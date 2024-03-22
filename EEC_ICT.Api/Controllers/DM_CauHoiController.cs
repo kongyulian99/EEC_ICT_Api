@@ -29,6 +29,12 @@ namespace EEC_ICT.Api.Controllers
             try
             {
                 var data = DM_CauHoiServices.SelectAll();
+                // select thong tin dao tao
+                for(var i=0; i<data.Count(); i++)
+                {
+                    data[i].ChoiceList = DM_DapAnServices.SelectAllWQuestionId(data[i].QuestionId);
+                }
+                
                 //if (!string.IsNullOrEmpty(filter))
                 //{
                 //    data = data.Where(o => UtilityServices.convertToUnSign(o.TenCapBac).IndexOf(UtilityServices.convertToUnSign(filter), StringComparison.CurrentCultureIgnoreCase) >= 0).ToList();
@@ -86,7 +92,31 @@ namespace EEC_ICT.Api.Controllers
             };
             try
             {
-                retval.Data = DM_CauHoiServices.Insert(request);
+                var questionId = DM_CauHoiServices.Insert(request);
+                if (request.ChoiceList != null)
+                {
+                    for (int i = 0; i < request.ChoiceList.Count(); i++)
+                    {
+                        if (request.ChoiceList[i].AnswerId <= 0)
+                        {
+                            request.ChoiceList[i].QuestionId = questionId; // request.IdCanBoNhanVien;
+                            DM_DapAnServices.Insert(request.ChoiceList[i]);
+                        }
+                        else
+                        {
+                            DM_DapAnServices.Update(request.ChoiceList[i]);
+                        }
+                    }
+                }
+                if (request.ChoiceList_Delete != null)
+                {
+                    for (int i = 0; i < request.ChoiceList_Delete.Count(); i++)
+                    {
+                        DM_DapAnServices.Delete(request.ChoiceList_Delete[i].AnswerId);
+                    }
+                }
+
+                retval.Data = questionId;
                 retval.Status = new StatusReturn { Code = 1, Message = "Thành công" };
             }
             catch (Exception ex)
@@ -110,7 +140,32 @@ namespace EEC_ICT.Api.Controllers
             };
             try
             {
-                retval.Data = DM_CauHoiServices.Update(request);
+                var questionId = DM_CauHoiServices.Update(request);
+
+                if (request.ChoiceList != null)
+                {
+                    for (int i = 0; i < request.ChoiceList.Count(); i++)
+                    {
+                        if (request.ChoiceList[i].AnswerId <= 0)
+                        {
+                            request.ChoiceList[i].QuestionId = questionId; // request.IdCanBoNhanVien;
+                            DM_DapAnServices.Insert(request.ChoiceList[i]);
+                        }
+                        else
+                        {
+                            DM_DapAnServices.Update(request.ChoiceList[i]);
+                        }
+                    }
+                }
+                if (request.ChoiceList_Delete != null)
+                {
+                    for (int i = 0; i < request.ChoiceList_Delete.Count(); i++)
+                    {
+                        DM_DapAnServices.Delete(request.ChoiceList_Delete[i].AnswerId);
+                    }
+                }
+
+                retval.Data = questionId;
                 retval.Status = new StatusReturn { Code = 1, Message = "Thành công" };
             }
             catch (Exception ex)
