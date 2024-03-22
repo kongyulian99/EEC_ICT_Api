@@ -9,26 +9,21 @@ using System.Threading.Tasks;
 
 namespace EEC_ICT.Data.Services
 {
-    public class DM_CauHoiServices
+    public class DM_DapAnServices
     {
-        private static DM_CauHoiRepository rep = new DM_CauHoiRepository();
+        private static DM_DapAnRepository rep = new DM_DapAnRepository();
 
-        public static List<DM_CauHoi> SelectAll()
+        public static List<DM_DapAn> SelectAllWQuestionId(int questionId)
         {
-            return SqlHelper.GetList<DM_CauHoi>(rep.SelectAll());
+            return SqlHelper.GetList<DM_DapAn>(rep.SelectAllWQuestionId(questionId));
         }
 
-        public static DM_CauHoi SelectOne(int questionId)
-        {
-            return SqlHelper.GetInfo<DM_CauHoi>(rep.SelectOne(questionId));
-        }
-
-        public static int Insert(DM_CauHoi entity)
+        public static string Insert(DM_DapAn entity)
         {
             return rep.Insert(entity);
         }
 
-        public static int Update(DM_CauHoi entity)
+        public static string Update(DM_DapAn entity)
         {
             return rep.Update(entity);
         }

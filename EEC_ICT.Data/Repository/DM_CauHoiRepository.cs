@@ -28,34 +28,34 @@ namespace EEC_ICT.Data.Repository
             return SqlHelper.ExecuteReader(CommonFunctions.GetConnectionString(), CommandType.StoredProcedure, "pr_DM_CauHoi_SelectOne", parameter);
         }
 
-        public string Insert(DM_CauHoi entity)
+        public int Insert(DM_CauHoi entity)
         {
             var parameters = new List<SqlParameter>()
             {
                 new SqlParameter("@iQuestionId", SqlDbType.Int){ Value = ParameterDirection.Output},
                 new SqlParameter("@sQuestion", SqlDbType.NVarChar, -1) { Value = entity.Question},
                 new SqlParameter("@sGraphUrl", SqlDbType.NVarChar, 200) { Value = entity.GraphUrl},
-                new SqlParameter("@iCorrectAnswerId", SqlDbType.Int) { Value = entity.CorrectAnswerId},
+                //new SqlParameter("@iCorrectAnswerId", SqlDbType.Int) { Value = entity.CorrectAnswerId},
                 new SqlParameter("@iTopicId", SqlDbType.Int) { Value = entity.TopicId},
                 new SqlParameter("@iErrorCode", SqlDbType.Int) { Direction = ParameterDirection.Output }
             };
             SqlHelper.ExecuteNonQuery(CommonFunctions.GetConnectionString(), CommandType.StoredProcedure, "pr_DM_CauHoi_Insert", parameters.ToArray());
-            return parameters[0].Value.ToString();
+            return int.Parse(parameters[0].Value.ToString());
         }
 
-        public string Update(DM_CauHoi entity)
+        public int Update(DM_CauHoi entity)
         {
             var parameters = new List<SqlParameter>()
             {
                 new SqlParameter("@iQuestionId", SqlDbType.Int){ Value = entity.QuestionId},
                 new SqlParameter("@sQuestion", SqlDbType.NVarChar, -1) { Value = entity.Question},
                 new SqlParameter("@sGraphUrl", SqlDbType.NVarChar, 200) { Value = entity.GraphUrl},
-                new SqlParameter("@iCorrectAnswerId", SqlDbType.Int) { Value = entity.CorrectAnswerId},
+                //new SqlParameter("@iCorrectAnswerId", SqlDbType.Int) { Value = entity.CorrectAnswerId},
                 new SqlParameter("@iTopicId", SqlDbType.Int) { Value = entity.TopicId},
                 new SqlParameter("@iErrorCode", SqlDbType.Int) { Direction = ParameterDirection.Output }
             };
             SqlHelper.ExecuteNonQuery(CommonFunctions.GetConnectionString(), CommandType.StoredProcedure, "pr_DM_CauHoi_Update", parameters.ToArray());
-            return entity.QuestionId.ToString();
+            return int.Parse(entity.QuestionId.ToString());
         }
 
         public string Delete(int questionId)
