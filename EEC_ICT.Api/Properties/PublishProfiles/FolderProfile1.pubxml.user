@@ -1,0 +1,2916 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <_PublishTargetUrl>D:\DeployApi</_PublishTargetUrl>
+    <History>True|2022-11-12T09:18:38.6240156Z;True|2022-11-09T21:27:36.4642139+07:00;True|2022-11-09T18:06:54.0789659+07:00;False|2022-11-08T09:53:07.7327560+07:00;True|2022-11-04T11:02:38.8879604+07:00;False|2022-11-04T11:00:11.5589084+07:00;False|2022-11-04T10:59:53.9656497+07:00;True|2022-11-03T09:30:26.4918157+07:00;True|2022-10-30T20:31:09.5878706+07:00;True|2022-10-30T15:29:22.1459680+07:00;True|2022-10-27T14:38:20.1784789+07:00;True|2022-10-25T13:44:44.6661649+07:00;True|2022-10-23T19:18:29.7768987+07:00;True|2022-10-21T17:18:28.2918671+07:00;True|2022-10-21T17:18:21.4053554+07:00;True|2022-10-20T09:55:55.0400529+07:00;True|2022-10-20T01:48:30.4968420+07:00;True|2022-10-20T01:43:36.9604279+07:00;True|2022-10-19T13:27:55.5963948+07:00;True|2022-10-06T21:15:33.0850258+07:00;True|2022-10-06T15:32:30.4674205+07:00;True|2022-10-05T23:34:11.3701348+07:00;True|2022-10-02T21:03:05.3152528+07:00;True|2022-10-01T00:11:00.7776322+07:00;True|2022-09-30T14:34:35.6826291+07:00;True|2022-09-29T00:27:36.7318235+07:00;True|2022-09-28T22:15:28.6386508+07:00;True|2022-09-25T10:40:12.9868268+07:00;True|2022-06-09T14:22:54.8164302+07:00;True|2022-06-06T08:02:37.4608618+07:00;</History>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="Areas/HelpPage/HelpPage.css">
+      <publishTime>05/17/2021 08:04:24</publishTime>
+    </File>
+    <File Include="Areas/HelpPage/Views/Help/Api.cshtml">
+      <publishTime>09/05/2022 10:18:28</publishTime>
+    </File>
+    <File Include="Areas/HelpPage/Views/Help/DisplayTemplates/ApiGroup.cshtml">
+      <publishTime>09/05/2022 10:18:28</publishTime>
+    </File>
+    <File Include="Areas/HelpPage/Views/Help/DisplayTemplates/CollectionModelDescription.cshtml">
+      <publishTime>09/05/2022 10:18:27</publishTime>
+    </File>
+    <File Include="Areas/HelpPage/Views/Help/DisplayTemplates/ComplexTypeModelDescription.cshtml">
+      <publishTime>09/05/2022 10:18:27</publishTime>
+    </File>
+    <File Include="Areas/HelpPage/Views/Help/DisplayTemplates/DictionaryModelDescription.cshtml">
+      <publishTime>09/05/2022 10:18:27</publishTime>
+    </File>
+    <File Include="Areas/HelpPage/Views/Help/DisplayTemplates/EnumTypeModelDescription.cshtml">
+      <publishTime>09/05/2022 10:18:27</publishTime>
+    </File>
+    <File Include="Areas/HelpPage/Views/Help/DisplayTemplates/HelpPageApiModel.cshtml">
+      <publishTime>09/05/2022 10:18:27</publishTime>
+    </File>
+    <File Include="Areas/HelpPage/Views/Help/DisplayTemplates/ImageSample.cshtml">
+      <publishTime>09/05/2022 10:18:27</publishTime>
+    </File>
+    <File Include="Areas/HelpPage/Views/Help/DisplayTemplates/InvalidSample.cshtml">
+      <publishTime>09/05/2022 10:18:27</publishTime>
+    </File>
+    <File Include="Areas/HelpPage/Views/Help/DisplayTemplates/KeyValuePairModelDescription.cshtml">
+      <publishTime>09/05/2022 10:18:27</publishTime>
+    </File>
+    <File Include="Areas/HelpPage/Views/Help/DisplayTemplates/ModelDescriptionLink.cshtml">
+      <publishTime>09/05/2022 10:18:27</publishTime>
+    </File>
+    <File Include="Areas/HelpPage/Views/Help/DisplayTemplates/Parameters.cshtml">
+      <publishTime>09/05/2022 10:18:27</publishTime>
+    </File>
+    <File Include="Areas/HelpPage/Views/Help/DisplayTemplates/Samples.cshtml">
+      <publishTime>05/17/2021 08:04:24</publishTime>
+    </File>
+    <File Include="Areas/HelpPage/Views/Help/DisplayTemplates/SimpleTypeModelDescription.cshtml">
+      <publishTime>09/05/2022 10:18:27</publishTime>
+    </File>
+    <File Include="Areas/HelpPage/Views/Help/DisplayTemplates/TextSample.cshtml">
+      <publishTime>09/05/2022 10:18:27</publishTime>
+    </File>
+    <File Include="Areas/HelpPage/Views/Help/Index.cshtml">
+      <publishTime>09/05/2022 10:18:27</publishTime>
+    </File>
+    <File Include="Areas/HelpPage/Views/Help/ResourceModel.cshtml">
+      <publishTime>09/05/2022 10:18:27</publishTime>
+    </File>
+    <File Include="Areas/HelpPage/Views/Shared/_Layout.cshtml">
+      <publishTime>05/17/2021 08:04:24</publishTime>
+    </File>
+    <File Include="Areas/HelpPage/Views/Web.config">
+      <publishTime>05/17/2021 08:04:24</publishTime>
+    </File>
+    <File Include="Areas/HelpPage/Views/_ViewStart.cshtml">
+      <publishTime>05/17/2021 08:04:24</publishTime>
+    </File>
+    <File Include="bin/Antlr3.Runtime.dll">
+      <publishTime>05/17/2021 08:04:32</publishTime>
+    </File>
+    <File Include="bin/Antlr3.Runtime.pdb">
+      <publishTime>05/17/2021 08:04:32</publishTime>
+    </File>
+    <File Include="bin/BitMiracle.Docotic.Pdf.dll">
+      <publishTime>03/15/2021 05:25:34</publishTime>
+    </File>
+    <File Include="bin/CTacAnToanLaoDong.Api.dll">
+      <publishTime>06/09/2022 15:28:13</publishTime>
+    </File>
+    <File Include="bin/CTacAnToanLaoDong.Api.pdb">
+      <publishTime>06/09/2022 15:28:13</publishTime>
+    </File>
+    <File Include="bin/CTacAnToanLaoDong.Data.dll">
+      <publishTime>06/09/2022 14:22:53</publishTime>
+    </File>
+    <File Include="bin/CTacAnToanLaoDong.Data.pdb">
+      <publishTime>06/09/2022 14:22:53</publishTime>
+    </File>
+    <File Include="bin/DocumentFormat.OpenXml.dll">
+      <publishTime>05/14/2021 06:20:54</publishTime>
+    </File>
+    <File Include="bin/EPPlus.dll">
+      <publishTime>10/09/2017 05:48:52</publishTime>
+    </File>
+    <File Include="bin/log4net.dll">
+      <publishTime>05/17/2021 08:04:40</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Bcl.AsyncInterfaces.dll">
+      <publishTime>05/17/2021 08:04:34</publishTime>
+    </File>
+    <File Include="bin/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll">
+      <publishTime>05/17/2021 08:04:34</publishTime>
+    </File>
+    <File Include="bin/Microsoft.IdentityModel.JsonWebTokens.dll">
+      <publishTime>05/17/2021 08:04:38</publishTime>
+    </File>
+    <File Include="bin/Microsoft.IdentityModel.Logging.dll">
+      <publishTime>05/17/2021 08:04:38</publishTime>
+    </File>
+    <File Include="bin/Microsoft.IdentityModel.Tokens.dll">
+      <publishTime>05/17/2021 08:04:38</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.Cors.dll">
+      <publishTime>05/07/2021 23:09:06</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.dll">
+      <publishTime>05/07/2021 23:08:46</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.Host.SystemWeb.dll">
+      <publishTime>05/17/2021 08:04:38</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Web.Infrastructure.dll">
+      <publishTime>05/17/2021 08:04:38</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Win32.Primitives.dll">
+      <publishTime>09/11/2022 00:13:25</publishTime>
+    </File>
+    <File Include="bin/netstandard.dll">
+      <publishTime>09/11/2022 00:13:25</publishTime>
+    </File>
+    <File Include="bin/Newtonsoft.Json.dll">
+      <publishTime>05/17/2021 08:04:38</publishTime>
+    </File>
+    <File Include="bin/Owin.dll">
+      <publishTime>05/17/2021 08:04:38</publishTime>
+    </File>
+    <File Include="bin/QLTrangTin.Api.dll">
+      <publishTime>11/21/2022 15:13:21</publishTime>
+    </File>
+    <File Include="bin/QLTrangTin.Api.pdb">
+      <publishTime>11/21/2022 15:13:21</publishTime>
+    </File>
+    <File Include="bin/QLTrangTin.Data.dll">
+      <publishTime>11/21/2022 15:13:20</publishTime>
+    </File>
+    <File Include="bin/QLTrangTin.Data.pdb">
+      <publishTime>11/21/2022 15:13:20</publishTime>
+    </File>
+    <File Include="bin/roslyn/csc.exe">
+      <publishTime>05/17/2021 08:04:36</publishTime>
+    </File>
+    <File Include="bin/roslyn/csc.exe.config">
+      <publishTime>05/17/2021 08:04:36</publishTime>
+    </File>
+    <File Include="bin/roslyn/csc.rsp">
+      <publishTime>05/17/2021 08:04:36</publishTime>
+    </File>
+    <File Include="bin/roslyn/csi.exe">
+      <publishTime>05/17/2021 08:04:36</publishTime>
+    </File>
+    <File Include="bin/roslyn/csi.exe.config">
+      <publishTime>05/17/2021 08:04:36</publishTime>
+    </File>
+    <File Include="bin/roslyn/csi.rsp">
+      <publishTime>05/17/2021 08:04:36</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.Build.Tasks.CodeAnalysis.dll">
+      <publishTime>05/17/2021 08:04:36</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.CSharp.dll">
+      <publishTime>05/17/2021 08:04:36</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.CSharp.Scripting.dll">
+      <publishTime>05/17/2021 08:04:36</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.dll">
+      <publishTime>05/17/2021 08:04:36</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.Scripting.dll">
+      <publishTime>05/17/2021 08:04:36</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.VisualBasic.dll">
+      <publishTime>05/17/2021 08:04:36</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CSharp.Core.targets">
+      <publishTime>05/17/2021 08:04:36</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.DiaSymReader.Native.amd64.dll">
+      <publishTime>05/17/2021 08:04:36</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.DiaSymReader.Native.x86.dll">
+      <publishTime>05/17/2021 08:04:36</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.Managed.Core.targets">
+      <publishTime>05/17/2021 08:04:36</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.VisualBasic.Core.targets">
+      <publishTime>05/17/2021 08:04:36</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.Win32.Primitives.dll">
+      <publishTime>05/17/2021 08:04:36</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.AppContext.dll">
+      <publishTime>05/17/2021 08:04:36</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Collections.Immutable.dll">
+      <publishTime>05/17/2021 08:04:36</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Console.dll">
+      <publishTime>05/17/2021 08:04:36</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Diagnostics.DiagnosticSource.dll">
+      <publishTime>05/17/2021 08:04:36</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Diagnostics.FileVersionInfo.dll">
+      <publishTime>05/17/2021 08:04:36</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Diagnostics.StackTrace.dll">
+      <publishTime>05/17/2021 08:04:36</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Globalization.Calendars.dll">
+      <publishTime>05/17/2021 08:04:36</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.IO.Compression.dll">
+      <publishTime>05/17/2021 08:04:36</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.IO.Compression.ZipFile.dll">
+      <publishTime>05/17/2021 08:04:36</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.IO.FileSystem.dll">
+      <publishTime>05/17/2021 08:04:36</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.IO.FileSystem.Primitives.dll">
+      <publishTime>05/17/2021 08:04:36</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Net.Http.dll">
+      <publishTime>05/17/2021 08:04:36</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Net.Sockets.dll">
+      <publishTime>05/17/2021 08:04:36</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Reflection.Metadata.dll">
+      <publishTime>05/17/2021 08:04:36</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Runtime.InteropServices.RuntimeInformation.dll">
+      <publishTime>05/17/2021 08:04:36</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Security.Cryptography.Algorithms.dll">
+      <publishTime>05/17/2021 08:04:36</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Security.Cryptography.Encoding.dll">
+      <publishTime>05/17/2021 08:04:36</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Security.Cryptography.Primitives.dll">
+      <publishTime>05/17/2021 08:04:36</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Security.Cryptography.X509Certificates.dll">
+      <publishTime>05/17/2021 08:04:36</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Text.Encoding.CodePages.dll">
+      <publishTime>05/17/2021 08:04:36</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Threading.Tasks.Extensions.dll">
+      <publishTime>05/17/2021 08:04:36</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.ValueTuple.dll">
+      <publishTime>05/17/2021 08:04:36</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Xml.ReaderWriter.dll">
+      <publishTime>05/17/2021 08:04:36</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Xml.XmlDocument.dll">
+      <publishTime>05/17/2021 08:04:36</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Xml.XPath.dll">
+      <publishTime>05/17/2021 08:04:36</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Xml.XPath.XDocument.dll">
+      <publishTime>05/17/2021 08:04:36</publishTime>
+    </File>
+    <File Include="bin/roslyn/vbc.exe">
+      <publishTime>05/17/2021 08:04:36</publishTime>
+    </File>
+    <File Include="bin/roslyn/vbc.exe.config">
+      <publishTime>05/17/2021 08:04:36</publishTime>
+    </File>
+    <File Include="bin/roslyn/vbc.rsp">
+      <publishTime>05/17/2021 08:04:36</publishTime>
+    </File>
+    <File Include="bin/roslyn/VBCSCompiler.exe">
+      <publishTime>05/17/2021 08:04:36</publishTime>
+    </File>
+    <File Include="bin/roslyn/VBCSCompiler.exe.config">
+      <publishTime>05/17/2021 08:04:36</publishTime>
+    </File>
+    <File Include="bin/System.AppContext.dll">
+      <publishTime>09/11/2022 00:13:25</publishTime>
+    </File>
+    <File Include="bin/System.Collections.Concurrent.dll">
+      <publishTime>09/11/2022 00:13:25</publishTime>
+    </File>
+    <File Include="bin/System.Collections.dll">
+      <publishTime>09/11/2022 00:13:25</publishTime>
+    </File>
+    <File Include="bin/System.Collections.NonGeneric.dll">
+      <publishTime>09/11/2022 00:13:25</publishTime>
+    </File>
+    <File Include="bin/System.Collections.Specialized.dll">
+      <publishTime>09/11/2022 00:13:25</publishTime>
+    </File>
+    <File Include="bin/System.ComponentModel.dll">
+      <publishTime>09/11/2022 00:13:25</publishTime>
+    </File>
+    <File Include="bin/System.ComponentModel.EventBasedAsync.dll">
+      <publishTime>09/11/2022 00:13:25</publishTime>
+    </File>
+    <File Include="bin/System.ComponentModel.Primitives.dll">
+      <publishTime>09/11/2022 00:13:25</publishTime>
+    </File>
+    <File Include="bin/System.ComponentModel.TypeConverter.dll">
+      <publishTime>09/11/2022 00:13:25</publishTime>
+    </File>
+    <File Include="bin/System.Console.dll">
+      <publishTime>09/11/2022 00:13:25</publishTime>
+    </File>
+    <File Include="bin/System.Data.Common.dll">
+      <publishTime>09/11/2022 00:13:25</publishTime>
+    </File>
+    <File Include="bin/System.Diagnostics.Contracts.dll">
+      <publishTime>09/11/2022 00:13:25</publishTime>
+    </File>
+    <File Include="bin/System.Diagnostics.Debug.dll">
+      <publishTime>09/11/2022 00:13:25</publishTime>
+    </File>
+    <File Include="bin/System.Diagnostics.FileVersionInfo.dll">
+      <publishTime>09/11/2022 00:13:25</publishTime>
+    </File>
+    <File Include="bin/System.Diagnostics.Process.dll">
+      <publishTime>09/11/2022 00:13:25</publishTime>
+    </File>
+    <File Include="bin/System.Diagnostics.StackTrace.dll">
+      <publishTime>09/11/2022 00:13:25</publishTime>
+    </File>
+    <File Include="bin/System.Diagnostics.TextWriterTraceListener.dll">
+      <publishTime>09/11/2022 00:13:25</publishTime>
+    </File>
+    <File Include="bin/System.Diagnostics.Tools.dll">
+      <publishTime>09/11/2022 00:13:25</publishTime>
+    </File>
+    <File Include="bin/System.Diagnostics.TraceSource.dll">
+      <publishTime>09/11/2022 00:13:25</publishTime>
+    </File>
+    <File Include="bin/System.Diagnostics.Tracing.dll">
+      <publishTime>09/11/2022 00:13:25</publishTime>
+    </File>
+    <File Include="bin/System.Drawing.Primitives.dll">
+      <publishTime>09/11/2022 00:13:25</publishTime>
+    </File>
+    <File Include="bin/System.Dynamic.Runtime.dll">
+      <publishTime>09/11/2022 00:13:25</publishTime>
+    </File>
+    <File Include="bin/System.Globalization.Calendars.dll">
+      <publishTime>09/11/2022 00:13:25</publishTime>
+    </File>
+    <File Include="bin/System.Globalization.dll">
+      <publishTime>09/11/2022 00:13:25</publishTime>
+    </File>
+    <File Include="bin/System.Globalization.Extensions.dll">
+      <publishTime>09/11/2022 00:13:25</publishTime>
+    </File>
+    <File Include="bin/System.IdentityModel.Tokens.Jwt.dll">
+      <publishTime>05/17/2021 08:04:38</publishTime>
+    </File>
+    <File Include="bin/System.IO.Compression.dll">
+      <publishTime>09/11/2022 00:13:25</publishTime>
+    </File>
+    <File Include="bin/System.IO.Compression.ZipFile.dll">
+      <publishTime>09/11/2022 00:13:25</publishTime>
+    </File>
+    <File Include="bin/System.IO.dll">
+      <publishTime>09/11/2022 00:13:25</publishTime>
+    </File>
+    <File Include="bin/System.IO.FileSystem.dll">
+      <publishTime>09/11/2022 00:13:25</publishTime>
+    </File>
+    <File Include="bin/System.IO.FileSystem.DriveInfo.dll">
+      <publishTime>09/11/2022 00:13:25</publishTime>
+    </File>
+    <File Include="bin/System.IO.FileSystem.Primitives.dll">
+      <publishTime>09/11/2022 00:13:25</publishTime>
+    </File>
+    <File Include="bin/System.IO.FileSystem.Watcher.dll">
+      <publishTime>09/11/2022 00:13:25</publishTime>
+    </File>
+    <File Include="bin/System.IO.IsolatedStorage.dll">
+      <publishTime>09/11/2022 00:13:25</publishTime>
+    </File>
+    <File Include="bin/System.IO.MemoryMappedFiles.dll">
+      <publishTime>09/11/2022 00:13:25</publishTime>
+    </File>
+    <File Include="bin/System.IO.Pipes.dll">
+      <publishTime>09/11/2022 00:13:25</publishTime>
+    </File>
+    <File Include="bin/System.IO.UnmanagedMemoryStream.dll">
+      <publishTime>09/11/2022 00:13:25</publishTime>
+    </File>
+    <File Include="bin/System.Linq.dll">
+      <publishTime>09/11/2022 00:13:25</publishTime>
+    </File>
+    <File Include="bin/System.Linq.Expressions.dll">
+      <publishTime>09/11/2022 00:13:25</publishTime>
+    </File>
+    <File Include="bin/System.Linq.Parallel.dll">
+      <publishTime>09/11/2022 00:13:25</publishTime>
+    </File>
+    <File Include="bin/System.Linq.Queryable.dll">
+      <publishTime>09/11/2022 00:13:25</publishTime>
+    </File>
+    <File Include="bin/System.Net.Http.dll">
+      <publishTime>09/11/2022 00:13:25</publishTime>
+    </File>
+    <File Include="bin/System.Net.Http.Formatting.dll">
+      <publishTime>05/17/2021 08:04:32</publishTime>
+    </File>
+    <File Include="bin/System.Net.NameResolution.dll">
+      <publishTime>09/11/2022 00:13:25</publishTime>
+    </File>
+    <File Include="bin/System.Net.NetworkInformation.dll">
+      <publishTime>09/11/2022 00:13:25</publishTime>
+    </File>
+    <File Include="bin/System.Net.Ping.dll">
+      <publishTime>09/11/2022 00:13:25</publishTime>
+    </File>
+    <File Include="bin/System.Net.Primitives.dll">
+      <publishTime>09/11/2022 00:13:25</publishTime>
+    </File>
+    <File Include="bin/System.Net.Requests.dll">
+      <publishTime>09/11/2022 00:13:25</publishTime>
+    </File>
+    <File Include="bin/System.Net.Security.dll">
+      <publishTime>09/11/2022 00:13:25</publishTime>
+    </File>
+    <File Include="bin/System.Net.Sockets.dll">
+      <publishTime>09/11/2022 00:13:25</publishTime>
+    </File>
+    <File Include="bin/System.Net.WebHeaderCollection.dll">
+      <publishTime>09/11/2022 00:13:25</publishTime>
+    </File>
+    <File Include="bin/System.Net.WebSockets.Client.dll">
+      <publishTime>09/11/2022 00:13:25</publishTime>
+    </File>
+    <File Include="bin/System.Net.WebSockets.dll">
+      <publishTime>09/11/2022 00:13:25</publishTime>
+    </File>
+    <File Include="bin/System.ObjectModel.dll">
+      <publishTime>09/11/2022 00:13:25</publishTime>
+    </File>
+    <File Include="bin/System.Reflection.dll">
+      <publishTime>09/11/2022 00:13:25</publishTime>
+    </File>
+    <File Include="bin/System.Reflection.Extensions.dll">
+      <publishTime>09/11/2022 00:13:25</publishTime>
+    </File>
+    <File Include="bin/System.Reflection.Primitives.dll">
+      <publishTime>09/11/2022 00:13:25</publishTime>
+    </File>
+    <File Include="bin/System.Resources.Reader.dll">
+      <publishTime>09/11/2022 00:13:25</publishTime>
+    </File>
+    <File Include="bin/System.Resources.ResourceManager.dll">
+      <publishTime>09/11/2022 00:13:25</publishTime>
+    </File>
+    <File Include="bin/System.Resources.Writer.dll">
+      <publishTime>09/11/2022 00:13:25</publishTime>
+    </File>
+    <File Include="bin/System.Runtime.CompilerServices.Unsafe.dll">
+      <publishTime>05/17/2021 08:04:40</publishTime>
+    </File>
+    <File Include="bin/System.Runtime.CompilerServices.VisualC.dll">
+      <publishTime>09/11/2022 00:13:25</publishTime>
+    </File>
+    <File Include="bin/System.Runtime.dll">
+      <publishTime>09/11/2022 00:13:25</publishTime>
+    </File>
+    <File Include="bin/System.Runtime.Extensions.dll">
+      <publishTime>09/11/2022 00:13:25</publishTime>
+    </File>
+    <File Include="bin/System.Runtime.Handles.dll">
+      <publishTime>09/11/2022 00:13:25</publishTime>
+    </File>
+    <File Include="bin/System.Runtime.InteropServices.dll">
+      <publishTime>09/11/2022 00:13:25</publishTime>
+    </File>
+    <File Include="bin/System.Runtime.InteropServices.RuntimeInformation.dll">
+      <publishTime>09/11/2022 00:13:25</publishTime>
+    </File>
+    <File Include="bin/System.Runtime.Numerics.dll">
+      <publishTime>09/11/2022 00:13:25</publishTime>
+    </File>
+    <File Include="bin/System.Runtime.Serialization.Formatters.dll">
+      <publishTime>09/11/2022 00:13:25</publishTime>
+    </File>
+    <File Include="bin/System.Runtime.Serialization.Json.dll">
+      <publishTime>09/11/2022 00:13:25</publishTime>
+    </File>
+    <File Include="bin/System.Runtime.Serialization.Primitives.dll">
+      <publishTime>09/11/2022 00:13:25</publishTime>
+    </File>
+    <File Include="bin/System.Runtime.Serialization.Xml.dll">
+      <publishTime>09/11/2022 00:13:25</publishTime>
+    </File>
+    <File Include="bin/System.Security.Claims.dll">
+      <publishTime>09/11/2022 00:13:25</publishTime>
+    </File>
+    <File Include="bin/System.Security.Cryptography.Algorithms.dll">
+      <publishTime>09/11/2022 00:13:25</publishTime>
+    </File>
+    <File Include="bin/System.Security.Cryptography.Csp.dll">
+      <publishTime>09/11/2022 00:13:25</publishTime>
+    </File>
+    <File Include="bin/System.Security.Cryptography.Encoding.dll">
+      <publishTime>09/11/2022 00:13:25</publishTime>
+    </File>
+    <File Include="bin/System.Security.Cryptography.Primitives.dll">
+      <publishTime>09/11/2022 00:13:25</publishTime>
+    </File>
+    <File Include="bin/System.Security.Cryptography.X509Certificates.dll">
+      <publishTime>09/11/2022 00:13:25</publishTime>
+    </File>
+    <File Include="bin/System.Security.Principal.dll">
+      <publishTime>09/11/2022 00:13:25</publishTime>
+    </File>
+    <File Include="bin/System.Security.SecureString.dll">
+      <publishTime>09/11/2022 00:13:25</publishTime>
+    </File>
+    <File Include="bin/System.Text.Encoding.dll">
+      <publishTime>09/11/2022 00:13:25</publishTime>
+    </File>
+    <File Include="bin/System.Text.Encoding.Extensions.dll">
+      <publishTime>09/11/2022 00:13:25</publishTime>
+    </File>
+    <File Include="bin/System.Text.RegularExpressions.dll">
+      <publishTime>09/11/2022 00:13:25</publishTime>
+    </File>
+    <File Include="bin/System.Threading.dll">
+      <publishTime>09/11/2022 00:13:25</publishTime>
+    </File>
+    <File Include="bin/System.Threading.Overlapped.dll">
+      <publishTime>09/11/2022 00:13:25</publishTime>
+    </File>
+    <File Include="bin/System.Threading.Tasks.dll">
+      <publishTime>09/11/2022 00:13:25</publishTime>
+    </File>
+    <File Include="bin/System.Threading.Tasks.Extensions.dll">
+      <publishTime>05/17/2021 08:04:40</publishTime>
+    </File>
+    <File Include="bin/System.Threading.Tasks.Parallel.dll">
+      <publishTime>09/11/2022 00:13:25</publishTime>
+    </File>
+    <File Include="bin/System.Threading.Thread.dll">
+      <publishTime>09/11/2022 00:13:25</publishTime>
+    </File>
+    <File Include="bin/System.Threading.ThreadPool.dll">
+      <publishTime>09/11/2022 00:13:25</publishTime>
+    </File>
+    <File Include="bin/System.Threading.Timer.dll">
+      <publishTime>09/11/2022 00:13:25</publishTime>
+    </File>
+    <File Include="bin/System.ValueTuple.dll">
+      <publishTime>09/11/2022 00:13:25</publishTime>
+    </File>
+    <File Include="bin/System.Web.Cors.dll">
+      <publishTime>11/28/2018 12:58:44</publishTime>
+    </File>
+    <File Include="bin/System.Web.Helpers.dll">
+      <publishTime>05/17/2021 08:04:34</publishTime>
+    </File>
+    <File Include="bin/System.Web.Http.Cors.dll">
+      <publishTime>11/28/2018 13:01:26</publishTime>
+    </File>
+    <File Include="bin/System.Web.Http.dll">
+      <publishTime>05/17/2021 08:04:34</publishTime>
+    </File>
+    <File Include="bin/System.Web.Http.WebHost.dll">
+      <publishTime>05/17/2021 08:04:34</publishTime>
+    </File>
+    <File Include="bin/System.Web.Mvc.dll">
+      <publishTime>05/17/2021 08:04:32</publishTime>
+    </File>
+    <File Include="bin/System.Web.Optimization.dll">
+      <publishTime>05/17/2021 08:04:32</publishTime>
+    </File>
+    <File Include="bin/System.Web.Razor.dll">
+      <publishTime>05/17/2021 08:04:32</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.Deployment.dll">
+      <publishTime>05/17/2021 08:04:34</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.dll">
+      <publishTime>05/17/2021 08:04:34</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.Razor.dll">
+      <publishTime>05/17/2021 08:04:34</publishTime>
+    </File>
+    <File Include="bin/System.Xml.ReaderWriter.dll">
+      <publishTime>09/11/2022 00:13:25</publishTime>
+    </File>
+    <File Include="bin/System.Xml.XDocument.dll">
+      <publishTime>09/11/2022 00:13:25</publishTime>
+    </File>
+    <File Include="bin/System.Xml.XmlDocument.dll">
+      <publishTime>09/11/2022 00:13:25</publishTime>
+    </File>
+    <File Include="bin/System.Xml.XmlSerializer.dll">
+      <publishTime>09/11/2022 00:13:25</publishTime>
+    </File>
+    <File Include="bin/System.Xml.XPath.dll">
+      <publishTime>09/11/2022 00:13:25</publishTime>
+    </File>
+    <File Include="bin/System.Xml.XPath.XDocument.dll">
+      <publishTime>09/11/2022 00:13:25</publishTime>
+    </File>
+    <File Include="bin/WebGrease.dll">
+      <publishTime>05/17/2021 08:04:40</publishTime>
+    </File>
+    <File Include="Content/bootstrap-theme.css">
+      <publishTime>05/17/2021 08:04:24</publishTime>
+    </File>
+    <File Include="Content/bootstrap-theme.css.map">
+      <publishTime>05/17/2021 08:04:24</publishTime>
+    </File>
+    <File Include="Content/bootstrap-theme.min.css">
+      <publishTime>05/17/2021 08:04:24</publishTime>
+    </File>
+    <File Include="Content/bootstrap-theme.min.css.map">
+      <publishTime>05/17/2021 08:04:24</publishTime>
+    </File>
+    <File Include="Content/bootstrap.css">
+      <publishTime>05/17/2021 08:04:24</publishTime>
+    </File>
+    <File Include="Content/bootstrap.css.map">
+      <publishTime>05/17/2021 08:04:24</publishTime>
+    </File>
+    <File Include="Content/bootstrap.min.css">
+      <publishTime>05/17/2021 08:04:24</publishTime>
+    </File>
+    <File Include="Content/bootstrap.min.css.map">
+      <publishTime>05/17/2021 08:04:24</publishTime>
+    </File>
+    <File Include="Content/Site.css">
+      <publishTime>05/17/2021 08:04:24</publishTime>
+    </File>
+    <File Include="favicon.ico">
+      <publishTime>05/17/2021 08:04:32</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.eot">
+      <publishTime>05/17/2021 08:04:32</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.svg">
+      <publishTime>05/17/2021 08:04:32</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.ttf">
+      <publishTime>05/17/2021 08:04:32</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.woff">
+      <publishTime>05/17/2021 08:04:32</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.woff2">
+      <publishTime>05/17/2021 08:04:32</publishTime>
+    </File>
+    <File Include="Global.asax">
+      <publishTime>09/05/2022 10:18:27</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap.js">
+      <publishTime>05/17/2021 08:04:24</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap.min.js">
+      <publishTime>05/17/2021 08:04:24</publishTime>
+    </File>
+    <File Include="Scripts/jquery-3.4.1.js">
+      <publishTime>05/17/2021 08:04:24</publishTime>
+    </File>
+    <File Include="Scripts/jquery-3.4.1.min.js">
+      <publishTime>05/17/2021 08:04:24</publishTime>
+    </File>
+    <File Include="Scripts/jquery-3.4.1.min.map">
+      <publishTime>05/17/2021 08:04:24</publishTime>
+    </File>
+    <File Include="Scripts/jquery-3.4.1.slim.js">
+      <publishTime>05/17/2021 08:04:24</publishTime>
+    </File>
+    <File Include="Scripts/jquery-3.4.1.slim.min.js">
+      <publishTime>05/17/2021 08:04:24</publishTime>
+    </File>
+    <File Include="Scripts/jquery-3.4.1.slim.min.map">
+      <publishTime>05/17/2021 08:04:24</publishTime>
+    </File>
+    <File Include="Scripts/modernizr-2.8.3.js">
+      <publishTime>05/17/2021 08:04:24</publishTime>
+    </File>
+    <File Include="Templates/BC01.xlsx">
+      <publishTime>09/14/2021 16:06:24</publishTime>
+    </File>
+    <File Include="Templates/BC02.xlsx">
+      <publishTime>09/16/2021 11:08:18</publishTime>
+    </File>
+    <File Include="Templates/BC03.xlsx">
+      <publishTime>09/15/2021 11:38:24</publishTime>
+    </File>
+    <File Include="Templates/BC04.xlsx">
+      <publishTime>09/16/2021 11:09:08</publishTime>
+    </File>
+    <File Include="Templates/BCNu.xlsx">
+      <publishTime>09/16/2021 11:09:28</publishTime>
+    </File>
+    <File Include="Templates/BCTongHopChung.xlsx">
+      <publishTime>09/11/2021 23:04:36</publishTime>
+    </File>
+    <File Include="Uploads/CkEditor/04d4df72-0a8e-491f-bc33-039036386dc5.jpg">
+      <publishTime>10/27/2022 14:36:54</publishTime>
+    </File>
+    <File Include="Uploads/CkEditor/0b782653-4c27-4175-9bd8-99c12df8bcab.jpg">
+      <publishTime>10/27/2022 15:56:54</publishTime>
+    </File>
+    <File Include="Uploads/CkEditor/0e820d71-1100-46bc-a1a5-8e3cdb1ccb4e.jpeg">
+      <publishTime>10/27/2022 14:03:42</publishTime>
+    </File>
+    <File Include="Uploads/CkEditor/0e8785f1-9b99-43f0-886b-498fee920cff.jpg">
+      <publishTime>10/27/2022 15:03:18</publishTime>
+    </File>
+    <File Include="Uploads/CkEditor/10a4e5c1-1116-476a-9505-d030770ca306.jpg">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Uploads/CkEditor/10e6c5bf-ffb1-4aeb-944a-a6ef5a99bbc8.jpg">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Uploads/CkEditor/13d5a186-4247-46e9-bdc7-b606ebb460f5.jpeg">
+      <publishTime>10/27/2022 14:04:19</publishTime>
+    </File>
+    <File Include="Uploads/CkEditor/14532777-5274-4366-8079-1d2633df503a.jpg">
+      <publishTime>10/27/2022 14:22:06</publishTime>
+    </File>
+    <File Include="Uploads/CkEditor/1523f86f-63d5-4a33-b574-d1c9928bd15f.jpg">
+      <publishTime>10/27/2022 14:49:26</publishTime>
+    </File>
+    <File Include="Uploads/CkEditor/156b878c-e460-488d-80ea-db35f02bd33f.jpg">
+      <publishTime>10/27/2022 16:18:28</publishTime>
+    </File>
+    <File Include="Uploads/CkEditor/17f2a64c-d44c-43c9-bf4f-d0ee00b564b8.jpg">
+      <publishTime>10/27/2022 18:01:11</publishTime>
+    </File>
+    <File Include="Uploads/CkEditor/1ae0e8a7-a92d-4eef-8995-943b648ddfff.jpg">
+      <publishTime>10/27/2022 14:55:02</publishTime>
+    </File>
+    <File Include="Uploads/CkEditor/2c6ee7b7-a989-4188-9c27-93b856c5f827.jpeg">
+      <publishTime>10/27/2022 11:04:23</publishTime>
+    </File>
+    <File Include="Uploads/CkEditor/3136d68d-9226-4dc6-8d07-021d778a41ab.jpeg">
+      <publishTime>10/27/2022 11:04:23</publishTime>
+    </File>
+    <File Include="Uploads/CkEditor/36273905-3b8b-423f-aa34-8c1f0222da28.jpg">
+      <publishTime>10/27/2022 15:03:59</publishTime>
+    </File>
+    <File Include="Uploads/CkEditor/37abf16b-188f-4a80-9b99-7c19ea0013cc.jpg">
+      <publishTime>10/27/2022 14:38:17</publishTime>
+    </File>
+    <File Include="Uploads/CkEditor/37b1059c-11d8-44e0-bdd5-6fcb0177a2fd.jpeg">
+      <publishTime>10/28/2022 11:26:07</publishTime>
+    </File>
+    <File Include="Uploads/CkEditor/389d4f4c-f44e-4bbb-8bc9-bd08478b6f32.jpg">
+      <publishTime>10/31/2022 10:56:22</publishTime>
+    </File>
+    <File Include="Uploads/CkEditor/38dafa29-212b-401e-b17b-3bcf078599f4.jpeg">
+      <publishTime>10/27/2022 14:03:58</publishTime>
+    </File>
+    <File Include="Uploads/CkEditor/3d349399-a1fb-4396-9b87-924c7bf58887.jpeg">
+      <publishTime>10/27/2022 14:04:12</publishTime>
+    </File>
+    <File Include="Uploads/CkEditor/3f2667ca-1d84-4932-bd81-e5fe22c64692.jpg">
+      <publishTime>10/27/2022 16:06:39</publishTime>
+    </File>
+    <File Include="Uploads/CkEditor/40151155-89b8-47af-924e-fcb1ba33e324.jpg">
+      <publishTime>09/19/2022 09:27:10</publishTime>
+    </File>
+    <File Include="Uploads/CkEditor/40bdaa2d-b424-4bae-b874-be67a60b463e.jpg">
+      <publishTime>10/27/2022 15:17:56</publishTime>
+    </File>
+    <File Include="Uploads/CkEditor/44454a0e-45c5-4686-8766-466598aab5d1.jpg">
+      <publishTime>09/20/2022 00:12:41</publishTime>
+    </File>
+    <File Include="Uploads/CkEditor/45b43d2c-b4c8-4e6d-bc54-3fab64fe13ee.jpg">
+      <publishTime>10/31/2022 13:30:26</publishTime>
+    </File>
+    <File Include="Uploads/CkEditor/4742a9a4-7d80-431e-8604-34233c55b22d.jpg">
+      <publishTime>10/28/2022 13:40:19</publishTime>
+    </File>
+    <File Include="Uploads/CkEditor/47c3d639-807d-4db5-b63a-d50c8d2432cd.jpg">
+      <publishTime>10/31/2022 10:59:39</publishTime>
+    </File>
+    <File Include="Uploads/CkEditor/4bbbcbef-898d-4c23-94c6-bfca9bacb55a.jpg">
+      <publishTime>10/27/2022 14:24:21</publishTime>
+    </File>
+    <File Include="Uploads/CkEditor/4bee7064-b490-4c36-93f0-15e12afb246e.jpg">
+      <publishTime>10/27/2022 14:56:21</publishTime>
+    </File>
+    <File Include="Uploads/CkEditor/4c495951-b700-4750-85c3-8bebc0be29cf.jpeg">
+      <publishTime>10/27/2022 14:03:27</publishTime>
+    </File>
+    <File Include="Uploads/CkEditor/4e8e8b9d-b98d-40eb-94df-0bfcd35e4ac4.jpg">
+      <publishTime>10/31/2022 10:59:57</publishTime>
+    </File>
+    <File Include="Uploads/CkEditor/50333c6a-e5a3-4690-ad00-41fd288db781.jpg">
+      <publishTime>10/27/2022 16:23:31</publishTime>
+    </File>
+    <File Include="Uploads/CkEditor/55038300-2cd0-4493-87a9-c8df124f9a71.jpg">
+      <publishTime>10/27/2022 15:17:09</publishTime>
+    </File>
+    <File Include="Uploads/CkEditor/56849417-70cf-4ec5-84d8-d10e285f9085.jpg">
+      <publishTime>10/27/2022 14:51:37</publishTime>
+    </File>
+    <File Include="Uploads/CkEditor/581512a1-2ac0-4000-9060-0fd368658eee.jpeg">
+      <publishTime>10/27/2022 11:04:22</publishTime>
+    </File>
+    <File Include="Uploads/CkEditor/5b248067-936a-44ee-b5ef-a2cba8bd5d43.jpg">
+      <publishTime>10/27/2022 16:05:36</publishTime>
+    </File>
+    <File Include="Uploads/CkEditor/5b70b98d-611e-4267-a019-288a32676ad3.jpg">
+      <publishTime>10/27/2022 15:52:22</publishTime>
+    </File>
+    <File Include="Uploads/CkEditor/5c634a76-0b5a-46a5-ace6-37241db428af.jpg">
+      <publishTime>10/27/2022 16:06:01</publishTime>
+    </File>
+    <File Include="Uploads/CkEditor/5e5d4b7a-ef9e-47a7-bb6c-045f02ffcab8.jpg">
+      <publishTime>10/27/2022 16:19:42</publishTime>
+    </File>
+    <File Include="Uploads/CkEditor/5fd3605e-ccc9-4be7-8e1a-42c791230f2a.jpg">
+      <publishTime>10/28/2022 13:40:48</publishTime>
+    </File>
+    <File Include="Uploads/CkEditor/62452149-31c3-46a2-a027-1333dc56f798.jpg">
+      <publishTime>10/27/2022 14:35:26</publishTime>
+    </File>
+    <File Include="Uploads/CkEditor/6791b5c0-491e-4852-9afb-3a9cb1c4bba3.jpg">
+      <publishTime>10/31/2022 11:03:01</publishTime>
+    </File>
+    <File Include="Uploads/CkEditor/68874f18-f5dd-401c-9b22-f59b29ac884f.jpeg">
+      <publishTime>10/27/2022 11:04:22</publishTime>
+    </File>
+    <File Include="Uploads/CkEditor/6b34fbb0-f2c1-4923-8e5f-8f3ab58aa2fe.jpg">
+      <publishTime>10/27/2022 15:18:39</publishTime>
+    </File>
+    <File Include="Uploads/CkEditor/6bf506e7-b8c4-4d98-bd52-2d3127484602.jpeg">
+      <publishTime>10/27/2022 14:03:19</publishTime>
+    </File>
+    <File Include="Uploads/CkEditor/70c4c088-65f1-4650-a678-ddcdb8bedbdf.jpg">
+      <publishTime>10/27/2022 16:19:53</publishTime>
+    </File>
+    <File Include="Uploads/CkEditor/726c5525-2e62-4505-9c8a-1128ba47b1ac.jpeg">
+      <publishTime>10/27/2022 14:03:35</publishTime>
+    </File>
+    <File Include="Uploads/CkEditor/7565a40d-5f8b-47ca-91a7-4480a80ca425.jpeg">
+      <publishTime>10/27/2022 11:04:22</publishTime>
+    </File>
+    <File Include="Uploads/CkEditor/78d6b9f2-7b4f-4600-a5a8-52609e64aa98.jpg">
+      <publishTime>10/31/2022 10:58:20</publishTime>
+    </File>
+    <File Include="Uploads/CkEditor/7c617e3c-3531-46fb-918a-3038d7355ea4.jpg">
+      <publishTime>10/27/2022 14:38:01</publishTime>
+    </File>
+    <File Include="Uploads/CkEditor/7dc81aac-9183-4c20-a9ac-005284362205.jpg">
+      <publishTime>10/27/2022 15:57:31</publishTime>
+    </File>
+    <File Include="Uploads/CkEditor/7f0f2aa5-cc07-410c-813b-43a73ad8b510.jpg">
+      <publishTime>10/31/2022 11:01:12</publishTime>
+    </File>
+    <File Include="Uploads/CkEditor/809a07e2-3c40-4e73-8e12-623f27765524.jpeg">
+      <publishTime>10/27/2022 11:04:23</publishTime>
+    </File>
+    <File Include="Uploads/CkEditor/81935b23-97ca-4835-851c-789fb68097bb.jpg">
+      <publishTime>10/27/2022 16:06:51</publishTime>
+    </File>
+    <File Include="Uploads/CkEditor/81ed8c44-e2af-4f07-973c-04dde0532066.jpg">
+      <publishTime>09/19/2022 09:24:09</publishTime>
+    </File>
+    <File Include="Uploads/CkEditor/876d2393-84a1-4e89-bd97-14d8e9cf4347.jpg">
+      <publishTime>10/27/2022 14:55:54</publishTime>
+    </File>
+    <File Include="Uploads/CkEditor/89563083-a751-45b1-9b03-6647092f575f.jpeg">
+      <publishTime>10/27/2022 14:03:08</publishTime>
+    </File>
+    <File Include="Uploads/CkEditor/8963c571-458b-4bbd-8c78-f8797664b71b.jpg">
+      <publishTime>10/27/2022 16:18:03</publishTime>
+    </File>
+    <File Include="Uploads/CkEditor/89dc8d99-ff5b-476f-ac78-16abfd28bd8d.jpg">
+      <publishTime>10/27/2022 16:23:13</publishTime>
+    </File>
+    <File Include="Uploads/CkEditor/89e6ff10-5acb-47e2-9c6d-b1741969a793.jpg">
+      <publishTime>10/27/2022 16:18:54</publishTime>
+    </File>
+    <File Include="Uploads/CkEditor/8c3c03bb-2235-4da2-af58-6363e9b51cc6.jpeg">
+      <publishTime>09/20/2022 00:16:27</publishTime>
+    </File>
+    <File Include="Uploads/CkEditor/8ee2051c-4ebd-43fc-b384-f51ae85110de.jpg">
+      <publishTime>10/27/2022 16:19:32</publishTime>
+    </File>
+    <File Include="Uploads/CkEditor/9806be98-bdef-478f-80f7-fbebd6c3dfbc.jpg">
+      <publishTime>10/27/2022 15:07:47</publishTime>
+    </File>
+    <File Include="Uploads/CkEditor/98bc0538-4472-4514-9e22-fa3b5da3d2ea.png">
+      <publishTime>10/31/2022 15:11:30</publishTime>
+    </File>
+    <File Include="Uploads/CkEditor/9a770495-7991-4b95-83d9-bdec4e40616b.jpg">
+      <publishTime>09/19/2022 09:21:18</publishTime>
+    </File>
+    <File Include="Uploads/CkEditor/a1033ccc-7949-4603-bd25-f0ef73b63f8f.jpeg">
+      <publishTime>10/27/2022 11:04:22</publishTime>
+    </File>
+    <File Include="Uploads/CkEditor/a4f419ab-438f-4b7c-8e92-8fada8e6f20d.jpeg">
+      <publishTime>10/28/2022 11:26:42</publishTime>
+    </File>
+    <File Include="Uploads/CkEditor/acea9ec5-ecf5-4db0-9300-029312ffb4c8.jpeg">
+      <publishTime>10/27/2022 14:03:51</publishTime>
+    </File>
+    <File Include="Uploads/CkEditor/adf07363-ff97-4a96-8dea-3d061e461640.jpg">
+      <publishTime>10/27/2022 15:03:40</publishTime>
+    </File>
+    <File Include="Uploads/CkEditor/ae5958ab-e3cd-417c-9104-a28ba62244f6.png">
+      <publishTime>10/31/2022 15:11:44</publishTime>
+    </File>
+    <File Include="Uploads/CkEditor/ae687b9f-6292-45ee-9f91-a51ae29c7940.jpeg">
+      <publishTime>10/27/2022 11:04:22</publishTime>
+    </File>
+    <File Include="Uploads/CkEditor/b1c70483-ba1d-4731-91b9-60c35df0fd37.jpg">
+      <publishTime>10/27/2022 14:25:40</publishTime>
+    </File>
+    <File Include="Uploads/CkEditor/bc51a344-fb5a-4546-b621-b36ffcc6996d.jpg">
+      <publishTime>10/27/2022 15:17:39</publishTime>
+    </File>
+    <File Include="Uploads/CkEditor/befd1680-4772-4469-8584-1fa94fe19e48.jpg">
+      <publishTime>10/27/2022 16:22:42</publishTime>
+    </File>
+    <File Include="Uploads/CkEditor/c2129bd6-7359-49ab-9727-0704a28e07a0.jpg">
+      <publishTime>10/27/2022 14:24:46</publishTime>
+    </File>
+    <File Include="Uploads/CkEditor/c38026b8-a292-4e14-bf09-66b1ec2d4c9b.jpg">
+      <publishTime>10/27/2022 15:02:49</publishTime>
+    </File>
+    <File Include="Uploads/CkEditor/c60b0bb5-9b50-4e78-9bb2-fe279c4ef3d5.jpg">
+      <publishTime>10/27/2022 15:19:09</publishTime>
+    </File>
+    <File Include="Uploads/CkEditor/c7e559b6-f47b-4561-b642-ec571e62ee3d.jpg">
+      <publishTime>09/19/2022 09:30:39</publishTime>
+    </File>
+    <File Include="Uploads/CkEditor/c9701703-e84e-441d-9ee7-72e50daa64cd.jpg">
+      <publishTime>10/27/2022 15:03:49</publishTime>
+    </File>
+    <File Include="Uploads/CkEditor/ca332ddb-b993-4f04-8216-44604e7eec85.jpg">
+      <publishTime>10/27/2022 14:37:16</publishTime>
+    </File>
+    <File Include="Uploads/CkEditor/cf62f826-42c2-4e66-8a3c-91dc03bc4d2f.jpg">
+      <publishTime>10/27/2022 14:05:32</publishTime>
+    </File>
+    <File Include="Uploads/CkEditor/d27c31e7-b687-412a-ace2-12e3d3e9762c.jpg">
+      <publishTime>10/28/2022 11:36:41</publishTime>
+    </File>
+    <File Include="Uploads/CkEditor/d543d19f-e60c-485f-9421-2b2bf0c0d9f4.jpeg">
+      <publishTime>10/27/2022 11:07:15</publishTime>
+    </File>
+    <File Include="Uploads/CkEditor/d575f007-075c-4c03-9387-2a8cc4946b3a.jpg">
+      <publishTime>10/27/2022 11:22:03</publishTime>
+    </File>
+    <File Include="Uploads/CkEditor/d7910fdc-7358-402c-92b0-4a1263c82601.jpg">
+      <publishTime>10/27/2022 14:49:51</publishTime>
+    </File>
+    <File Include="Uploads/CkEditor/deace54c-a07a-4dc9-8dca-99d70ca046ce.jpeg">
+      <publishTime>10/27/2022 11:04:22</publishTime>
+    </File>
+    <File Include="Uploads/CkEditor/e40e9c37-4184-4cd6-9f3a-9880d067f545.jpg">
+      <publishTime>10/27/2022 14:36:13</publishTime>
+    </File>
+    <File Include="Uploads/CkEditor/ec493082-30e9-4820-8450-940b3e4568f0.jpg">
+      <publishTime>10/28/2022 14:15:49</publishTime>
+    </File>
+    <File Include="Uploads/CkEditor/ef286548-b253-4da9-9c02-1c56dd6b094b.jpg">
+      <publishTime>10/27/2022 15:56:47</publishTime>
+    </File>
+    <File Include="Uploads/CkEditor/f5fd2d59-e841-4d76-8460-8b61868e4de5.jpg">
+      <publishTime>10/27/2022 15:19:29</publishTime>
+    </File>
+    <File Include="Uploads/CkEditor/f6f1b0f7-5ad1-4f32-9981-eda30384f667.jpg">
+      <publishTime>10/27/2022 14:25:20</publishTime>
+    </File>
+    <File Include="Uploads/CkEditor/f7ab2d10-3e93-4ed0-92ce-8269b65c7072.jpg">
+      <publishTime>09/20/2022 10:28:10</publishTime>
+    </File>
+    <File Include="Uploads/CkEditor/faca2a6d-b2de-4c17-ba38-8c8090e9e896.jpg">
+      <publishTime>10/27/2022 15:18:27</publishTime>
+    </File>
+    <File Include="Uploads/CkEditor/fcbb8d3f-3cb3-41b2-8023-9f71943d1851.jpg">
+      <publishTime>10/27/2022 15:08:17</publishTime>
+    </File>
+    <File Include="Uploads/CkEditor/fd965632-abe3-4720-a10c-10ea75ac49cd.jpeg">
+      <publishTime>10/27/2022 11:04:22</publishTime>
+    </File>
+    <File Include="Uploads/CkEditor/fdaad3b2-3e17-473e-bce6-b5ff79e9435f.jpeg">
+      <publishTime>10/27/2022 14:02:57</publishTime>
+    </File>
+    <File Include="Uploads/cong-tac-huan-luyen.jpg">
+      <publishTime>04/06/2022 01:51:50</publishTime>
+    </File>
+    <File Include="Uploads/Documents/huongdannghiepvu-traodoi/10-mot-so-luu-y-thuc-hien-da-qn216rzHqlwToxLbn46l76Pq.doc">
+      <publishTime>10/31/2022 10:09:50</publishTime>
+    </File>
+    <File Include="Uploads/Documents/huongdannghiepvu-traodoi/1thong-tu-so-08_2022_tt-bkhdtdtZNj4SBwTMVfp3sNKNH.pdf">
+      <publishTime>01/11/2022 15:27:56</publishTime>
+    </File>
+    <File Include="Uploads/Documents/huongdannghiepvu-traodoi/1thong-tu-so-08_2022_tt-bkhdtQDfZwZEvqjk3IAx5Z37L.pdf">
+      <publishTime>01/11/2022 15:45:42</publishTime>
+    </File>
+    <File Include="Uploads/Documents/huongdannghiepvu-traodoi/7f8OnV0qGF3bhGhhQYT3.xls">
+      <publishTime>10/26/2022 00:22:30</publishTime>
+    </File>
+    <File Include="Uploads/Documents/huongdannghiepvu-traodoi/7Q4wErdJUHsFqZyMpph4.doc">
+      <publishTime>10/26/2022 00:15:12</publishTime>
+    </File>
+    <File Include="Uploads/Documents/huongdannghiepvu-traodoi/8vkgs0rx67Nm7zAE5ZaG.doc">
+      <publishTime>10/26/2022 00:18:52</publishTime>
+    </File>
+    <File Include="Uploads/Documents/huongdannghiepvu-traodoi/cv-huong-dan-chuanurCvRv6t5nvhMkp3oqiV.doc">
+      <publishTime>04/11/2022 09:08:35</publishTime>
+    </File>
+    <File Include="Uploads/Documents/huongdannghiepvu-traodoi/hd-dau-tu-tgsx-cb-t5-2019aTXVCAI3NVhqSIWPh5zz.doc">
+      <publishTime>10/31/2022 10:16:10</publishTime>
+    </File>
+    <File Include="Uploads/Documents/huongdannghiepvu-traodoi/hd-trien-khai-xay-dung-mo-hinh-diem-de-an-qn-210CtfSJlyDwbhpkdKLIef.doc">
+      <publishTime>10/31/2022 10:20:22</publishTime>
+    </File>
+    <File Include="Uploads/Documents/huongdannghiepvu-traodoi/huong-dan-kiem-tra-ky-nang-ngheJJ6JCeid32wC5YobU7WL.doc">
+      <publishTime>10/31/2022 10:34:06</publishTime>
+    </File>
+    <File Include="Uploads/Documents/huongdannghiepvu-traodoi/huong-dan-qui-42022PezddVA88gDK6oosq9Jy.doc">
+      <publishTime>10/31/2022 10:22:34</publishTime>
+    </File>
+    <File Include="Uploads/Documents/huongdannghiepvu-traodoi/huong-dan-thuc-hien-kh-phong-chong-cum-gia-cam-2019-2025-t3-2019XtKQjw5XshKEtA3dGyGD.doc">
+      <publishTime>10/31/2022 10:24:48</publishTime>
+    </File>
+    <File Include="Uploads/Documents/huongdannghiepvu-traodoi/ky-thuat-chan-nuoi-lon-nai-sinh-san-huong-nac-ban-danggnk71YSWORebTi2e9jHG.doc">
+      <publishTime>10/31/2022 10:26:17</publishTime>
+    </File>
+    <File Include="Uploads/Documents/huongdannghiepvu-traodoi/l3ydpo3yuFI6zCiajsJ9.doc">
+      <publishTime>10/26/2022 00:16:55</publishTime>
+    </File>
+    <File Include="Uploads/Documents/huongdannghiepvu-traodoi/Lj3S9PjUmKUD5D4XWdMa.doc">
+      <publishTime>10/26/2022 00:20:23</publishTime>
+    </File>
+    <File Include="Uploads/Documents/huongdannghiepvu-traodoi/quy-trinh-xd-dmvtkt_20213EMUokqQivqeQhAOKiZj.doc">
+      <publishTime>01/11/2022 15:19:45</publishTime>
+    </File>
+    <File Include="Uploads/Documents/huongdannghiepvu-traodoi/quy-trinh-xd-dmvtkt_2021ziwqotUPzMGkfcl9LVNn.doc">
+      <publishTime>01/11/2022 15:48:21</publishTime>
+    </File>
+    <File Include="Uploads/Documents/huongdannghiepvu-traodoi/quy_trinh_xd_tckt20215ArVuxDeF23uvVmhiZOJ.doc">
+      <publishTime>01/11/2022 15:50:52</publishTime>
+    </File>
+    <File Include="Uploads/Documents/huongdannghiepvu-traodoi/quy_trinh_xd_tckt2021VM3J2IvyjekIyJZ7nLAA.doc">
+      <publishTime>01/11/2022 15:21:45</publishTime>
+    </File>
+    <File Include="Uploads/Documents/huongdannghiepvu-traodoi/XjjjWEROOKKlUKpbHYu7.doc">
+      <publishTime>10/26/2022 00:11:18</publishTime>
+    </File>
+    <File Include="Uploads/Documents/sach-tailieu/dieu_le_kh&amp;cn_qdndvn_2022.docx">
+      <publishTime>10/28/2022 09:52:57</publishTime>
+    </File>
+    <File Include="Uploads/Documents/sach-tailieu/dlqlbd._chinh_thuc_17_11_2011.pdf">
+      <publishTime>10/28/2022 09:54:13</publishTime>
+    </File>
+    <File Include="Uploads/Documents/sach-tailieu/hd_cong_tac_hl_xd_nganh_nam_2022.doc">
+      <publishTime>04/11/2022 09:08:36</publishTime>
+    </File>
+    <File Include="Uploads/Documents/sach-tailieu/huong_dan_su_dung_powerpoint_2003_2007.docx">
+      <publishTime>10/28/2022 09:55:31</publishTime>
+    </File>
+    <File Include="Uploads/Documents/sach-tailieu/lich_su_hau_can_quan_doi.pdf">
+      <publishTime>10/28/2022 09:57:30</publishTime>
+    </File>
+    <File Include="Uploads/Documents/sach-tailieu/may_van_de_co_ban_ve_cong_tac_hau_can_trong_chien_tranh_tong_cuc_hau_can.pdf">
+      <publishTime>10/28/2022 10:01:30</publishTime>
+    </File>
+    <File Include="Uploads/Documents/sach-tailieu/tai_lieu_hsq_bs_sua_%28da_thong_qua%29.doc">
+      <publishTime>10/26/2022 00:44:24</publishTime>
+    </File>
+    <File Include="Uploads/Documents/sach-tailieu/tong-ket-covid-2019.pdf">
+      <publishTime>10/28/2022 09:16:18</publishTime>
+    </File>
+    <File Include="Uploads/Documents/VANBANQPPL/01_2021_tt_bldtbxh_476584_20220604022959.doc">
+      <publishTime>04/06/2022 14:29:59</publishTime>
+    </File>
+    <File Include="Uploads/Documents/VANBANQPPL/39_2016_nd_cp_%281%29_20220605110352.doc">
+      <publishTime>05/06/2022 11:03:52</publishTime>
+    </File>
+    <File Include="Uploads/Documents/VANBANQPPL/70.2014.qh13_20220603025336.txt">
+      <publishTime>03/06/2022 14:53:36</publishTime>
+    </File>
+    <File Include="Uploads/Documents/VANBANQPPL/70.2014.qh13_20220603025336_20220603030901.txt">
+      <publishTime>03/06/2022 15:09:01</publishTime>
+    </File>
+    <File Include="Uploads/Documents/VANBANQPPL/70.2014.qh13_20220603025336_20220603030952.txt">
+      <publishTime>03/06/2022 15:09:52</publishTime>
+    </File>
+    <File Include="Uploads/Documents/VANBANQPPL/70.2014.qh13_20220603025336_20220603031322.txt">
+      <publishTime>03/06/2022 15:13:22</publishTime>
+    </File>
+    <File Include="Uploads/Documents/VANBANQPPL/70.2014.qh13_20220603025336_20220603031358.txt">
+      <publishTime>03/06/2022 15:13:58</publishTime>
+    </File>
+    <File Include="Uploads/Documents/VANBANQPPL/70.2014.qh13_20220603025336_20220603031424.txt">
+      <publishTime>03/06/2022 15:14:24</publishTime>
+    </File>
+    <File Include="Uploads/Documents/VANBANQPPL/84_2015_qh13_20220605110541.pdf">
+      <publishTime>05/06/2022 11:05:41</publishTime>
+    </File>
+    <File Include="Uploads/Documents/VANBANQPPL/88_2020_nd_cp_20220605095445.pdf">
+      <publishTime>05/06/2022 09:54:45</publishTime>
+    </File>
+    <File Include="Uploads/Documents/VANBANQPPL/boluatlaodongso45_20220605095131.doc">
+      <publishTime>05/06/2022 09:51:31</publishTime>
+    </File>
+    <File Include="Uploads/Documents/VANBANQPPL/nghidinh28_20220605100058.pdf">
+      <publishTime>05/06/2022 10:00:58</publishTime>
+    </File>
+    <File Include="Uploads/Documents/VANBANQPPL/nghidinh58_20220605095750.doc">
+      <publishTime>05/06/2022 09:57:50</publishTime>
+    </File>
+    <File Include="Uploads/Documents/VANBANQPPL/nghi_dinh_140_2018_nd_cp_sua_doi_cac_nghi_dinh_ve_dau_tu_kinh_doanh_linh_vuc_lao_dong_20220605105326.pdf">
+      <publishTime>05/06/2022 10:53:26</publishTime>
+    </File>
+    <File Include="Uploads/Documents/VANBANQPPL/thong_tu_07_2016_tt_bldtbxh_bo_lao_dong_thuong_binh_va_xa_hoi%281%29_20220605110753.pdf">
+      <publishTime>05/06/2022 11:07:53</publishTime>
+    </File>
+    <File Include="Uploads/Documents/VANBANQPPL/thong_tu_16_2017_tt_bldtbxh_bo_lao_dong_thuong_binh_va_xa_hoi_20220605105542.pdf">
+      <publishTime>05/06/2022 10:55:42</publishTime>
+    </File>
+    <File Include="Uploads/Documents/VANBANQPPL/thong_tu_19_2016_tt_byt_20220605105837.doc">
+      <publishTime>05/06/2022 10:58:37</publishTime>
+    </File>
+    <File Include="Uploads/Documents/VANBANQPPL/thong_tu_245_2016_tt_btc_bo_tai_chinh_20220605105654.doc">
+      <publishTime>05/06/2022 10:56:54</publishTime>
+    </File>
+    <File Include="Uploads/Documents/VANBANQPPL/thong_tu_31_2018_tt_bldtbxh_hoat_dong_huan_luyen_an_toan_ve_sinh_lao_dong_20220605103839.pdf">
+      <publishTime>05/06/2022 10:38:39</publishTime>
+    </File>
+    <File Include="Uploads/Documents/VANBANQPPL/tt05bldtbxh_20220605104222.pdf">
+      <publishTime>05/06/2022 10:42:22</publishTime>
+    </File>
+    <File Include="Uploads/Documents/VANBANQPPL/tt_08_2021_bldtbxh_20220604021929.pdf">
+      <publishTime>04/06/2022 14:19:29</publishTime>
+    </File>
+    <File Include="Uploads/Documents/VANBANQPPL/tt_27_2021_bldtbxh_20220604021553.pdf">
+      <publishTime>04/06/2022 14:15:54</publishTime>
+    </File>
+    <File Include="Uploads/Documents/vbqppl/01_2021_tt_bldtbxh_476584_20220604022959.doc">
+      <publishTime>04/06/2022 14:29:59</publishTime>
+    </File>
+    <File Include="Uploads/Documents/vbqppl/1.thong_tu_so_08_2022_tt_bkhdt.pdf">
+      <publishTime>10/31/2022 10:47:51</publishTime>
+    </File>
+    <File Include="Uploads/Documents/vbqppl/39_2016_nd_cp_%281%29_20220605110352.doc">
+      <publishTime>05/06/2022 11:03:52</publishTime>
+    </File>
+    <File Include="Uploads/Documents/vbqppl/70.2014.qh13_20220603025336.txt">
+      <publishTime>06/03/2022 14:53:36</publishTime>
+    </File>
+    <File Include="Uploads/Documents/vbqppl/70.2014.qh13_20220603025336_20220603030901.txt">
+      <publishTime>06/03/2022 15:09:01</publishTime>
+    </File>
+    <File Include="Uploads/Documents/vbqppl/70.2014.qh13_20220603025336_20220603030952.txt">
+      <publishTime>06/03/2022 15:09:52</publishTime>
+    </File>
+    <File Include="Uploads/Documents/vbqppl/70.2014.qh13_20220603025336_20220603031322.txt">
+      <publishTime>06/03/2022 15:13:22</publishTime>
+    </File>
+    <File Include="Uploads/Documents/vbqppl/70.2014.qh13_20220603025336_20220603031358.txt">
+      <publishTime>06/03/2022 15:13:58</publishTime>
+    </File>
+    <File Include="Uploads/Documents/vbqppl/70.2014.qh13_20220603025336_20220603031424.txt">
+      <publishTime>06/03/2022 15:14:24</publishTime>
+    </File>
+    <File Include="Uploads/Documents/vbqppl/84_2015_qh13_20220605110541.pdf">
+      <publishTime>05/06/2022 11:05:41</publishTime>
+    </File>
+    <File Include="Uploads/Documents/vbqppl/88_2020_nd_cp_20220605095445.pdf">
+      <publishTime>05/06/2022 09:54:45</publishTime>
+    </File>
+    <File Include="Uploads/Documents/vbqppl/boluatlaodongso45_20220605095131.doc">
+      <publishTime>05/06/2022 09:51:31</publishTime>
+    </File>
+    <File Include="Uploads/Documents/vbqppl/hop_nhat_nghi_dinh_quy_dinh_xu_phat_vi_pham_hanh_chinh_trong_linh_vuc_giong_cay_trong_bao_ve_va_kiem_dich_thuc_vat.pdf">
+      <publishTime>10/31/2022 10:36:43</publishTime>
+    </File>
+    <File Include="Uploads/Documents/vbqppl/hop_nhat_nghi_dinh_quy_dinh_xu_phat_vi_pham_hanh_chinh_ve_chan_nuoi.pdf">
+      <publishTime>10/31/2022 10:38:35</publishTime>
+    </File>
+    <File Include="Uploads/Documents/vbqppl/luat_bvmt_2020.pdf">
+      <publishTime>10/31/2022 10:30:26</publishTime>
+    </File>
+    <File Include="Uploads/Documents/vbqppl/luat_chan_nuoi.pdf">
+      <publishTime>10/31/2022 10:31:37</publishTime>
+    </File>
+    <File Include="Uploads/Documents/vbqppl/luat_trong_trot.pdf">
+      <publishTime>10/31/2022 10:32:44</publishTime>
+    </File>
+    <File Include="Uploads/Documents/vbqppl/nghidinh28_20220605100058.pdf">
+      <publishTime>05/06/2022 10:00:58</publishTime>
+    </File>
+    <File Include="Uploads/Documents/vbqppl/nghidinh58_20220605095750.doc">
+      <publishTime>05/06/2022 09:57:50</publishTime>
+    </File>
+    <File Include="Uploads/Documents/vbqppl/nghi_dinh_140_2018_nd_cp_sua_doi_cac_nghi_dinh_ve_dau_tu_kinh_doanh_linh_vuc_lao_dong_20220605105326.pdf">
+      <publishTime>05/06/2022 10:53:26</publishTime>
+    </File>
+    <File Include="Uploads/Documents/vbqppl/nghi_dinh_76_2016.pdf">
+      <publishTime>10/31/2022 10:50:06</publishTime>
+    </File>
+    <File Include="Uploads/Documents/vbqppl/thong_tu_07_2016_tt_bldtbxh_bo_lao_dong_thuong_binh_va_xa_hoi%281%29_20220605110753.pdf">
+      <publishTime>06/05/2022 11:07:53</publishTime>
+    </File>
+    <File Include="Uploads/Documents/vbqppl/thong_tu_07_2016_tt_bldtbxh_bo_lao_dong_thuong_binh_va_xa_hoi_20220605110753.pdf">
+      <publishTime>05/06/2022 11:07:53</publishTime>
+    </File>
+    <File Include="Uploads/Documents/vbqppl/thong_tu_16_2017_tt_bldtbxh_bo_lao_dong_thuong_binh_va_xa_hoi_20220605105542.pdf">
+      <publishTime>05/06/2022 10:55:42</publishTime>
+    </File>
+    <File Include="Uploads/Documents/vbqppl/thong_tu_19_2016_tt_byt_20220605105837.doc">
+      <publishTime>05/06/2022 10:58:37</publishTime>
+    </File>
+    <File Include="Uploads/Documents/vbqppl/thong_tu_23_huong_dan_mot_so_dieu_luat_chan_nuoi.pdf">
+      <publishTime>10/31/2022 10:45:11</publishTime>
+    </File>
+    <File Include="Uploads/Documents/vbqppl/thong_tu_245_2016_tt_btc_bo_tai_chinh_20220605105654.doc">
+      <publishTime>05/06/2022 10:56:54</publishTime>
+    </File>
+    <File Include="Uploads/Documents/vbqppl/thong_tu_31_2018_tt_bldtbxh_hoat_dong_huan_luyen_an_toan_ve_sinh_lao_dong_20220605103839.pdf">
+      <publishTime>05/06/2022 10:38:39</publishTime>
+    </File>
+    <File Include="Uploads/Documents/vbqppl/thong_tu_quy_dinh_ve_phong_chong_dich_benh_dong_vat_tren_can.pdf">
+      <publishTime>10/31/2022 10:42:41</publishTime>
+    </File>
+    <File Include="Uploads/Documents/vbqppl/tt05bldtbxh_20220605104222.pdf">
+      <publishTime>05/06/2022 10:42:22</publishTime>
+    </File>
+    <File Include="Uploads/Documents/vbqppl/tt15.2022.bqp_dieu_le_bvmtqdndvn.pdf">
+      <publishTime>10/31/2022 10:40:51</publishTime>
+    </File>
+    <File Include="Uploads/Documents/vbqppl/tt_08_2021_bldtbxh_20220604021929.pdf">
+      <publishTime>04/06/2022 14:19:29</publishTime>
+    </File>
+    <File Include="Uploads/Documents/vbqppl/tt_27_2021_bldtbxh_20220604021553.pdf">
+      <publishTime>04/06/2022 14:15:54</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/005a0317-copy9N8uO2njNbLoNcFqpmbe.jpg">
+      <publishTime>10/26/2022 16:42:25</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/005a0317-copy9N8uO2njNbLoNcFqpmbe_thumbnail.jpg">
+      <publishTime>10/26/2022 16:42:25</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/005a03171uRsANgyY7Y7FoKsG8JV.jpg">
+      <publishTime>10/26/2022 16:27:47</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/005a03171uRsANgyY7Y7FoKsG8JV_thumbnail.jpg">
+      <publishTime>10/26/2022 16:27:47</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/005a0317C0vj4Ye9PAUZVqh32Ybk.jpg">
+      <publishTime>10/26/2022 15:57:02</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/005a0317C0vj4Ye9PAUZVqh32Ybk_thumbnail.jpg">
+      <publishTime>10/26/2022 15:57:02</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/005a0317cv3yz8fFOceuF8cYTokf.jpg">
+      <publishTime>10/26/2022 15:57:01</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/005a0317cv3yz8fFOceuF8cYTokf_thumbnail.jpg">
+      <publishTime>10/26/2022 15:57:01</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/005a0317EsbXH8WqrcCbPuUV2KYK.jpg">
+      <publishTime>10/27/2022 09:10:49</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/005a0317EsbXH8WqrcCbPuUV2KYK_thumbnail.jpg">
+      <publishTime>10/27/2022 09:10:49</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/005a0317suY9iyhxyipyTp1ERSUh.jpg">
+      <publishTime>10/26/2022 15:33:58</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/005a0317suY9iyhxyipyTp1ERSUh_thumbnail.jpg">
+      <publishTime>10/26/2022 15:33:58</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/005a0317XJmSKh9aiNiLXgW16elB.jpg">
+      <publishTime>10/26/2022 16:41:33</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/005a0317XJmSKh9aiNiLXgW16elB_thumbnail.jpg">
+      <publishTime>10/26/2022 16:41:33</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/1-doan-can-bo-quan-doi-nd-lao-tham-quan-khu-tgsx-tai-kho-205_cuc-qn-thang-720193uMAelhO89qudmPxzvUW.jpg">
+      <publishTime>10/26/2022 15:57:01</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/1-doan-can-bo-quan-doi-nd-lao-tham-quan-khu-tgsx-tai-kho-205_cuc-qn-thang-720193uMAelhO89qudmPxzvUW_thumbnail.jpg">
+      <publishTime>10/26/2022 15:57:01</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/1-doan-can-bo-quan-doi-nd-lao-tham-quan-khu-tgsx-tai-kho-205_cuc-qn-thang-72019c5meEJQ2LuH3BY3nX8DD.jpg">
+      <publishTime>10/26/2022 16:41:33</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/1-doan-can-bo-quan-doi-nd-lao-tham-quan-khu-tgsx-tai-kho-205_cuc-qn-thang-72019c5meEJQ2LuH3BY3nX8DD_thumbnail.jpg">
+      <publishTime>10/26/2022 16:41:33</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/1-doan-can-bo-quan-doi-nd-lao-tham-quan-khu-tgsx-tai-kho-205_cuc-qn-thang-72019FpMuHH65dXIwd0tncQsa.jpg">
+      <publishTime>10/26/2022 16:27:47</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/1-doan-can-bo-quan-doi-nd-lao-tham-quan-khu-tgsx-tai-kho-205_cuc-qn-thang-72019FpMuHH65dXIwd0tncQsa_thumbnail.jpg">
+      <publishTime>10/26/2022 16:27:47</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/1-doan-can-bo-quan-doi-nd-lao-tham-quan-khu-tgsx-tai-kho-205_cuc-qn-thang-72019JsYLoDbR0eJMbPmDWOQE.jpg">
+      <publishTime>10/26/2022 15:33:58</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/1-doan-can-bo-quan-doi-nd-lao-tham-quan-khu-tgsx-tai-kho-205_cuc-qn-thang-72019JsYLoDbR0eJMbPmDWOQE_thumbnail.jpg">
+      <publishTime>10/26/2022 15:33:58</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/1-doan-can-bo-quan-doi-nd-lao-tham-quan-khu-tgsx-tai-kho-205_cuc-qn-thang-72019JUkQpoTvvcVy3hTAXDnZ.jpg">
+      <publishTime>10/27/2022 09:10:49</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/1-doan-can-bo-quan-doi-nd-lao-tham-quan-khu-tgsx-tai-kho-205_cuc-qn-thang-72019JUkQpoTvvcVy3hTAXDnZ_thumbnail.jpg">
+      <publishTime>10/27/2022 09:10:49</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/1-doan-can-bo-quan-doi-nd-lao-tham-quan-khu-tgsx-tai-kho-205_cuc-qn-thang-72019PBJnGGoInjHLEMVVeM67.jpg">
+      <publishTime>10/26/2022 15:33:59</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/1-doan-can-bo-quan-doi-nd-lao-tham-quan-khu-tgsx-tai-kho-205_cuc-qn-thang-72019PBJnGGoInjHLEMVVeM67_thumbnail.jpg">
+      <publishTime>10/26/2022 15:33:59</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/1-dsc_7126_khu-cchc-binh-duong1nBHKcLhnsZJuWdHBvdn.jpg">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/1-dsc_7126_khu-cchc-binh-duong1nBHKcLhnsZJuWdHBvdn_thumbnail.jpg">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/1-img_9914KYRr5tMlGQWstctSmDhq.jpg">
+      <publishTime>10/26/2022 16:45:33</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/1-img_9914KYRr5tMlGQWstctSmDhq_thumbnail.jpg">
+      <publishTime>10/26/2022 16:45:33</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/10-bch-ngoxhoi_kon-tumm4ZSopYTS1uDCtuvwAEJ.jpg">
+      <publishTime>10/26/2022 16:43:12</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/10-bch-ngoxhoi_kon-tumm4ZSopYTS1uDCtuvwAEJ_thumbnail.jpg">
+      <publishTime>10/26/2022 16:43:12</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/10-bch-qs-dac-lac-%283%29qtkMQDzDtoghCehTmgIW.jpg">
+      <publishTime>10/26/2022 16:44:36</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/10-bch-qs-dac-lac-%283%29qtkMQDzDtoghCehTmgIW_thumbnail.jpg">
+      <publishTime>10/26/2022 16:44:36</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/10-img_9826JbgzmpRlpXJHXoBaYH1T.jpg">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/10-img_9826JbgzmpRlpXJHXoBaYH1T_thumbnail.jpg">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/10EUyRqEZPFDl29fV2Lwx2.jpg">
+      <publishTime>10/26/2022 16:45:34</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/10EUyRqEZPFDl29fV2Lwx2_thumbnail.jpg">
+      <publishTime>10/26/2022 16:45:34</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/11-bep-an-d86_lu-132_bcttllL0Gpu3C9EBoteNtMX4N5.jpg">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/11-bep-an-d86_lu-132_bcttllL0Gpu3C9EBoteNtMX4N5_thumbnail.jpg">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/11-don-bp-se-re-pok-_daclac_img_1434I9zFqDKsQ6GL8EixbUuT.jpg">
+      <publishTime>10/26/2022 16:43:12</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/11-don-bp-se-re-pok-_daclac_img_1434I9zFqDKsQ6GL8EixbUuT_thumbnail.jpg">
+      <publishTime>10/26/2022 16:43:12</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/11-img_7255_lu-pk-673_qk15xxZMzkCKrJeO5l8mSCP.jpg">
+      <publishTime>10/26/2022 16:43:12</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/11-img_7255_lu-pk-673_qk15xxZMzkCKrJeO5l8mSCP_thumbnail.jpg">
+      <publishTime>10/26/2022 16:43:12</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/11-img_9940pr02FT7AXkSmqIyMyh1c.jpg">
+      <publishTime>10/26/2022 16:45:34</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/11-img_9940pr02FT7AXkSmqIyMyh1c_thumbnail.jpg">
+      <publishTime>10/26/2022 16:45:34</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/12-img_5221DfiGTAHKy5MMhe8laySw.jpg">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/12-img_5221DfiGTAHKy5MMhe8laySw_thumbnail.jpg">
+      <publishTime>10/26/2022 16:44:01</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/12-img_5221Swr8rnmygdaaggj7huh4.jpg">
+      <publishTime>10/26/2022 16:44:01</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/12-img_5221Swr8rnmygdaaggj7huh4_thumbnail.jpg">
+      <publishTime>10/26/2022 16:44:01</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/12-img_7221sS982mQh9rmL75fAI1LX.jpg">
+      <publishTime>10/26/2022 16:45:34</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/12-img_7221sS982mQh9rmL75fAI1LX_thumbnail.jpg">
+      <publishTime>10/26/2022 16:45:34</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/12canh-sat-bienfd2DnAn6wuTkW33kW4HE.jpg">
+      <publishTime>10/26/2022 16:44:36</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/12canh-sat-bienfd2DnAn6wuTkW33kW4HE_thumbnail.jpg">
+      <publishTime>10/26/2022 16:44:37</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/13-img_4809XjvEGQg6ahjwnROvYubl.jpg">
+      <publishTime>10/26/2022 16:44:01</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/13-img_4809XjvEGQg6ahjwnROvYubl_thumbnail.jpg">
+      <publishTime>10/26/2022 16:44:01</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/14-e95_f2_qk5q1BRH0qJCPetjriyYuG7.jpg">
+      <publishTime>10/26/2022 16:44:37</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/14-e95_f2_qk5q1BRH0qJCPetjriyYuG7_thumbnail.jpg">
+      <publishTime>10/26/2022 16:44:37</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/14-imgp0286RNFod92SGBrazqJ56OEL.jpg">
+      <publishTime>10/26/2022 16:45:34</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/14-imgp0286RNFod92SGBrazqJ56OEL_thumbnail.jpg">
+      <publishTime>10/26/2022 16:45:34</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/14-kiem-tra-a70SeVpfzZ3anczpBsJ9HaR.jpg">
+      <publishTime>10/26/2022 16:43:12</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/14-kiem-tra-a70SeVpfzZ3anczpBsJ9HaR_thumbnail.jpg">
+      <publishTime>10/26/2022 16:43:12</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/14-scan0022m9lXvkLHM01NmSYZbjp7.jpg">
+      <publishTime>10/26/2022 16:44:01</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/14-scan0022m9lXvkLHM01NmSYZbjp7_thumbnail.jpg">
+      <publishTime>10/26/2022 16:44:01</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/15-img_3552MD4frvQWto2kOw5KjJPy.jpg">
+      <publishTime>10/26/2022 16:44:01</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/15-img_3552MD4frvQWto2kOw5KjJPy_thumbnail.jpg">
+      <publishTime>10/26/2022 16:44:01</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/15-img_4466BRZpEo0S1MoCq7vfiRmy.jpg">
+      <publishTime>10/26/2022 16:45:34</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/15-img_4466BRZpEo0S1MoCq7vfiRmy_thumbnail.jpg">
+      <publishTime>10/26/2022 16:45:34</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/16-img_9264DfeOg6Wt5cPKiBcz74w6.jpg">
+      <publishTime>10/26/2022 16:43:12</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/16-img_9264DfeOg6Wt5cPKiBcz74w6_thumbnail.jpg">
+      <publishTime>10/26/2022 16:43:12</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/17trung-doan-165-su-doan-3123iunMyw58lJnPOcy4sdp.jpg">
+      <publishTime>10/26/2022 16:43:13</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/17trung-doan-165-su-doan-3123iunMyw58lJnPOcy4sdp_thumbnail.jpg">
+      <publishTime>10/26/2022 16:43:13</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/17trung-doan-165-su-doan-312wrgPNypuqxEjxdHYx7Nj.jpg">
+      <publishTime>10/26/2022 16:43:12</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/17trung-doan-165-su-doan-312wrgPNypuqxEjxdHYx7Nj_thumbnail.jpg">
+      <publishTime>10/26/2022 16:43:12</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/18-lu-490_bcpbHLbru2VWwUrvAgQMg8tw.jpg">
+      <publishTime>10/26/2022 16:44:37</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/18-lu-490_bcpbHLbru2VWwUrvAgQMg8tw_thumbnail.jpg">
+      <publishTime>10/26/2022 16:44:37</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/1img_7241EERDBvoYR51uZEpAtzwA.jpg">
+      <publishTime>10/26/2022 16:42:25</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/1img_7241EERDBvoYR51uZEpAtzwA_thumbnail.jpg">
+      <publishTime>10/26/2022 16:42:25</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/2-dsc_7393_hn-sknq28-tay-ninh4K9VfMjUweLEJUlrZawZ.jpg">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/2-dsc_7393_hn-sknq28-tay-ninh4K9VfMjUweLEJUlrZawZ_thumbnail.jpg">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/2-img_6010NoRvGI9H9k5xFC2pTgyU.jpg">
+      <publishTime>10/26/2022 16:45:33</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/2-img_6010NoRvGI9H9k5xFC2pTgyU_thumbnail.jpg">
+      <publishTime>10/26/2022 16:45:33</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/2-img_6985_htruong-bqpInQmr5Kf8oKH3tAPUDeo.jpg">
+      <publishTime>10/26/2022 16:43:11</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/2-img_6985_htruong-bqpInQmr5Kf8oKH3tAPUDeo_thumbnail.jpg">
+      <publishTime>10/26/2022 16:43:11</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/2-img_9179_-hoi-truong-bqpQJFbG5WbKcNxGy8BbIHa.jpg">
+      <publishTime>10/26/2022 16:43:11</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/2-img_9179_-hoi-truong-bqpQJFbG5WbKcNxGy8BbIHa_thumbnail.jpg">
+      <publishTime>10/26/2022 16:43:11</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/20200819_1209579Fg5HcxHLmnktiQ3fYyi.jpg">
+      <publishTime>10/26/2022 16:41:34</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/20200819_1209579Fg5HcxHLmnktiQ3fYyi_thumbnail.jpg">
+      <publishTime>10/26/2022 16:41:34</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/20200819_120957CW4pqBUJnYpxXThSxhFB.jpg">
+      <publishTime>10/27/2022 09:10:51</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/20200819_120957CW4pqBUJnYpxXThSxhFB_thumbnail.jpg">
+      <publishTime>10/27/2022 09:10:51</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/20200819_120957KYmdQfhT0ZOE8BWhQ3ub.jpg">
+      <publishTime>10/27/2022 09:10:50</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/20200819_120957KYmdQfhT0ZOE8BWhQ3ub_thumbnail.jpg">
+      <publishTime>10/27/2022 09:10:50</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/20200819_120957QM73HZ6NaP1mkf5T8uFY.jpg">
+      <publishTime>10/26/2022 15:57:01</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/20200819_120957QM73HZ6NaP1mkf5T8uFY_thumbnail.jpg">
+      <publishTime>10/26/2022 15:57:01</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/20200819_120957TXj5ZU320ho5mbNillbx.jpg">
+      <publishTime>10/26/2022 16:27:48</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/20200819_120957TXj5ZU320ho5mbNillbx_thumbnail.jpg">
+      <publishTime>10/26/2022 16:27:48</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/20200819_120957y2X38XzyLfSSZRRKtFJi.jpg">
+      <publishTime>10/26/2022 15:33:58</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/20200819_120957y2X38XzyLfSSZRRKtFJi_thumbnail.jpg">
+      <publishTime>10/26/2022 15:33:58</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/20200819_120957YZ4yUL01kQgBs1HTLnHi.jpg">
+      <publishTime>10/26/2022 16:27:47</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/20200819_120957YZ4yUL01kQgBs1HTLnHi_thumbnail.jpg">
+      <publishTime>10/26/2022 16:27:47</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/20200823_143000bBZDcxK83IZIxIMXmRsw.jpg">
+      <publishTime>10/26/2022 16:27:47</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/20200823_143000bBZDcxK83IZIxIMXmRsw_thumbnail.jpg">
+      <publishTime>10/26/2022 16:27:47</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/20200823_143000M7hatyDv4mZPiKQ35umW.jpg">
+      <publishTime>10/27/2022 09:10:50</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/20200823_143000M7hatyDv4mZPiKQ35umW_thumbnail.jpg">
+      <publishTime>10/27/2022 09:10:50</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/20200823_143000s5ZgMWGFX5lZGkBEBEwO.jpg">
+      <publishTime>10/26/2022 15:57:01</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/20200823_143000s5ZgMWGFX5lZGkBEBEwO_thumbnail.jpg">
+      <publishTime>10/26/2022 15:57:01</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/20200823_143000sx8YWXNi3lgQMprPHPo7.jpg">
+      <publishTime>10/26/2022 16:27:47</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/20200823_143000sx8YWXNi3lgQMprPHPo7_thumbnail.jpg">
+      <publishTime>10/26/2022 16:27:47</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/20200823_143000uYWPozRMLoLcUwSjKiYi.jpg">
+      <publishTime>10/26/2022 15:33:58</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/20200823_143000uYWPozRMLoLcUwSjKiYi_thumbnail.jpg">
+      <publishTime>10/26/2022 15:33:58</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/20200823_143000Y56W1TizzKxZWpSLC8aX.jpg">
+      <publishTime>10/26/2022 16:41:34</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/20200823_143000Y56W1TizzKxZWpSLC8aX_thumbnail.jpg">
+      <publishTime>10/26/2022 16:41:34</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/20200905_14023206JXpmbCTChCoasI2fjF.jpg">
+      <publishTime>10/26/2022 15:33:58</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/20200905_14023206JXpmbCTChCoasI2fjF_thumbnail.jpg">
+      <publishTime>10/26/2022 15:33:59</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/20200905_14023221SS66ptAsu3VgqtvFay.jpg">
+      <publishTime>10/26/2022 15:57:01</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/20200905_14023221SS66ptAsu3VgqtvFay_thumbnail.jpg">
+      <publishTime>10/26/2022 15:57:01</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/20200905_140232sUvrTCYWx0arXU7BlLdN.jpg">
+      <publishTime>10/26/2022 16:27:47</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/20200905_140232sUvrTCYWx0arXU7BlLdN_thumbnail.jpg">
+      <publishTime>10/26/2022 16:27:48</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/20200905_140232T9jCfTNn9OUWTNl1zIUy.jpg">
+      <publishTime>10/27/2022 09:10:50</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/20200905_140232T9jCfTNn9OUWTNl1zIUy_thumbnail.jpg">
+      <publishTime>10/27/2022 09:10:50</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/20200905_140232V4TU9Hnkf4YDOTS5fJZS.jpg">
+      <publishTime>10/26/2022 16:41:34</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/20200905_140232V4TU9Hnkf4YDOTS5fJZS_thumbnail.jpg">
+      <publishTime>10/26/2022 16:41:34</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/21-btl-canh-sat-bienkHISWwXdj05kUlGGIwYE.jpg">
+      <publishTime>10/26/2022 16:44:37</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/21-btl-canh-sat-bienkHISWwXdj05kUlGGIwYE_thumbnail.jpg">
+      <publishTime>10/26/2022 16:44:37</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/23-img_7064pKESeGGb6NZdpoE2AFOx.jpg">
+      <publishTime>10/26/2022 16:43:12</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/23-img_7064pKESeGGb6NZdpoE2AFOx_thumbnail.jpg">
+      <publishTime>10/26/2022 16:43:12</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/28-img_9044_cty-22F78tsyL4V6jbfWw5VLt9.jpg">
+      <publishTime>10/26/2022 16:42:25</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/28-img_9044_cty-22F78tsyL4V6jbfWw5VLt9_thumbnail.jpg">
+      <publishTime>10/26/2022 16:42:25</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/3-sch-tchcUJ9xBgBgiwKOUqEsYBky.jpg">
+      <publishTime>10/26/2022 16:43:11</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/3-sch-tchcUJ9xBgBgiwKOUqEsYBky_thumbnail.jpg">
+      <publishTime>10/26/2022 16:43:11</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/3-trung-tuong-phan-van-giang-tong-tmtqdndvn-kiem-tra-van-hanh-xe-bep-tu-hanh-thang-82017kKz4aSl3KcYEeOZF80RI.jpg">
+      <publishTime>10/26/2022 16:42:25</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/3-trung-tuong-phan-van-giang-tong-tmtqdndvn-kiem-tra-van-hanh-xe-bep-tu-hanh-thang-82017kKz4aSl3KcYEeOZF80RI_thumbnail.jpg">
+      <publishTime>10/26/2022 16:42:25</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/3img_2016FDvsZh9DAjAnMp0I8naA.jpg">
+      <publishTime>10/26/2022 16:45:33</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/3img_2016FDvsZh9DAjAnMp0I8naA_thumbnail.jpg">
+      <publishTime>10/26/2022 16:45:33</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/3img_2016WtChPNmz22QRVflMS5u5.jpg">
+      <publishTime>10/26/2022 16:45:35</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/3img_2016WtChPNmz22QRVflMS5u5_thumbnail.jpg">
+      <publishTime>10/26/2022 16:45:35</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/5-doan-can-bo-quan-doi-hoang-gia-campuchia-tham-quan-khu-tgsx-tai-f9qd4-%281%294ku2dcOsHOPIl4IEiZ1D.jpg">
+      <publishTime>10/26/2022 16:41:33</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/5-doan-can-bo-quan-doi-hoang-gia-campuchia-tham-quan-khu-tgsx-tai-f9qd4-%281%294ku2dcOsHOPIl4IEiZ1D_thumbnail.jpg">
+      <publishTime>10/26/2022 16:41:33</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/5-doan-can-bo-quan-doi-hoang-gia-campuchia-tham-quan-khu-tgsx-tai-f9qd4-%281%29ayUN24te4FHcWHmyE5Wx.jpg">
+      <publishTime>10/26/2022 16:27:47</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/5-doan-can-bo-quan-doi-hoang-gia-campuchia-tham-quan-khu-tgsx-tai-f9qd4-%281%29ayUN24te4FHcWHmyE5Wx_thumbnail.jpg">
+      <publishTime>10/26/2022 16:27:47</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/5-doan-can-bo-quan-doi-hoang-gia-campuchia-tham-quan-khu-tgsx-tai-f9qd4-%281%29isvhGIdpmGAq4FjeE27K.jpg">
+      <publishTime>10/27/2022 09:10:49</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/5-doan-can-bo-quan-doi-hoang-gia-campuchia-tham-quan-khu-tgsx-tai-f9qd4-%281%29isvhGIdpmGAq4FjeE27K_thumbnail.jpg">
+      <publishTime>10/27/2022 09:10:49</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/5-doan-can-bo-quan-doi-hoang-gia-campuchia-tham-quan-khu-tgsx-tai-f9qd4-%281%29jPKRIGygWSWoZ9plQ9np.jpg">
+      <publishTime>10/26/2022 15:57:01</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/5-doan-can-bo-quan-doi-hoang-gia-campuchia-tham-quan-khu-tgsx-tai-f9qd4-%281%29jPKRIGygWSWoZ9plQ9np_thumbnail.jpg">
+      <publishTime>10/26/2022 15:57:01</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/5-doan-can-bo-quan-doi-hoang-gia-campuchia-tham-quan-khu-tgsx-tai-f9qd4-%281%29XF64VZaCFSypLpUI2qJl.jpg">
+      <publishTime>10/26/2022 15:33:58</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/5-doan-can-bo-quan-doi-hoang-gia-campuchia-tham-quan-khu-tgsx-tai-f9qd4-%281%29XF64VZaCFSypLpUI2qJl_thumbnail.jpg">
+      <publishTime>10/26/2022 15:33:58</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/5-img_1844_don-bp-gia-laiw91QG1OyantSWwTbL1bG.jpg">
+      <publishTime>10/26/2022 16:44:36</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/5-img_1844_don-bp-gia-laiw91QG1OyantSWwTbL1bG_thumbnail.jpg">
+      <publishTime>10/26/2022 16:44:36</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/5-img_2507ZoZdqANtBa5Io1Jg767H.jpg">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/5-img_2507ZoZdqANtBa5Io1Jg767H_thumbnail.jpg">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/55-lu-490_bcpblzd4wMGuf2v6QfEqD3zb.jpg">
+      <publishTime>10/26/2022 16:44:37</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/55-lu-490_bcpblzd4wMGuf2v6QfEqD3zb_thumbnail.jpg">
+      <publishTime>10/26/2022 16:44:37</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/6-bch-kon-tumJEzEp3H4zGciH1oVA7Fu.jpg">
+      <publishTime>10/26/2022 16:44:36</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/6-bch-kon-tumJEzEp3H4zGciH1oVA7Fu_thumbnail.jpg">
+      <publishTime>10/26/2022 16:44:36</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/6-img_7052MuSWg8MWQEqn7xhGdsjs.jpg">
+      <publishTime>10/26/2022 16:42:25</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/6-img_7052MuSWg8MWQEqn7xhGdsjs_thumbnail.jpg">
+      <publishTime>10/26/2022 16:42:25</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/6-img_7362_khu-cchc-binh-duongHMgDPczIpFpZ8z8uEf9d.jpg">
+      <publishTime>10/26/2022 16:43:11</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/6-img_7362_khu-cchc-binh-duongHMgDPczIpFpZ8z8uEf9d_thumbnail.jpg">
+      <publishTime>10/26/2022 16:43:12</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/6img_04425BW7RWJ53GYtQeGruNH0.jpg">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/6img_04425BW7RWJ53GYtQeGruNH0_thumbnail.jpg">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/7-img_3537_lu-692gvwzztCmMYb0RR8852xn.jpg">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/7-img_3537_lu-692gvwzztCmMYb0RR8852xn_thumbnail.jpg">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/7-img_7936_hdqn-ra-mat-hua-hen3iA0TqCighRkkPnHghtE.jpg">
+      <publishTime>10/26/2022 16:45:33</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/7-img_7936_hdqn-ra-mat-hua-hen3iA0TqCighRkkPnHghtE_thumbnail.jpg">
+      <publishTime>10/26/2022 16:45:34</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/8-img_7962_phong-hop-so-2SjWrKINiyvqlmnXmNrNf.jpg">
+      <publishTime>10/26/2022 16:43:12</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/8-img_7962_phong-hop-so-2SjWrKINiyvqlmnXmNrNf_thumbnail.jpg">
+      <publishTime>10/26/2022 16:43:12</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/8-img_9504_thi-tbqn-2018crsvfkIkGm3rfYDbTGSs.jpg">
+      <publishTime>10/27/2022 09:10:49</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/8-img_9504_thi-tbqn-2018crsvfkIkGm3rfYDbTGSs_thumbnail.jpg">
+      <publishTime>10/27/2022 09:10:49</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/8-img_9504_thi-tbqn-2018hh4rtsWtBkWmcMs9Esj8.jpg">
+      <publishTime>10/26/2022 16:27:47</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/8-img_9504_thi-tbqn-2018hh4rtsWtBkWmcMs9Esj8_thumbnail.jpg">
+      <publishTime>10/26/2022 16:27:47</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/8-img_9504_thi-tbqn-2018kLtvFpSWhkxNw3mM5gvH.jpg">
+      <publishTime>10/26/2022 16:41:33</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/8-img_9504_thi-tbqn-2018kLtvFpSWhkxNw3mM5gvH_thumbnail.jpg">
+      <publishTime>10/26/2022 16:41:34</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/8-img_9504_thi-tbqn-2018oKJG4wtMRiNWEAT1mDeC.jpg">
+      <publishTime>10/26/2022 15:57:01</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/8-img_9504_thi-tbqn-2018oKJG4wtMRiNWEAT1mDeC_thumbnail.jpg">
+      <publishTime>10/26/2022 15:57:01</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/8-img_9504_thi-tbqn-2018tfjnGTrew1nWNc2qWFBJ.jpg">
+      <publishTime>10/26/2022 15:33:58</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/8-img_9504_thi-tbqn-2018tfjnGTrew1nWNc2qWFBJ_thumbnail.jpg">
+      <publishTime>10/26/2022 15:33:58</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/8-img_9504_thi-tbqn-2018wfVxkrTsT9Q1SOgpfE6Z.jpg">
+      <publishTime>10/26/2022 16:41:35</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/8-img_9504_thi-tbqn-2018wfVxkrTsT9Q1SOgpfE6Z_thumbnail.jpg">
+      <publishTime>10/26/2022 16:41:35</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/8truong-luc-quan-1PlQ50bHbUfWdWNzNhsgX.jpg">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/8truong-luc-quan-1PlQ50bHbUfWdWNzNhsgX_thumbnail.jpg">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/9-bch-qs-dac-lac-%284%2988EhFKajzfNeFGTC6Kr0.jpg">
+      <publishTime>10/26/2022 16:44:36</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/9-bch-qs-dac-lac-%284%2988EhFKajzfNeFGTC6Kr0_thumbnail.jpg">
+      <publishTime>10/26/2022 16:44:36</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/9-img_0136CM2r2DJuymq9LyXyqdnY.jpg">
+      <publishTime>10/26/2022 16:45:34</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/9-img_0136CM2r2DJuymq9LyXyqdnY_thumbnail.jpg">
+      <publishTime>10/26/2022 16:45:34</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/9-img_2236_hoi-thao-nau-an-201657x2SPHJouNxqTDiImw5.jpg">
+      <publishTime>10/26/2022 15:33:58</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/9-img_2236_hoi-thao-nau-an-201657x2SPHJouNxqTDiImw5_thumbnail.jpg">
+      <publishTime>10/26/2022 15:33:58</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/9-img_2236_hoi-thao-nau-an-2016oNoZf1ah2s4vSM8JEOhD.jpg">
+      <publishTime>10/26/2022 16:27:47</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/9-img_2236_hoi-thao-nau-an-2016oNoZf1ah2s4vSM8JEOhD_thumbnail.jpg">
+      <publishTime>10/26/2022 16:27:47</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/9-img_2236_hoi-thao-nau-an-2016PI35oegzAxRnlMv8CXf3.jpg">
+      <publishTime>10/27/2022 09:10:49</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/9-img_2236_hoi-thao-nau-an-2016PI35oegzAxRnlMv8CXf3_thumbnail.jpg">
+      <publishTime>10/27/2022 09:10:50</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/9-img_2236_hoi-thao-nau-an-2016u3BJLAiuQaVpwrHMERyY.jpg">
+      <publishTime>10/26/2022 16:41:34</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/9-img_2236_hoi-thao-nau-an-2016u3BJLAiuQaVpwrHMERyY_thumbnail.jpg">
+      <publishTime>10/26/2022 16:41:34</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/9-img_2236_hoi-thao-nau-an-2016z3ho9bUZ3lTfvRgJRu8a.jpg">
+      <publishTime>10/26/2022 15:57:01</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/9-img_2236_hoi-thao-nau-an-2016z3ho9bUZ3lTfvRgJRu8a_thumbnail.jpg">
+      <publishTime>10/26/2022 15:57:01</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/9-img_9404kFvsL8dsBQQebgUJvWTd.jpg">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/9-img_9404kFvsL8dsBQQebgUJvWTd_thumbnail.jpg">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/bch-dang-bo-cqn-khoa12CgqZSW7RpBOSaAe0m1eV.jpg">
+      <publishTime>10/28/2022 10:40:35</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/bch-dang-bo-cqn-khoa12CgqZSW7RpBOSaAe0m1eV_thumbnail.jpg">
+      <publishTime>10/28/2022 10:40:35</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/bch-dang-bo-cqn-khoa12hahyocfhM9XMD1KCtR4J.jpg">
+      <publishTime>10/28/2022 10:40:35</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/bch-dang-bo-cqn-khoa12hahyocfhM9XMD1KCtR4J_thumbnail.jpg">
+      <publishTime>10/28/2022 10:40:35</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/bch-dang-bo-cqn-khoa13MVoJpi0Vp8iLml0oJJzS.jpg">
+      <publishTime>10/28/2022 10:40:35</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/bch-dang-bo-cqn-khoa13MVoJpi0Vp8iLml0oJJzS_thumbnail.jpg">
+      <publishTime>10/28/2022 10:40:35</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/bch-qs-dac-nong_img_1269fJ64qDT8u7wMFeWatWYs.jpg">
+      <publishTime>10/26/2022 16:43:12</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/bch-qs-dac-nong_img_1269fJ64qDT8u7wMFeWatWYs_thumbnail.jpg">
+      <publishTime>10/26/2022 16:43:12</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/dao-phan-vinh-dsc_0300u3lWdWPl86tzJ1BTEI0M.jpg">
+      <publishTime>10/26/2022 16:44:37</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/dao-phan-vinh-dsc_0300u3lWdWPl86tzJ1BTEI0M_thumbnail.jpg">
+      <publishTime>10/26/2022 16:44:37</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/dsc_7422_f5qk7_tay-ninhlVtcdpKl2tdFIg7xPwtW.jpg">
+      <publishTime>10/26/2022 16:42:25</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/dsc_7422_f5qk7_tay-ninhlVtcdpKl2tdFIg7xPwtW_thumbnail.jpg">
+      <publishTime>10/26/2022 16:42:25</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/e3-f330-qk9-%287%29yAuB6n6RrP4TuuWxP2df.jpg">
+      <publishTime>10/26/2022 16:44:01</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/e3-f330-qk9-%287%29yAuB6n6RrP4TuuWxP2df_thumbnail.jpg">
+      <publishTime>10/26/2022 16:44:01</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/hai_0568_-tt-huan-luyen-mieu-monEdTtByXcmL7DYAOUPmBq.jpg">
+      <publishTime>10/26/2022 16:42:25</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/hai_0568_-tt-huan-luyen-mieu-monEdTtByXcmL7DYAOUPmBq_thumbnail.jpg">
+      <publishTime>10/26/2022 16:42:25</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/hnqc-bqp-912-%281%29VVb4FlGWjPidezB3mcng.jpg">
+      <publishTime>10/26/2022 16:42:25</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/hnqc-bqp-912-%281%29VVb4FlGWjPidezB3mcng_thumbnail.jpg">
+      <publishTime>10/26/2022 16:42:25</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/img_0633DIpZZrWd5V3nRMhaVd1r.jpg">
+      <publishTime>10/26/2022 16:45:34</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/img_0633DIpZZrWd5V3nRMhaVd1r_thumbnail.jpg">
+      <publishTime>10/26/2022 16:45:34</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/img_0658Go0VrEqAPoDyPODKRpWA.jpg">
+      <publishTime>10/26/2022 16:45:34</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/img_0658Go0VrEqAPoDyPODKRpWA_thumbnail.jpg">
+      <publishTime>10/26/2022 16:45:34</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/img_0960_dtn-hpn-tham-bao-tang-32019igeq2wQ4K4YQownhDyVP.jpg">
+      <publishTime>10/26/2022 16:45:34</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/img_0960_dtn-hpn-tham-bao-tang-32019igeq2wQ4K4YQownhDyVP_thumbnail.jpg">
+      <publishTime>10/26/2022 16:45:34</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/img_1166HPjMbOSBRib0iu91jOwq.jpg">
+      <publishTime>10/26/2022 16:45:34</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/img_1166HPjMbOSBRib0iu91jOwq_thumbnail.jpg">
+      <publishTime>10/26/2022 16:45:34</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/img_1831dRSyJijrxTeMTW2KbW1a.jpg">
+      <publishTime>10/26/2022 16:45:34</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/img_1831dRSyJijrxTeMTW2KbW1a_thumbnail.jpg">
+      <publishTime>10/26/2022 16:45:34</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/img_2449sJjKjdhkaHOEzY4vmdxg.jpg">
+      <publishTime>10/26/2022 16:45:34</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/img_2449sJjKjdhkaHOEzY4vmdxg_thumbnail.jpg">
+      <publishTime>10/26/2022 16:45:35</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/img_4324r8OoYWafqBuc0gfvhp5A.jpg">
+      <publishTime>10/26/2022 16:45:35</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/img_4324r8OoYWafqBuc0gfvhp5A_thumbnail.jpg">
+      <publishTime>10/26/2022 16:45:35</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/img_5601agmF8uVAM9E85tT4I0Kb4.jpg">
+      <publishTime>10/26/2022 16:42:25</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/img_5601agmF8uVAM9E85tT4I0Kb4_thumbnail.jpg">
+      <publishTime>10/26/2022 16:42:25</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/img_5601aooDLzxWcDrWMWnjhxxHf.jpg">
+      <publishTime>10/26/2022 16:42:26</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/img_5601aooDLzxWcDrWMWnjhxxHf_thumbnail.jpg">
+      <publishTime>10/26/2022 16:42:26</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/img_6676MX07zEtkYTrIX4KDXjiT.jpg">
+      <publishTime>10/26/2022 16:42:25</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/img_6676MX07zEtkYTrIX4KDXjiT_thumbnail.jpg">
+      <publishTime>10/26/2022 16:42:25</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/img_7712_f5qk75ESmGVNj2QK15JEfUzqJ.jpg">
+      <publishTime>10/26/2022 16:43:12</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/img_7712_f5qk75ESmGVNj2QK15JEfUzqJ_thumbnail.jpg">
+      <publishTime>10/26/2022 16:43:12</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/img_7713J8ZKTxaGtaFBrL9xnoKV.jpg">
+      <publishTime>10/26/2022 16:42:25</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/img_7713J8ZKTxaGtaFBrL9xnoKV_thumbnail.jpg">
+      <publishTime>10/26/2022 16:42:26</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/img_7915ZuAeUMpfCKMKsbMtaFpC.jpg">
+      <publishTime>10/26/2022 16:42:26</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/img_7915ZuAeUMpfCKMKsbMtaFpC_thumbnail.jpg">
+      <publishTime>10/26/2022 16:42:26</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/img_7924YIToCLlICwIclRGhTozv.jpg">
+      <publishTime>10/26/2022 16:42:26</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/img_7924YIToCLlICwIclRGhTozv_thumbnail.jpg">
+      <publishTime>10/26/2022 16:42:26</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/img_9174_tt-ng-tan-cuong_lop-tap-huan-qs-toan-quan-2019-tai-e101f302qd2HNX1ZVihcEz35OZwH0D7.jpg">
+      <publishTime>10/26/2022 16:43:12</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/img_9174_tt-ng-tan-cuong_lop-tap-huan-qs-toan-quan-2019-tai-e101f302qd2HNX1ZVihcEz35OZwH0D7_thumbnail.jpg">
+      <publishTime>10/26/2022 16:43:13</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/lu-doan-cong-binh-299-quan-doan-1-%282%290vEL4pVYWhWsGiI3x0gB.jpg">
+      <publishTime>10/26/2022 16:44:38</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/lu-doan-cong-binh-299-quan-doan-1-%282%290vEL4pVYWhWsGiI3x0gB_thumbnail.jpg">
+      <publishTime>10/26/2022 16:44:38</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/lu-doan-cong-binh-299-quan-doan-1-%282%29vynKhzsYeMgsrLkWvE50.jpg">
+      <publishTime>10/26/2022 16:44:37</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/lu-doan-cong-binh-299-quan-doan-1-%282%29vynKhzsYeMgsrLkWvE50_thumbnail.jpg">
+      <publishTime>10/26/2022 16:44:37</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/qn-18-%282%291g7S2j4MAyJLPF1vYHh8.jpg">
+      <publishTime>10/26/2022 16:42:26</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/qn-18-%282%291g7S2j4MAyJLPF1vYHh8_thumbnail.jpg">
+      <publishTime>10/26/2022 16:42:26</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/qn-18-%284%29qP4bOEiRwj7f8mwGAAOC.jpg">
+      <publishTime>10/26/2022 16:42:26</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/qn-18-%284%29qP4bOEiRwj7f8mwGAAOC_thumbnail.jpg">
+      <publishTime>10/26/2022 16:42:26</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/scan0001_-trung-tam-95-cuc-tc-dien-tu_-bao-dam-hc-cho-dien-tap-dk-1843RoqVByFClsuQCzHVKD.jpg">
+      <publishTime>10/27/2022 09:10:50</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/scan0001_-trung-tam-95-cuc-tc-dien-tu_-bao-dam-hc-cho-dien-tap-dk-1843RoqVByFClsuQCzHVKD_thumbnail.jpg">
+      <publishTime>10/27/2022 09:10:50</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/scan0001_-trung-tam-95-cuc-tc-dien-tu_-bao-dam-hc-cho-dien-tap-dk-18BBhp0Uh7tIU1XgMDvOxB.jpg">
+      <publishTime>10/26/2022 15:57:01</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/scan0001_-trung-tam-95-cuc-tc-dien-tu_-bao-dam-hc-cho-dien-tap-dk-18BBhp0Uh7tIU1XgMDvOxB_thumbnail.jpg">
+      <publishTime>10/26/2022 15:57:01</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/scan0001_-trung-tam-95-cuc-tc-dien-tu_-bao-dam-hc-cho-dien-tap-dk-18i3wEIEPC5ApvR6WcVRwK.jpg">
+      <publishTime>10/26/2022 16:27:48</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/scan0001_-trung-tam-95-cuc-tc-dien-tu_-bao-dam-hc-cho-dien-tap-dk-18i3wEIEPC5ApvR6WcVRwK_thumbnail.jpg">
+      <publishTime>10/26/2022 16:27:48</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/scan0001_-trung-tam-95-cuc-tc-dien-tu_-bao-dam-hc-cho-dien-tap-dk-18nzaF2trWGAjxQm2aw5cv.jpg">
+      <publishTime>10/26/2022 15:33:59</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/scan0001_-trung-tam-95-cuc-tc-dien-tu_-bao-dam-hc-cho-dien-tap-dk-18nzaF2trWGAjxQm2aw5cv_thumbnail.jpg">
+      <publishTime>10/26/2022 15:33:59</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/scan0001_-trung-tam-95-cuc-tc-dien-tu_-bao-dam-hc-cho-dien-tap-dk-18Xjb9rZ9uCZSQUUYduUI7.jpg">
+      <publishTime>10/26/2022 16:41:34</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/scan0001_-trung-tam-95-cuc-tc-dien-tu_-bao-dam-hc-cho-dien-tap-dk-18Xjb9rZ9uCZSQUUYduUI7_thumbnail.jpg">
+      <publishTime>10/26/2022 16:41:34</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/scan0009_bep-an-tren-tau-canh-sat-bienm9fR7uozq7UNcILHzqe4.jpg">
+      <publishTime>10/26/2022 16:44:01</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/scan0009_bep-an-tren-tau-canh-sat-bienm9fR7uozq7UNcILHzqe4_thumbnail.jpg">
+      <publishTime>10/26/2022 16:44:01</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/scan0012_san-xuat-banh-my-tai-f3qk1U83gIUbbjiJhD8gJNuSm.jpg">
+      <publishTime>10/26/2022 16:44:37</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/scan0012_san-xuat-banh-my-tai-f3qk1U83gIUbbjiJhD8gJNuSm_thumbnail.jpg">
+      <publishTime>10/26/2022 16:44:37</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/scan0016_tt-do-van-thien-chinh-uy-qd-ktra-bep-an-f308qd1-thang-22017UUYIFvl5RLXyTF2eSVDJ.jpg">
+      <publishTime>10/26/2022 16:44:01</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/scan0016_tt-do-van-thien-chinh-uy-qd-ktra-bep-an-f308qd1-thang-22017UUYIFvl5RLXyTF2eSVDJ_thumbnail.jpg">
+      <publishTime>10/26/2022 16:44:01</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/scan0018_diem-nghiem-quan-trang-chien-sy-moi-lu-doan-139-bc-ttll-2017Q2uvlSQj1kLEcOr8t5ER.jpg">
+      <publishTime>10/26/2022 16:43:13</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/scan0018_diem-nghiem-quan-trang-chien-sy-moi-lu-doan-139-bc-ttll-2017Q2uvlSQj1kLEcOr8t5ER_thumbnail.jpg">
+      <publishTime>10/26/2022 16:43:13</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/scan0021_tram-giat-la-quan-trang-nghi-le_btl-lang4cqoPYckUnZd01a3xjXR.jpg">
+      <publishTime>10/26/2022 16:43:13</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/scan0021_tram-giat-la-quan-trang-nghi-le_btl-lang4cqoPYckUnZd01a3xjXR_thumbnail.jpg">
+      <publishTime>10/26/2022 16:43:13</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/scan0022_tt-thang-ktra-cong-tac-bao-dam-sscd-llvt-tinh-an-giang-qk9Qbsog3IS97i7PvG6NSQU.jpg">
+      <publishTime>10/26/2022 16:44:37</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/scan0022_tt-thang-ktra-cong-tac-bao-dam-sscd-llvt-tinh-an-giang-qk9Qbsog3IS97i7PvG6NSQU_thumbnail.jpg">
+      <publishTime>10/26/2022 16:44:37</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/scan0023_-diem-nghiem-quan-trang-truong-sq-phong-hoa-bc-hoa-hocdGmFVm8iFYx6pEbiVTjv.jpg">
+      <publishTime>10/26/2022 16:43:13</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/scan0023_-diem-nghiem-quan-trang-truong-sq-phong-hoa-bc-hoa-hocdGmFVm8iFYx6pEbiVTjv_thumbnail.jpg">
+      <publishTime>10/26/2022 16:43:13</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/scan0024_trong-nam-linh-chi-tai-truong-sq-thong-tin-2018Ibn6yISqdw6rFvSGJOKY.jpg">
+      <publishTime>10/26/2022 16:44:37</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/scan0024_trong-nam-linh-chi-tai-truong-sq-thong-tin-2018Ibn6yISqdw6rFvSGJOKY_thumbnail.jpg">
+      <publishTime>10/26/2022 16:44:37</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/scan0025_ktra-hc-tren-nha-gian-dk1-thang-420193e6VQj9Jpvso7D7K9pCm.jpg">
+      <publishTime>10/26/2022 16:44:37</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/scan0025_ktra-hc-tren-nha-gian-dk1-thang-420193e6VQj9Jpvso7D7K9pCm_thumbnail.jpg">
+      <publishTime>10/26/2022 16:44:37</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/scan0030_-huan-luyen-su-dung-bep-lo-hoi-co-khi-tai-bch-qs-tinh-bac-giang-qk11CCH6ijqEDvREdbvivam.jpg">
+      <publishTime>10/26/2022 15:33:59</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/scan0030_-huan-luyen-su-dung-bep-lo-hoi-co-khi-tai-bch-qs-tinh-bac-giang-qk11CCH6ijqEDvREdbvivam_thumbnail.jpg">
+      <publishTime>10/26/2022 15:33:59</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/scan0030_-huan-luyen-su-dung-bep-lo-hoi-co-khi-tai-bch-qs-tinh-bac-giang-qk1lJnfiK0ArDRS9Sr6978F.jpg">
+      <publishTime>10/26/2022 15:57:01</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/scan0030_-huan-luyen-su-dung-bep-lo-hoi-co-khi-tai-bch-qs-tinh-bac-giang-qk1lJnfiK0ArDRS9Sr6978F_thumbnail.jpg">
+      <publishTime>10/26/2022 15:57:01</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/scan0030_-huan-luyen-su-dung-bep-lo-hoi-co-khi-tai-bch-qs-tinh-bac-giang-qk1rCaf3jZdalysUVM2eZNN.jpg">
+      <publishTime>10/27/2022 09:10:50</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/scan0030_-huan-luyen-su-dung-bep-lo-hoi-co-khi-tai-bch-qs-tinh-bac-giang-qk1rCaf3jZdalysUVM2eZNN_thumbnail.jpg">
+      <publishTime>10/27/2022 09:10:50</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/scan0030_-huan-luyen-su-dung-bep-lo-hoi-co-khi-tai-bch-qs-tinh-bac-giang-qk1W7EsDsAbyFHWEVKwLBq4.jpg">
+      <publishTime>10/26/2022 16:27:48</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/scan0030_-huan-luyen-su-dung-bep-lo-hoi-co-khi-tai-bch-qs-tinh-bac-giang-qk1W7EsDsAbyFHWEVKwLBq4_thumbnail.jpg">
+      <publishTime>10/26/2022 16:27:48</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/scan0030_-huan-luyen-su-dung-bep-lo-hoi-co-khi-tai-bch-qs-tinh-bac-giang-qk1ZbT4HpjgSSCSK2fU3TlJ.jpg">
+      <publishTime>10/26/2022 16:41:34</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/scan0030_-huan-luyen-su-dung-bep-lo-hoi-co-khi-tai-bch-qs-tinh-bac-giang-qk1ZbT4HpjgSSCSK2fU3TlJ_thumbnail.jpg">
+      <publishTime>10/26/2022 16:41:34</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/scan0035_mo-hinh-bep-hoang-cam-su-dung-trong-huan-luyena90vhoMKL4q5DxpENRn7.jpg">
+      <publishTime>10/26/2022 15:57:01</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/scan0035_mo-hinh-bep-hoang-cam-su-dung-trong-huan-luyena90vhoMKL4q5DxpENRn7_thumbnail.jpg">
+      <publishTime>10/26/2022 15:57:02</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/scan0035_mo-hinh-bep-hoang-cam-su-dung-trong-huan-luyenMud6GdzJaDXJLEvxUV9M.jpg">
+      <publishTime>10/26/2022 15:33:59</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/scan0035_mo-hinh-bep-hoang-cam-su-dung-trong-huan-luyenMud6GdzJaDXJLEvxUV9M_thumbnail.jpg">
+      <publishTime>10/26/2022 15:33:59</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/scan0035_mo-hinh-bep-hoang-cam-su-dung-trong-huan-luyennQoDRM09fyG9Okz4O7q3.jpg">
+      <publishTime>10/26/2022 16:27:48</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/scan0035_mo-hinh-bep-hoang-cam-su-dung-trong-huan-luyennQoDRM09fyG9Okz4O7q3_thumbnail.jpg">
+      <publishTime>10/26/2022 16:27:48</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/scan0035_mo-hinh-bep-hoang-cam-su-dung-trong-huan-luyenrHJWOrzhCn1jI4MUNjAo.jpg">
+      <publishTime>10/26/2022 16:41:34</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/scan0035_mo-hinh-bep-hoang-cam-su-dung-trong-huan-luyenrHJWOrzhCn1jI4MUNjAo_thumbnail.jpg">
+      <publishTime>10/26/2022 16:41:34</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/scan0035_mo-hinh-bep-hoang-cam-su-dung-trong-huan-luyensfG49bCwqu3OsM3nHh34.jpg">
+      <publishTime>10/27/2022 09:10:50</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/scan0035_mo-hinh-bep-hoang-cam-su-dung-trong-huan-luyensfG49bCwqu3OsM3nHh34_thumbnail.jpg">
+      <publishTime>10/27/2022 09:10:50</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/scan0036_thi-nau-an-tai-f363-qc-pkkq-nam-2019buRYsGXvxq0KVRDeUikQ.jpg">
+      <publishTime>10/26/2022 16:27:48</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/scan0036_thi-nau-an-tai-f363-qc-pkkq-nam-2019buRYsGXvxq0KVRDeUikQ_thumbnail.jpg">
+      <publishTime>10/26/2022 16:27:48</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/scan0036_thi-nau-an-tai-f363-qc-pkkq-nam-2019juZhFCap91WjpQRTH7f9.jpg">
+      <publishTime>10/26/2022 15:57:02</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/scan0036_thi-nau-an-tai-f363-qc-pkkq-nam-2019juZhFCap91WjpQRTH7f9_thumbnail.jpg">
+      <publishTime>10/26/2022 15:57:02</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/scan0036_thi-nau-an-tai-f363-qc-pkkq-nam-2019oENFdGuEXllBwME5VNkP.jpg">
+      <publishTime>10/26/2022 15:33:59</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/scan0036_thi-nau-an-tai-f363-qc-pkkq-nam-2019oENFdGuEXllBwME5VNkP_thumbnail.jpg">
+      <publishTime>10/26/2022 15:33:59</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/scan0036_thi-nau-an-tai-f363-qc-pkkq-nam-2019OXcSopbUhL3niYqPv1SJ.jpg">
+      <publishTime>10/27/2022 09:10:50</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/scan0036_thi-nau-an-tai-f363-qc-pkkq-nam-2019OXcSopbUhL3niYqPv1SJ_thumbnail.jpg">
+      <publishTime>10/27/2022 09:10:51</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/scan0036_thi-nau-an-tai-f363-qc-pkkq-nam-2019yIdcO8bhoMLt9oJUB4fn.jpg">
+      <publishTime>10/26/2022 16:41:34</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/scan0036_thi-nau-an-tai-f363-qc-pkkq-nam-2019yIdcO8bhoMLt9oJUB4fn_thumbnail.jpg">
+      <publishTime>10/26/2022 16:41:34</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/scan0038_sang-kien-che-bien-thuc-pham-cua-tong-cuc-ii02LfZ5llDDQdn4rbOpLG.jpg">
+      <publishTime>10/26/2022 16:42:26</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/scan0038_sang-kien-che-bien-thuc-pham-cua-tong-cuc-ii02LfZ5llDDQdn4rbOpLG_thumbnail.jpg">
+      <publishTime>10/26/2022 16:42:26</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/scan0041_ung-dung-khkt-trong-rau-thuy-canh-tai-btl-phao-binhKnhO8DR17kbrlZMckqQP.jpg">
+      <publishTime>10/26/2022 16:42:26</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/scan0041_ung-dung-khkt-trong-rau-thuy-canh-tai-btl-phao-binhKnhO8DR17kbrlZMckqQP_thumbnail.jpg">
+      <publishTime>10/26/2022 16:42:26</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/scan0045_khu-vuc-chan-nuoi-gia-cam-tai-e335f324qk4-2018LI9hjkkyPKcGYUddovQl.jpg">
+      <publishTime>10/26/2022 16:44:37</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/scan0045_khu-vuc-chan-nuoi-gia-cam-tai-e335f324qk4-2018LI9hjkkyPKcGYUddovQl_thumbnail.jpg">
+      <publishTime>10/26/2022 16:44:38</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/scan0048_bgh-truong-sq-chinh-tri-ktra-bep-xhhg1afrWekzPGVdDI85qg8.jpg">
+      <publishTime>10/26/2022 16:44:01</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/scan0048_bgh-truong-sq-chinh-tri-ktra-bep-xhhg1afrWekzPGVdDI85qg8_thumbnail.jpg">
+      <publishTime>10/26/2022 16:44:01</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/scan0050_thu-hoach-ca-tre-phi-tai-truong-sq-chinh-triFEIiEyXD9XuTSlEeUAN8.jpg">
+      <publishTime>10/26/2022 16:44:38</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/scan0050_thu-hoach-ca-tre-phi-tai-truong-sq-chinh-triFEIiEyXD9XuTSlEeUAN8_thumbnail.jpg">
+      <publishTime>10/26/2022 16:44:38</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/scan0053_trong-rau-trong-nha-luoi-tai-e692-btl-thu-doMPWuV9UvKhTe2RYZhThO.jpg">
+      <publishTime>10/26/2022 16:44:38</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/scan0053_trong-rau-trong-nha-luoi-tai-e692-btl-thu-doMPWuV9UvKhTe2RYZhThO_thumbnail.jpg">
+      <publishTime>10/26/2022 16:44:38</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/scan0056_huyen-luyen-tgsx-cho-hoc-vien-tai-d11-truong-sqlq-ii-2016ap1JXIQ9eqvIQDpVHYt4.jpg">
+      <publishTime>10/26/2022 15:33:59</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/scan0056_huyen-luyen-tgsx-cho-hoc-vien-tai-d11-truong-sqlq-ii-2016ap1JXIQ9eqvIQDpVHYt4_thumbnail.jpg">
+      <publishTime>10/26/2022 15:33:59</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/scan0056_huyen-luyen-tgsx-cho-hoc-vien-tai-d11-truong-sqlq-ii-2016eIVVaF0sAizwwtqzU1th.jpg">
+      <publishTime>10/26/2022 15:57:02</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/scan0056_huyen-luyen-tgsx-cho-hoc-vien-tai-d11-truong-sqlq-ii-2016eIVVaF0sAizwwtqzU1th_thumbnail.jpg">
+      <publishTime>10/26/2022 15:57:02</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/scan0056_huyen-luyen-tgsx-cho-hoc-vien-tai-d11-truong-sqlq-ii-2016Igl0cymafxnyWbwpwNdC.jpg">
+      <publishTime>10/26/2022 16:27:48</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/scan0056_huyen-luyen-tgsx-cho-hoc-vien-tai-d11-truong-sqlq-ii-2016Igl0cymafxnyWbwpwNdC_thumbnail.jpg">
+      <publishTime>10/26/2022 16:27:48</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/scan0056_huyen-luyen-tgsx-cho-hoc-vien-tai-d11-truong-sqlq-ii-2016ok8zIGhNwzUcyzyYuGeh.jpg">
+      <publishTime>10/26/2022 16:41:34</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/scan0056_huyen-luyen-tgsx-cho-hoc-vien-tai-d11-truong-sqlq-ii-2016ok8zIGhNwzUcyzyYuGeh_thumbnail.jpg">
+      <publishTime>10/26/2022 16:41:34</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/scan0056_huyen-luyen-tgsx-cho-hoc-vien-tai-d11-truong-sqlq-ii-2016ZKX8SF6mR4Afw7HZ1Eyk.jpg">
+      <publishTime>10/27/2022 09:10:51</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/scan0056_huyen-luyen-tgsx-cho-hoc-vien-tai-d11-truong-sqlq-ii-2016ZKX8SF6mR4Afw7HZ1Eyk_thumbnail.jpg">
+      <publishTime>10/27/2022 09:10:51</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/scan0057_thi-goi-banh-trung-banh-tet-tet-ky-hoi-truong-sqlq-ii4ePNjtq5uTeKwVJA360p.jpg">
+      <publishTime>10/26/2022 16:41:34</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/scan0057_thi-goi-banh-trung-banh-tet-tet-ky-hoi-truong-sqlq-ii4ePNjtq5uTeKwVJA360p_thumbnail.jpg">
+      <publishTime>10/26/2022 16:41:34</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/scan0057_thi-goi-banh-trung-banh-tet-tet-ky-hoi-truong-sqlq-iicUbm8SKW27DUocQkimRp.jpg">
+      <publishTime>10/26/2022 15:57:02</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/scan0057_thi-goi-banh-trung-banh-tet-tet-ky-hoi-truong-sqlq-iicUbm8SKW27DUocQkimRp_thumbnail.jpg">
+      <publishTime>10/26/2022 15:57:02</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/scan0057_thi-goi-banh-trung-banh-tet-tet-ky-hoi-truong-sqlq-iijoX8FtWAhdEjnNOzDLm0.jpg">
+      <publishTime>10/26/2022 16:27:48</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/scan0057_thi-goi-banh-trung-banh-tet-tet-ky-hoi-truong-sqlq-iijoX8FtWAhdEjnNOzDLm0_thumbnail.jpg">
+      <publishTime>10/26/2022 16:27:48</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/scan0057_thi-goi-banh-trung-banh-tet-tet-ky-hoi-truong-sqlq-iilnb0iUwkG8QlTk9BodkE.jpg">
+      <publishTime>10/26/2022 15:33:59</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/scan0057_thi-goi-banh-trung-banh-tet-tet-ky-hoi-truong-sqlq-iilnb0iUwkG8QlTk9BodkE_thumbnail.jpg">
+      <publishTime>10/26/2022 15:33:59</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/scan0057_thi-goi-banh-trung-banh-tet-tet-ky-hoi-truong-sqlq-iiUk0FiPnoTOcmjmZXNfT5.jpg">
+      <publishTime>10/27/2022 09:10:51</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/scan0057_thi-goi-banh-trung-banh-tet-tet-ky-hoi-truong-sqlq-iiUk0FiPnoTOcmjmZXNfT5_thumbnail.jpg">
+      <publishTime>10/27/2022 09:10:51</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/scan0061_truong-sqlq-1nJibGf2cpnCpJaVFOBAb.jpg">
+      <publishTime>10/26/2022 16:44:38</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/scan0061_truong-sqlq-1nJibGf2cpnCpJaVFOBAb_thumbnail.jpg">
+      <publishTime>10/26/2022 16:44:38</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/sx-thit-hop-qn-18-%285%29Vq1q4aPXVRhT564KDcPX.jpg">
+      <publishTime>10/26/2022 16:45:35</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/sx-thit-hop-qn-18-%285%29Vq1q4aPXVRhT564KDcPX_thumbnail.jpg">
+      <publishTime>10/26/2022 16:45:35</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/tham-quan-tai-f390-qd1-%285%29V6ziann0vKrwPl97rxiq.jpg">
+      <publishTime>10/26/2022 16:42:26</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/tham-quan-tai-f390-qd1-%285%29V6ziann0vKrwPl97rxiq_thumbnail.jpg">
+      <publishTime>10/26/2022 16:42:26</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/thi-nang-bac-ktna-2019ckcMWgbEbr5qbhOrbEii.jpg">
+      <publishTime>10/27/2022 09:10:51</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/thi-nang-bac-ktna-2019ckcMWgbEbr5qbhOrbEii_thumbnail.jpg">
+      <publishTime>10/27/2022 09:10:51</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/thi-nang-bac-ktna-2019uaiR4DQ2oOCYuf6ew94d.jpg">
+      <publishTime>10/26/2022 16:27:48</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/thi-nang-bac-ktna-2019uaiR4DQ2oOCYuf6ew94d_thumbnail.jpg">
+      <publishTime>10/26/2022 16:27:48</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/thi-nang-bac-ktna-2019uB40TzlzWPDpeNfxn4ce.jpg">
+      <publishTime>10/26/2022 16:41:34</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/thi-nang-bac-ktna-2019uB40TzlzWPDpeNfxn4ce_thumbnail.jpg">
+      <publishTime>10/26/2022 16:41:34</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/thi-nang-bac-ktna-2019ubud6oHjJSVEDyNs3nej.jpg">
+      <publishTime>10/26/2022 15:33:59</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/thi-nang-bac-ktna-2019ubud6oHjJSVEDyNs3nej_thumbnail.jpg">
+      <publishTime>10/26/2022 15:33:59</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/thi-nang-bac-ktna-2019X408oFTGRYtuxhTcNIaI.jpg">
+      <publishTime>10/26/2022 15:57:02</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/thi-nang-bac-ktna-2019X408oFTGRYtuxhTcNIaI_thumbnail.jpg">
+      <publishTime>10/26/2022 15:57:02</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/thi-nuoi-quan-gioi-kho-205-2019CXtN5T41yOCCV0GWS0p9.jpg">
+      <publishTime>10/26/2022 16:44:38</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/thi-nuoi-quan-gioi-kho-205-2019CXtN5T41yOCCV0GWS0p9_thumbnail.jpg">
+      <publishTime>10/26/2022 16:44:38</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/thi-truong-ban-tro-ly-qn-2019-%281%2938a2UayRNBVCiDm7INsO.jpg">
+      <publishTime>10/26/2022 15:57:02</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/thi-truong-ban-tro-ly-qn-2019-%281%2938a2UayRNBVCiDm7INsO_thumbnail.jpg">
+      <publishTime>10/26/2022 15:57:02</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/thi-truong-ban-tro-ly-qn-2019-%281%29bNG8z7F8x02PPdFX9zQJ.jpg">
+      <publishTime>10/26/2022 16:41:34</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/thi-truong-ban-tro-ly-qn-2019-%281%29bNG8z7F8x02PPdFX9zQJ_thumbnail.jpg">
+      <publishTime>10/26/2022 16:41:35</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/thi-truong-ban-tro-ly-qn-2019-%281%29FFieolJ4GjWHr5qbjxN9.jpg">
+      <publishTime>10/26/2022 15:33:59</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/thi-truong-ban-tro-ly-qn-2019-%281%29FFieolJ4GjWHr5qbjxN9_thumbnail.jpg">
+      <publishTime>10/26/2022 15:33:59</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/thi-truong-ban-tro-ly-qn-2019-%281%29Ip1HGkLPcgVCjyaVpdqp.jpg">
+      <publishTime>10/26/2022 16:27:48</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/thi-truong-ban-tro-ly-qn-2019-%281%29Ip1HGkLPcgVCjyaVpdqp_thumbnail.jpg">
+      <publishTime>10/26/2022 16:27:48</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/thi-truong-ban-tro-ly-qn-2019-%281%29YPwsWkxk0l26QTQn9LIp.jpg">
+      <publishTime>10/27/2022 09:10:51</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/thi-truong-ban-tro-ly-qn-2019-%281%29YPwsWkxk0l26QTQn9LIp_thumbnail.jpg">
+      <publishTime>10/27/2022 09:10:51</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/trung-doan-31-f309-qd4dsc_6vKqg5D6PFop0lbbTZR5.jpg">
+      <publishTime>10/26/2022 16:44:38</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/trung-doan-31-f309-qd4dsc_6vKqg5D6PFop0lbbTZR5_thumbnail.jpg">
+      <publishTime>10/26/2022 16:44:38</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/_mg_8193NwkxXrb1FTiVCiewpptD.jpg">
+      <publishTime>10/26/2022 16:45:33</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/_mg_8193NwkxXrb1FTiVCiewpptD_thumbnail.jpg">
+      <publishTime>10/26/2022 16:45:33</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/_mg_8340rnE2VsbHyLRva4TSr0BF.jpg">
+      <publishTime>10/26/2022 16:44:36</publishTime>
+    </File>
+    <File Include="Uploads/Images/album-image/_mg_8340rnE2VsbHyLRva4TSr0BF_thumbnail.jpg">
+      <publishTime>10/26/2022 16:44:36</publishTime>
+    </File>
+    <File Include="Uploads/Images/baidang/005a0639_12SLduds9HuKA7LlPZQ9l.jpg">
+      <publishTime>10/27/2022 16:49:36</publishTime>
+    </File>
+    <File Include="Uploads/Images/baidang/005a0845_1svIp4bmOXqDNCmHylXzm.jpg">
+      <publishTime>10/27/2022 17:00:13</publishTime>
+    </File>
+    <File Include="Uploads/Images/baidang/101P1tx0nG37GGjEIJp7hly.jpg">
+      <publishTime>10/28/2022 11:28:06</publishTime>
+    </File>
+    <File Include="Uploads/Images/baidang/111ulBieMR0u15zJlglYN7j.jpg">
+      <publishTime>10/28/2022 11:39:52</publishTime>
+    </File>
+    <File Include="Uploads/Images/baidang/121fPVLj1vuXXW4I8IeoikR.jpg">
+      <publishTime>10/28/2022 13:26:14</publishTime>
+    </File>
+    <File Include="Uploads/Images/baidang/131MxJGK8J5UZSpRaSAvFVX.jpg">
+      <publishTime>10/28/2022 13:35:13</publishTime>
+    </File>
+    <File Include="Uploads/Images/baidang/141cjxzNYIyrHs5eDxIBbsW.jpg">
+      <publishTime>10/28/2022 13:42:55</publishTime>
+    </File>
+    <File Include="Uploads/Images/baidang/20200823_143000Iw6rmPbIfDqaE5BQoOmA.jpg">
+      <publishTime>10/27/2022 14:54:22</publishTime>
+    </File>
+    <File Include="Uploads/Images/baidang/20200823_143000VYuk3lQfEd97OLsm2w9M.jpg">
+      <publishTime>10/27/2022 15:03:57</publishTime>
+    </File>
+    <File Include="Uploads/Images/baidang/41dsc_30928Aef2lCUhutGNimIrC4c.jpg">
+      <publishTime>10/27/2022 15:04:22</publishTime>
+    </File>
+    <File Include="Uploads/Images/baidang/51wlmlw2AXqun1JedAudkc.jpg">
+      <publishTime>10/27/2022 15:09:26</publishTime>
+    </File>
+    <File Include="Uploads/Images/baidang/61mkZpBnaGc2Mk1yOiAHA2.jpg">
+      <publishTime>10/27/2022 15:19:42</publishTime>
+    </File>
+    <File Include="Uploads/Images/baidang/71eGJTIE2BA7IIhvDcP38Z.jpg">
+      <publishTime>10/27/2022 16:12:42</publishTime>
+    </File>
+    <File Include="Uploads/Images/baidang/81oW00bwp5O6Tpok0Uz69Z.jpg">
+      <publishTime>10/27/2022 16:20:49</publishTime>
+    </File>
+    <File Include="Uploads/Images/baidang/91PAvW85l6Gp1yky0l54RC.jpg">
+      <publishTime>10/27/2022 16:24:11</publishTime>
+    </File>
+    <File Include="Uploads/Images/baidang/bGXNFDXVrjjSNW2nXrhs.jpg">
+      <publishTime>10/25/2022 21:00:17</publishTime>
+    </File>
+    <File Include="Uploads/Images/baidang/cg8lwZn3EQO3FjKyCr8c.jpg">
+      <publishTime>10/25/2022 21:09:05</publishTime>
+    </File>
+    <File Include="Uploads/Images/baidang/cong_tac_huan_luyen_20220607021911.jpg">
+      <publishTime>06/07/2022 14:19:11</publishTime>
+    </File>
+    <File Include="Uploads/Images/baidang/cong_tac_huan_luyen_20220607111526.jpg">
+      <publishTime>06/07/2022 11:15:26</publishTime>
+    </File>
+    <File Include="Uploads/Images/baidang/cong_tac_huan_luyen_20220609023944.jpg">
+      <publishTime>06/09/2022 14:39:44</publishTime>
+    </File>
+    <File Include="Uploads/Images/baidang/cong_tac_huan_luyen_20220609102027.jpg">
+      <publishTime>06/09/2022 10:20:27</publishTime>
+    </File>
+    <File Include="Uploads/Images/baidang/dsc_0642nhUmFu5lpDOBBl2C6zKz.jpg">
+      <publishTime>10/27/2022 14:57:08</publishTime>
+    </File>
+    <File Include="Uploads/Images/baidang/dtFzMNAGmx0tkC7FM5Wkcj.jpg">
+      <publishTime>10/27/2022 14:38:55</publishTime>
+    </File>
+    <File Include="Uploads/Images/baidang/FwIHm7SFKwBaq1BoYjld.jpeg">
+      <publishTime>10/25/2022 20:57:27</publishTime>
+    </File>
+    <File Include="Uploads/Images/baidang/gCgoUZdtsYPgNfEjyqfw.jpg">
+      <publishTime>10/25/2022 21:01:34</publishTime>
+    </File>
+    <File Include="Uploads/Images/baidang/gIuVOdfqSwYvZ2tGoCGT.jpg">
+      <publishTime>10/25/2022 21:02:40</publishTime>
+    </File>
+    <File Include="Uploads/Images/baidang/img_0763_1BTl2VIDAktTGTgUXet3q.jpg">
+      <publishTime>10/27/2022 17:17:14</publishTime>
+    </File>
+    <File Include="Uploads/Images/baidang/j8UVWLNX9IRty3odEtTJ.jpg">
+      <publishTime>10/25/2022 21:00:29</publishTime>
+    </File>
+    <File Include="Uploads/Images/baidang/kiemdinh_20220607021942.jpg">
+      <publishTime>06/07/2022 14:19:42</publishTime>
+    </File>
+    <File Include="Uploads/Images/baidang/kiemdinh_20220607111550.jpg">
+      <publishTime>06/07/2022 11:15:50</publishTime>
+    </File>
+    <File Include="Uploads/Images/baidang/kiemdinh_20220609110616.jpg">
+      <publishTime>06/09/2022 11:06:16</publishTime>
+    </File>
+    <File Include="Uploads/Images/baidang/kiemdinh_20220609111605.jpg">
+      <publishTime>06/09/2022 11:16:05</publishTime>
+    </File>
+    <File Include="Uploads/Images/baidang/lGh1QFTxC0YXPrE257A7.jpg">
+      <publishTime>10/25/2022 21:08:34</publishTime>
+    </File>
+    <File Include="Uploads/Images/baidang/logo_giai_thuong_sang_tao2_20220607104920.jpg">
+      <publishTime>06/07/2022 10:49:20</publishTime>
+    </File>
+    <File Include="Uploads/Images/baidang/logo_giai_thuong_sang_tao2_20220607105047.jpg">
+      <publishTime>06/07/2022 10:50:47</publishTime>
+    </File>
+    <File Include="Uploads/Images/baidang/logo_giai_thuong_sang_tao2_20220607105455.jpg">
+      <publishTime>06/07/2022 10:54:55</publishTime>
+    </File>
+    <File Include="Uploads/Images/baidang/logo_giai_thuong_sang_tao2_20220607105501.jpg">
+      <publishTime>06/07/2022 10:55:01</publishTime>
+    </File>
+    <File Include="Uploads/Images/baidang/logo_giai_thuong_sang_tao2_20220607105545.jpg">
+      <publishTime>06/07/2022 10:55:45</publishTime>
+    </File>
+    <File Include="Uploads/Images/baidang/logo_giai_thuong_sang_tao2_20220607105951.jpg">
+      <publishTime>06/07/2022 10:59:51</publishTime>
+    </File>
+    <File Include="Uploads/Images/baidang/logo_giai_thuong_sang_tao2_20220607110819.jpg">
+      <publishTime>06/07/2022 11:08:19</publishTime>
+    </File>
+    <File Include="Uploads/Images/baidang/logo_giai_thuong_sang_tao2_20220607110853.png">
+      <publishTime>06/07/2022 11:08:53</publishTime>
+    </File>
+    <File Include="Uploads/Images/baidang/logo_giai_thuong_sang_tao2_20220607111115.jpg">
+      <publishTime>06/07/2022 11:11:15</publishTime>
+    </File>
+    <File Include="Uploads/Images/baidang/logo_giai_thuong_sang_tao2_20220607111249.png">
+      <publishTime>06/07/2022 11:12:49</publishTime>
+    </File>
+    <File Include="Uploads/Images/baidang/logo_giai_thuong_sang_tao2_20220607111344.png">
+      <publishTime>06/07/2022 11:13:44</publishTime>
+    </File>
+    <File Include="Uploads/Images/baidang/maylocnuoc8UoPwknH5kc9KeNarZ8x.jpg">
+      <publishTime>10/27/2022 18:03:26</publishTime>
+    </File>
+    <File Include="Uploads/Images/baidang/nghenguyhiem_20220607022010.jpg">
+      <publishTime>06/07/2022 14:20:10</publishTime>
+    </File>
+    <File Include="Uploads/Images/baidang/nghenguyhiem_20220607111607.jpg">
+      <publishTime>06/07/2022 11:16:07</publishTime>
+    </File>
+    <File Include="Uploads/Images/baidang/nghenguyhiem_20220609030443.jpg">
+      <publishTime>06/09/2022 15:04:43</publishTime>
+    </File>
+    <File Include="Uploads/Images/baidang/nghenguyhiem_20220609084921.jpg">
+      <publishTime>06/09/2022 08:49:21</publishTime>
+    </File>
+    <File Include="Uploads/Images/baidang/nghenguyhiem_20220609101000.jpg">
+      <publishTime>06/09/2022 10:10:00</publishTime>
+    </File>
+    <File Include="Uploads/Images/baidang/nghenguyhiem_20220609110045.jpg">
+      <publishTime>06/09/2022 11:00:45</publishTime>
+    </File>
+    <File Include="Uploads/Images/baidang/nghenguyhiem_20220609111322.jpg">
+      <publishTime>06/09/2022 11:13:22</publishTime>
+    </File>
+    <File Include="Uploads/Images/baidang/nghenguyhiem_20220609111327.jpg">
+      <publishTime>06/09/2022 11:13:27</publishTime>
+    </File>
+    <File Include="Uploads/Images/baidang/nghenguyhiem_20220609111339.jpg">
+      <publishTime>06/09/2022 11:13:39</publishTime>
+    </File>
+    <File Include="Uploads/Images/baidang/nghenguyhiem_20220609111430.jpg">
+      <publishTime>06/09/2022 11:14:30</publishTime>
+    </File>
+    <File Include="Uploads/Images/baidang/nYD1MJbHbKEMbMBI5fqG.jpg">
+      <publishTime>10/25/2022 21:03:27</publishTime>
+    </File>
+    <File Include="Uploads/Images/baidang/nzkCVMp03PPRTXlf1Ne1.jpg">
+      <publishTime>10/25/2022 21:06:18</publishTime>
+    </File>
+    <File Include="Uploads/Images/baidang/O46RldlSVWYx5wvQF5fZ.jpg">
+      <publishTime>10/25/2022 21:00:39</publishTime>
+    </File>
+    <File Include="Uploads/Images/baidang/pexels_eberhard_grossgasteiger_443446_20220919110002.jpg">
+      <publishTime>09/19/2022 23:00:02</publishTime>
+    </File>
+    <File Include="Uploads/Images/baidang/pexels_eberhard_grossgasteiger_443446_20220920102408.jpg">
+      <publishTime>09/20/2022 10:24:08</publishTime>
+    </File>
+    <File Include="Uploads/Images/baidang/pexels_krivec_ales_547125_20220919110445.jpg">
+      <publishTime>09/19/2022 23:04:45</publishTime>
+    </File>
+    <File Include="Uploads/Images/baidang/pexels_krivec_ales_547125_20220919110510.jpg">
+      <publishTime>09/19/2022 23:05:10</publishTime>
+    </File>
+    <File Include="Uploads/Images/baidang/pexels_pixabay_235615_20220919115031.jpg">
+      <publishTime>09/19/2022 23:50:31</publishTime>
+    </File>
+    <File Include="Uploads/Images/baidang/pexels_pixabay_268533_20220919110524.jpg">
+      <publishTime>09/19/2022 23:05:24</publishTime>
+    </File>
+    <File Include="Uploads/Images/baidang/pexels_pixabay_33545_20220919110325.jpg">
+      <publishTime>09/19/2022 23:03:25</publishTime>
+    </File>
+    <File Include="Uploads/Images/baidang/pexels_pixabay_33545_20220919114946.jpg">
+      <publishTime>09/19/2022 23:49:46</publishTime>
+    </File>
+    <File Include="Uploads/Images/baidang/pexels_pixabay_40896_20220919110543.jpg">
+      <publishTime>09/19/2022 23:05:43</publishTime>
+    </File>
+    <File Include="Uploads/Images/baidang/pexels_pixabay_40896_20220920102528.jpg">
+      <publishTime>09/20/2022 10:25:28</publishTime>
+    </File>
+    <File Include="Uploads/Images/baidang/pexels_pixabay_40896_20220920102759.jpg">
+      <publishTime>09/20/2022 10:27:59</publishTime>
+    </File>
+    <File Include="Uploads/Images/baidang/pexels_pixabay_40896_20220920120338.jpg">
+      <publishTime>09/20/2022 00:03:38</publishTime>
+    </File>
+    <File Include="Uploads/Images/baidang/pexels_pixabay_40896_20220920120430.jpg">
+      <publishTime>09/20/2022 00:04:30</publishTime>
+    </File>
+    <File Include="Uploads/Images/baidang/pexels_pixabay_459225_20220919110615.jpg">
+      <publishTime>09/19/2022 23:06:15</publishTime>
+    </File>
+    <File Include="Uploads/Images/baidang/pexels_pixabay_459225_20220919115227.jpg">
+      <publishTime>09/19/2022 23:52:27</publishTime>
+    </File>
+    <File Include="Uploads/Images/baidang/pexels_pixabay_459225_20220920121229.jpg">
+      <publishTime>09/20/2022 00:12:29</publishTime>
+    </File>
+    <File Include="Uploads/Images/baidang/pexels_pixabay_52500_20220920121217.jpg">
+      <publishTime>09/20/2022 00:12:17</publishTime>
+    </File>
+    <File Include="Uploads/Images/baidang/pexels_sebastian_voortman_189349_20220919115242.jpg">
+      <publishTime>09/19/2022 23:52:42</publishTime>
+    </File>
+    <File Include="Uploads/Images/baidang/red_circle_20220609023223.png">
+      <publishTime>06/09/2022 14:32:23</publishTime>
+    </File>
+    <File Include="Uploads/Images/baidang/red_circle_20220609103958.jpg">
+      <publishTime>06/09/2022 10:39:58</publishTime>
+    </File>
+    <File Include="Uploads/Images/baidang/red_circle_20220609110421.jpg">
+      <publishTime>06/09/2022 11:04:21</publishTime>
+    </File>
+    <File Include="Uploads/Images/baidang/red_triangle_20220609110238.jpg">
+      <publishTime>06/09/2022 11:02:38</publishTime>
+    </File>
+    <File Include="Uploads/Images/baidang/shG81bUlInZTWTNBdACn.jpg">
+      <publishTime>10/25/2022 21:00:02</publishTime>
+    </File>
+    <File Include="Uploads/Images/baidang/tainanlaodong_20220607022033.jpg">
+      <publishTime>06/07/2022 14:20:33</publishTime>
+    </File>
+    <File Include="Uploads/Images/baidang/tainanlaodong_20220607111625.jpg">
+      <publishTime>06/07/2022 11:16:25</publishTime>
+    </File>
+    <File Include="Uploads/Images/baidang/tainanlaodong_20220609014208.jpg">
+      <publishTime>06/09/2022 13:42:08</publishTime>
+    </File>
+    <File Include="Uploads/Images/baidang/UDZ2oUMejgFsmCL3KNLS.jpg">
+      <publishTime>10/25/2022 21:04:10</publishTime>
+    </File>
+    <File Include="Uploads/Images/baidang/Wd7azBvDKmbm7Bb7Sy7O.jpg">
+      <publishTime>10/25/2022 21:03:04</publishTime>
+    </File>
+    <File Include="Uploads/Images/baidang/x2DYEGGCooU68iNu8PoS.jpg">
+      <publishTime>10/25/2022 21:03:54</publishTime>
+    </File>
+    <File Include="Uploads/Images/baidang/z2571608647875_7bba57b91bd899328e178fc667156385p0kqilEvdAaQoMUIKl4c.jpg">
+      <publishTime>10/27/2022 14:50:05</publishTime>
+    </File>
+    <File Include="Uploads/Images/baidang/z3565497708069_2094d989fbd43598fcb23b4312b6d283j0BPvOFSWoH1KacgMRYu.jpg">
+      <publishTime>10/27/2022 14:23:54</publishTime>
+    </File>
+    <File Include="Uploads/Images/hoang/nghenguyhiem_20220609084857.jpg">
+      <publishTime>06/09/2022 08:48:57</publishTime>
+    </File>
+    <File Include="Uploads/Images/hoang/red_circle_20220607035526.png">
+      <publishTime>06/07/2022 15:55:26</publishTime>
+    </File>
+    <File Include="Uploads/Images/hoang/red_circle_20220607051757.png">
+      <publishTime>06/07/2022 17:17:57</publishTime>
+    </File>
+    <File Include="Uploads/Images/hoang/red_circle_20220609084909.png">
+      <publishTime>06/09/2022 08:49:09</publishTime>
+    </File>
+    <File Include="Uploads/Images/hoang/red_circle_20220609094127.png">
+      <publishTime>06/09/2022 09:41:27</publishTime>
+    </File>
+    <File Include="Uploads/Images/hoang/red_circle_20220609100948.png">
+      <publishTime>06/09/2022 10:09:48</publishTime>
+    </File>
+    <File Include="Uploads/Images/hoang/red_flag_20220607035153.jpg">
+      <publishTime>06/07/2022 15:51:53</publishTime>
+    </File>
+    <File Include="Uploads/Images/hoang/red_flag_20220607041955.jpg">
+      <publishTime>06/07/2022 16:19:55</publishTime>
+    </File>
+    <File Include="Uploads/Images/hoang/red_flag_20220607050114.jpg">
+      <publishTime>06/07/2022 17:01:14</publishTime>
+    </File>
+    <File Include="Uploads/Images/hoang/red_flag_20220607051739.jpg">
+      <publishTime>06/07/2022 17:17:39</publishTime>
+    </File>
+    <File Include="Uploads/Images/hoang/red_flag_20220607053248.jpg">
+      <publishTime>06/07/2022 17:32:48</publishTime>
+    </File>
+    <File Include="Uploads/Images/hoang/red_flag_20220607053339.jpg">
+      <publishTime>06/07/2022 17:33:39</publishTime>
+    </File>
+    <File Include="Uploads/Images/hoang/red_flag_20220609094150.jpg">
+      <publishTime>06/09/2022 09:41:50</publishTime>
+    </File>
+    <File Include="Uploads/Images/hoang/red_flag_20220609100854.jpg">
+      <publishTime>06/09/2022 10:08:54</publishTime>
+    </File>
+    <File Include="Uploads/Images/khophanmem/123UnCtUjdCR6SJcpPZ3Gyt.jpg">
+      <publishTime>02/11/2022 21:51:58</publishTime>
+    </File>
+    <File Include="Uploads/Images/khophanmem/documents-confirmed-approved-document_149152-4391iLrwWig3nxZAVgD0DZP.jpg">
+      <publishTime>01/11/2022 16:07:02</publishTime>
+    </File>
+    <File Include="Uploads/Images/khophanmem/dpYV9pk2aKZFQG8tWru9.png">
+      <publishTime>10/25/2022 21:21:32</publishTime>
+    </File>
+    <File Include="Uploads/Images/khophanmem/dpyv9pk2akzfqg8twru9CruXh4fu83PLb0iYl1Y5.png">
+      <publishTime>01/11/2022 16:00:25</publishTime>
+    </File>
+    <File Include="Uploads/Images/khophanmem/Ju5PApQWLEvc4tDiqi6N.jpg">
+      <publishTime>10/25/2022 21:21:41</publishTime>
+    </File>
+    <File Include="Uploads/Images/khophanmem/khophanmemnMf0yaQz1vRBaOnGOVHw.jpg">
+      <publishTime>10/28/2022 13:18:21</publishTime>
+    </File>
+    <File Include="Uploads/Images/khophanmem/thanhnienc0iENKbrRJ7rJcjHe003.jpg">
+      <publishTime>10/28/2022 13:17:46</publishTime>
+    </File>
+    <File Include="Uploads/Images/khophanmem/timkiemotES33L9YwT4EHmyrDlO.jpg">
+      <publishTime>10/28/2022 13:16:35</publishTime>
+    </File>
+    <File Include="Uploads/Images/khophanmem/vanphongdientuoBBxz0O92fmll2ENSGjT.jpg">
+      <publishTime>10/31/2022 09:19:10</publishTime>
+    </File>
+    <File Include="Uploads/Images/khophanmem/vbplXHT4ta3tMak9EWwzd0Vm.jpg">
+      <publishTime>03/11/2022 21:56:40</publishTime>
+    </File>
+    <File Include="Uploads/Images/test/red-flag_20220609101956.jpg">
+      <publishTime>06/09/2022 10:19:56</publishTime>
+    </File>
+    <File Include="Uploads/Images/tranglienket/4ytgxgQqMIFDdveiV6op.jpg">
+      <publishTime>10/25/2022 21:24:04</publishTime>
+    </File>
+    <File Include="Uploads/Images/tranglienket/5ScVfAS5QGZ5SSqYFpKZ.jpg">
+      <publishTime>10/25/2022 21:24:25</publishTime>
+    </File>
+    <File Include="Uploads/Images/tranglienket/i0pJe0I9yqiLlIKowzZg.jpg">
+      <publishTime>10/25/2022 21:24:13</publishTime>
+    </File>
+    <File Include="Uploads/Images/tranglienket/logo-tchccAzYxZlRyFBxxWtsSVSH.jpg">
+      <publishTime>10/31/2022 13:41:27</publishTime>
+    </File>
+    <File Include="Uploads/Images/tranglienket/thanhnienLFJM1tKHZbXbZ0UMEHGV.jpg">
+      <publishTime>10/28/2022 15:26:21</publishTime>
+    </File>
+    <File Include="Uploads/Images/tranglienket/U4dTfOrKyAzBbwxN3UeH.jpg">
+      <publishTime>10/25/2022 21:23:51</publishTime>
+    </File>
+    <File Include="Uploads/Images/tranglienket/vbplKHo4oCVfI0rFMDX5gFCI.jpg">
+      <publishTime>03/11/2022 21:57:56</publishTime>
+    </File>
+    <File Include="Uploads/Images/vanphongdientu/logo1v4GhvTtd743nDxWmik3.png">
+      <publishTime>10/31/2022 15:23:20</publishTime>
+    </File>
+    <File Include="Uploads/Images/vanphongdientu/logoGp9bwiqeIpt8FuDl6W4y.png">
+      <publishTime>10/31/2022 15:24:45</publishTime>
+    </File>
+    <File Include="Uploads/Images/vanphongdientu/logohDMGSKX82TIsGreS3JEW.png">
+      <publishTime>01/11/2022 15:56:19</publishTime>
+    </File>
+    <File Include="Uploads/Images/vanphongdientu/logoNe2Un7FUljr3aDGrWolw.png">
+      <publishTime>10/31/2022 15:24:33</publishTime>
+    </File>
+    <File Include="Uploads/Images/vanphongdientu/logorpqoF0P16myzmuCyPtMy.png">
+      <publishTime>10/31/2022 15:24:05</publishTime>
+    </File>
+    <File Include="Uploads/Images/vanphongdientu/logox9bryJsIutaKRTEjoTcx.png">
+      <publishTime>10/31/2022 15:24:23</publishTime>
+    </File>
+    <File Include="Uploads/Images/vanphongdientu/pm1Dx0hjpzLS3E236r8HXcv.jpg">
+      <publishTime>03/11/2022 18:42:09</publishTime>
+    </File>
+    <File Include="Uploads/Images/vanphongdientu/pm2bfEOwEttX5rGqLwSHa9o.jpg">
+      <publishTime>03/11/2022 18:43:34</publishTime>
+    </File>
+    <File Include="Uploads/Images/vanphongdientu/pm2FofdPoyjXHkvnzglqExE.jpg">
+      <publishTime>03/11/2022 18:44:07</publishTime>
+    </File>
+    <File Include="Uploads/Images/vanphongdientu/pm4OT0X00aLbcNcs4o9xNdy.jpg">
+      <publishTime>03/11/2022 18:43:26</publishTime>
+    </File>
+    <File Include="Uploads/Images/vanphongdientu/pm4QMTp1hI3Gt02w9qxxtFt.jpg">
+      <publishTime>03/11/2022 18:43:45</publishTime>
+    </File>
+    <File Include="Uploads/Images/vanphongdientu/pm5qvzTQPfhC6oYlO9toL38.jpg">
+      <publishTime>03/11/2022 18:44:00</publishTime>
+    </File>
+    <File Include="Uploads/Images/vanphongdientu/vanphongdientu2b3SuT6Td1ySDxaf8wWb.jpg">
+      <publishTime>10/31/2022 09:29:25</publishTime>
+    </File>
+    <File Include="Uploads/Images/vanphongdientu/vanphongdientujAjkTtobcTYCaAecopPj.jpg">
+      <publishTime>10/31/2022 15:18:31</publishTime>
+    </File>
+    <File Include="Uploads/Images/vanphongdientu/vanphongdientujyukg3ruNe6txXkbkGj2.jpg">
+      <publishTime>10/31/2022 15:20:20</publishTime>
+    </File>
+    <File Include="Uploads/Images/vanphongdientu/vanphongdientulN4CCEwq6OUrk8ZTiSVm.jpg">
+      <publishTime>10/31/2022 15:21:05</publishTime>
+    </File>
+    <File Include="Uploads/Images/vanphongdientu/vanphongdientup2o0TsrdEbtwAbT3HarK.jpg">
+      <publishTime>10/31/2022 09:20:42</publishTime>
+    </File>
+    <File Include="Uploads/Images/vanphongdientu/vanphongdientuqcAax9p3JKhaxGXb5uSR.jpg">
+      <publishTime>10/31/2022 15:21:49</publishTime>
+    </File>
+    <File Include="Uploads/Images/VideoAvatar/blob">
+      <publishTime>10/20/2022 14:18:13</publishTime>
+    </File>
+    <File Include="Uploads/Images/VideoAvatar/de_tai_cac_loai_bep_nau_dung_trong_nha_an_quan_doi.png">
+      <publishTime>10/20/2022 14:18:13</publishTime>
+    </File>
+    <File Include="Uploads/Images/VideoAvatar/de_tai_xe_bep_tu_hanh.png">
+      <publishTime>10/20/2022 14:18:13</publishTime>
+    </File>
+    <File Include="Uploads/Images/VideoAvatar/giam_nhe_vat_chat_mang_theo_cua_bo_doi.png">
+      <publishTime>10/20/2022 14:18:13</publishTime>
+    </File>
+    <File Include="Uploads/Images/VideoAvatar/inter_quartile_range_20221002012115.png">
+      <publishTime>10/03/2022 15:54:43</publishTime>
+    </File>
+    <File Include="Uploads/Images/VideoAvatar/inter_quartile_range_20221002110500.png">
+      <publishTime>10/03/2022 15:54:43</publishTime>
+    </File>
+    <File Include="Uploads/Images/VideoAvatar/inter_quartile_range_20221003074654.png">
+      <publishTime>10/03/2022 15:54:43</publishTime>
+    </File>
+    <File Include="Uploads/Images/VideoAvatar/Phim giảm nhẹ vật chất mang theo của bộ đội.PNG">
+      <publishTime>10/20/2022 14:18:13</publishTime>
+    </File>
+    <File Include="Uploads/Images/VideoAvatar/Phim quân nhu Lữ đoàn 86BTL Hóa học.PNG">
+      <publishTime>10/20/2022 14:18:13</publishTime>
+    </File>
+    <File Include="Uploads/Images/VideoAvatar/Phim Đề tài các loại bếp nấu dùng trong nhà ăn quân đội.PNG">
+      <publishTime>10/20/2022 14:18:13</publishTime>
+    </File>
+    <File Include="Uploads/Images/VideoAvatar/Phim đề tài xe bếp tự hành.PNG">
+      <publishTime>10/20/2022 14:18:13</publishTime>
+    </File>
+    <File Include="Uploads/Images/VideoAvatar/Phim đề tài xe bếp tự hànhOLD.PNG">
+      <publishTime>10/20/2022 14:18:13</publishTime>
+    </File>
+    <File Include="Uploads/Images/VideoAvatar/quan_nhu_lu_doan_86btl_hoa_hoc.png">
+      <publishTime>10/20/2022 14:18:13</publishTime>
+    </File>
+    <File Include="Uploads/Images/VideoAvatar/tong_ket_nghi_quyet_765_ve_cong_tac_huan_luyen.png">
+      <publishTime>10/20/2022 14:18:13</publishTime>
+    </File>
+    <File Include="Uploads/Images/VideoAvatar/Tổng kết Nghị quyết 765 về công tác huấn luyện - Cục Quân nhu.PNG">
+      <publishTime>10/20/2022 14:18:13</publishTime>
+    </File>
+    <File Include="Uploads/Video/de_tai_cac_loai_bep_nau_dung_trong_nha_an_quan_doi.mp4">
+      <publishTime>10/20/2022 14:14:59</publishTime>
+    </File>
+    <File Include="Uploads/Video/de_tai_xe_bep_tu_hanh.mp4">
+      <publishTime>10/20/2022 14:14:59</publishTime>
+    </File>
+    <File Include="Uploads/Video/giam_nhe_vat_chat_mang_theo_cua_bo_doi.mp4">
+      <publishTime>10/20/2022 14:14:55</publishTime>
+    </File>
+    <File Include="Uploads/Video/pexels_rodnae_productions_8474604_20221002012115.mp4">
+      <publishTime>10/03/2022 15:54:45</publishTime>
+    </File>
+    <File Include="Uploads/Video/pexels_rodnae_productions_8474604_20221002110500.mp4">
+      <publishTime>10/03/2022 15:54:45</publishTime>
+    </File>
+    <File Include="Uploads/Video/pexels_rodnae_productions_8474604_20221003074654.mp4">
+      <publishTime>10/03/2022 15:54:45</publishTime>
+    </File>
+    <File Include="Uploads/Video/Phim giảm nhẹ vật chất mang theo của bộ đội.mp4">
+      <publishTime>10/20/2022 14:14:55</publishTime>
+    </File>
+    <File Include="Uploads/Video/Phim quân nhu Lữ đoàn 86BTL Hóa học.mp4">
+      <publishTime>10/20/2022 14:14:57</publishTime>
+    </File>
+    <File Include="Uploads/Video/Phim Đề tài các loại bếp nấu dùng trong nhà ăn quân đội.mp4">
+      <publishTime>10/20/2022 14:14:59</publishTime>
+    </File>
+    <File Include="Uploads/Video/Phim đề tài xe bếp tự hành.mp4">
+      <publishTime>10/20/2022 14:14:59</publishTime>
+    </File>
+    <File Include="Uploads/Video/quan_nhu_lu_doan_86btl_hoa_hoc.mp4">
+      <publishTime>10/20/2022 14:14:57</publishTime>
+    </File>
+    <File Include="Uploads/Video/tong_ket_nghi_quyet_765_ve_cong_tac_huan_luyen.mp4">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Uploads/Video/Tổng kết Nghị quyết 765 về công tác huấn luyện - Cục Quân nhu.mp4">
+      <publishTime>10/20/2022 14:15:00</publishTime>
+    </File>
+    <File Include="Uploads/vietnam-flag.png">
+      <publishTime>05/17/2021 08:05:44</publishTime>
+    </File>
+    <File Include="Views/Home/Index.cshtml">
+      <publishTime>05/17/2021 08:04:24</publishTime>
+    </File>
+    <File Include="Views/Shared/Error.cshtml">
+      <publishTime>05/17/2021 08:04:24</publishTime>
+    </File>
+    <File Include="Views/Shared/_Layout.cshtml">
+      <publishTime>05/17/2021 08:04:24</publishTime>
+    </File>
+    <File Include="Views/Web.config">
+      <publishTime>09/05/2022 10:18:27</publishTime>
+    </File>
+    <File Include="Views/_ViewStart.cshtml">
+      <publishTime>05/17/2021 08:04:24</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>11/08/2022 09:54:02</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

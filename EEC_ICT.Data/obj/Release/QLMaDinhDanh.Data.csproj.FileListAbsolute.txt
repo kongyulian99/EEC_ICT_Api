@@ -1,0 +1,8 @@
+D:\Workspace\PHTQLDH\2024\Code\QLMaDinhDanh\New folder\Api\QLCanBoNganhHauCan.Data\bin\Release\QLyCtacDoanhTrai.Data.dll
+D:\Workspace\PHTQLDH\2024\Code\QLMaDinhDanh\New folder\Api\QLCanBoNganhHauCan.Data\bin\Release\QLyCtacDoanhTrai.Data.pdb
+D:\Workspace\PHTQLDH\2024\Code\QLMaDinhDanh\New folder\Api\QLCanBoNganhHauCan.Data\bin\Release\log4net.dll
+D:\Workspace\PHTQLDH\2024\Code\QLMaDinhDanh\New folder\Api\QLCanBoNganhHauCan.Data\bin\Release\log4net.xml
+D:\Workspace\PHTQLDH\2024\Code\QLMaDinhDanh\New folder\Api\QLCanBoNganhHauCan.Data\obj\Release\QLMaDinhDanh.Data.csproj.CoreCompileInputs.cache
+D:\Workspace\PHTQLDH\2024\Code\QLMaDinhDanh\New folder\Api\QLCanBoNganhHauCan.Data\obj\Release\QLMaDinhDanh.Data.csproj.CopyComplete
+D:\Workspace\PHTQLDH\2024\Code\QLMaDinhDanh\New folder\Api\QLCanBoNganhHauCan.Data\obj\Release\QLyCtacDoanhTrai.Data.dll
+D:\Workspace\PHTQLDH\2024\Code\QLMaDinhDanh\New folder\Api\QLCanBoNganhHauCan.Data\obj\Release\QLyCtacDoanhTrai.Data.pdb
