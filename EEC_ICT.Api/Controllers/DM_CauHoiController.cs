@@ -14,6 +14,7 @@ namespace EEC_ICT.Api.Controllers
     [RoutePrefix("api/dm-cauhoi")]
     public class DM_CauHoiController : ApiController
     {
+        // READ
         [HttpGet]
         [Route("selectall")]
         public object SelectAll(string filter, int pageIndex, int pageSize)
@@ -79,6 +80,7 @@ namespace EEC_ICT.Api.Controllers
             return retval;
         }
 
+        //CREAT
         [HttpPost]
         [Route("insert")]
         public object Insert(DM_CauHoi request)
@@ -99,7 +101,7 @@ namespace EEC_ICT.Api.Controllers
                     {
                         if (request.ChoiceList[i].AnswerId <= 0)
                         {
-                            request.ChoiceList[i].QuestionId = questionId; // request.IdCanBoNhanVien;
+                            request.ChoiceList[i].QuestionId = int.Parse(questionId); // request.IdCanBoNhanVien;
                             DM_DapAnServices.Insert(request.ChoiceList[i]);
                         }
                         else
@@ -127,6 +129,7 @@ namespace EEC_ICT.Api.Controllers
             return retval;
         }
 
+        // UPDATE
         [HttpPut]
         [Route("update")]
         public object Update(DM_CauHoi request)
@@ -140,7 +143,7 @@ namespace EEC_ICT.Api.Controllers
             };
             try
             {
-                var questionId = DM_CauHoiServices.Update(request);
+                var questionId = int.Parse(DM_CauHoiServices.Update(request));
 
                 if (request.ChoiceList != null)
                 {
@@ -176,6 +179,7 @@ namespace EEC_ICT.Api.Controllers
             return retval;
         }
 
+        // DELETE
         [HttpDelete]
         [Route("delete/{questionId}")]
         public object Delete(int questionId)
