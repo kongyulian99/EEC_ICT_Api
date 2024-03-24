@@ -32,7 +32,7 @@ namespace EEC_ICT.Data.Repository
         {
             var parameters = new List<SqlParameter>()
             {
-                new SqlParameter("@iQuestionId", SqlDbType.Int){ Value = ParameterDirection.Output},
+                new SqlParameter("@iQuestionId", SqlDbType.Int){ Direction = ParameterDirection.Output},
                 new SqlParameter("@sQuestion", SqlDbType.NVarChar, -1) { Value = entity.Question},
                 new SqlParameter("@sGraphUrl", SqlDbType.NVarChar, 200) { Value = entity.GraphUrl},
                 //new SqlParameter("@iCorrectAnswerId", SqlDbType.Int) { Value = entity.CorrectAnswerId},
