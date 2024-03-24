@@ -1,0 +1,9 @@
+D:\Workspace\Personal\Teach\ICT-Project-M1\FinalProject\Api\EEC_ICT.Data\bin\Release\QLyCtacDoanhTrai.Data.dll
+D:\Workspace\Personal\Teach\ICT-Project-M1\FinalProject\Api\EEC_ICT.Data\bin\Release\QLyCtacDoanhTrai.Data.pdb
+D:\Workspace\Personal\Teach\ICT-Project-M1\FinalProject\Api\EEC_ICT.Data\bin\Release\log4net.dll
+D:\Workspace\Personal\Teach\ICT-Project-M1\FinalProject\Api\EEC_ICT.Data\bin\Release\log4net.xml
+D:\Workspace\Personal\Teach\ICT-Project-M1\FinalProject\Api\EEC_ICT.Data\obj\Release\EEC_ICT.Data.csproj.AssemblyReference.cache
+D:\Workspace\Personal\Teach\ICT-Project-M1\FinalProject\Api\EEC_ICT.Data\obj\Release\EEC_ICT.Data.csproj.CoreCompileInputs.cache
+D:\Workspace\Personal\Teach\ICT-Project-M1\FinalProject\Api\EEC_ICT.Data\obj\Release\EEC_ICT.Data.csproj.CopyComplete
+D:\Workspace\Personal\Teach\ICT-Project-M1\FinalProject\Api\EEC_ICT.Data\obj\Release\QLyCtacDoanhTrai.Data.dll
+D:\Workspace\Personal\Teach\ICT-Project-M1\FinalProject\Api\EEC_ICT.Data\obj\Release\QLyCtacDoanhTrai.Data.pdb

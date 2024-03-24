@@ -23,12 +23,12 @@ namespace EEC_ICT.Data.Services
             return SqlHelper.GetInfo<DM_CauHoi>(rep.SelectOne(questionId));
         }
 
-        public static int Insert(DM_CauHoi entity)
+        public static string Insert(DM_CauHoi entity)
         {
             return rep.Insert(entity);
         }
 
-        public static int Update(DM_CauHoi entity)
+        public static string Update(DM_CauHoi entity)
         {
             return rep.Update(entity);
         }
