@@ -38,4 +38,33 @@ namespace EEC_ICT.Data.Services
             return rep.Delete(questionId);
         }
     }
+    public class DM_CauHoiServices_byTopic
+    {
+        private static DM_CauHoiRepository rep = new DM_CauHoiRepository();
+
+        public static List<DM_CauHoi> SelectAllWTopicIdLogic(topicId)
+        {
+            return SqlHelper.GetList<DM_CauHoi>(rep.SelectAllWTopicIdLogic(topicId));
+        }
+
+        public static DM_CauHoi SelectOne(int questionId)
+        {
+            return SqlHelper.GetInfo<DM_CauHoi>(rep.SelectOne(questionId));
+        }
+
+        public static string Insert(DM_CauHoi entity)
+        {
+            return rep.Insert(entity);
+        }
+
+        public static string Update(DM_CauHoi entity)
+        {
+            return rep.Update(entity);
+        }
+
+        public static string Delete(int questionId)
+        {
+            return rep.Delete(questionId);
+        }
+    }
 }

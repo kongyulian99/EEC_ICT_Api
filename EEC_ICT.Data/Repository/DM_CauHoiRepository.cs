@@ -21,6 +21,17 @@ namespace EEC_ICT.Data.Repository
             var data = SqlHelper.ExecuteReader(CommonFunctions.GetConnectionString(), CommandType.StoredProcedure, "pr_DM_CauHoi_SelectAll", parameters.ToArray());
             return data;
         }
+        public IDataReader SelectAllWTopicIdLogic(int topicId)
+        {
+            var parameters = new List<SqlParameter>()
+            {
+                //new SqlParameter("@sFilter", SqlDbType.NVarChar, 300){ Value = filter},
+                new SqlParameter("@iTopicId", SqlDbType.Int){ Value = topicId},
+                new SqlParameter("@iErrorCode", SqlDbType.Int) {Direction = ParameterDirection.Output}
+            };
+            var data = SqlHelper.ExecuteReader(CommonFunctions.GetConnectionString(), CommandType.StoredProcedure, "pr_DM_CauHoi_SelectAllWTopicIdLogic", parameters.ToArray());
+            return data;
+        }
 
         public IDataReader SelectOne(int questionId)
         {

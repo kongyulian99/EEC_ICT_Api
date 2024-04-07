@@ -48,6 +48,7 @@ namespace EEC_ICT.Api.Controllers
                 retval.Data = data;
                 retval.Status = new StatusReturn { Code = 1, Message = "Thành công" };
             }
+           
             catch (Exception ex)
             {
                 retval.Status = new StatusReturn { Code = -1, Message = ex.Message };
@@ -56,6 +57,47 @@ namespace EEC_ICT.Api.Controllers
             return retval;
         }
 
+        [HttpGet]
+        [Route("selectall")]
+        public object SelectAll(string filter, int pageIndex, int pageSize)
+        {
+            Logger.Info("[DM_CauHoi_SelectAllWTopicIdLogic]");
+            var retval = new ReturnInfo
+            {
+                Data = new List<DM_CauHoi>(),
+                Pagination = new PaginationInfo { PageIndex = pageIndex, PageSize = pageSize, TotalRows = 0 },
+                Status = new StatusReturn { Code = 0, Message = "Không thành công" }
+            };
+
+            try
+            {
+                var data = DM_CauHoiServices.SelectAllWTopicIdLogic(topicId);
+                // select thong tin dao tao
+                for (var i = 0; i < data.Count(); i++)
+                {
+                    data[i].ChoiceList = DM_DapAnServices.SelectAllWQuestionId(data[i].QuestionId);
+                }
+
+                //if (!string.IsNullOrEmpty(filter))
+                //{
+                //    data = data.Where(o => UtilityServices.convertToUnSign(o.TenCapBac).IndexOf(UtilityServices.convertToUnSign(filter), StringComparison.CurrentCultureIgnoreCase) >= 0).ToList();
+                //}
+                retval.Pagination.TotalRows = data.Count;
+                if (pageSize > 0)
+                {
+                    data = data.Skip(pageSize * (pageIndex - 1)).Take(pageSize).ToList();
+                }
+                retval.Data = data;
+                retval.Status = new StatusReturn { Code = 1, Message = "Thành công" };
+            }
+
+            catch (Exception ex)
+            {
+                retval.Status = new StatusReturn { Code = -1, Message = ex.Message };
+            }
+            Logger.Info("[retval]" + retval.JSONSerializer());
+            return retval;
+        }
         [HttpGet]
         [Route("selectone/{questionId}")]
         public object SelectOne(int questionId)
