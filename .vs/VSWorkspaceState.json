@@ -7,6 +7,6 @@
     "\\EEC_ICT.Data\\Repository",
     "\\EEC_ICT.Data\\Services"
   ],
-  "SelectedNode": "\\EEC_ICT.Data\\Services\\DM_DapAnServices.cs",
+  "SelectedNode": "\\EEC_ICT.Api\\Controllers\\DM_CauHoiController.cs",
   "PreviewInSolutionExplorer": false
 }

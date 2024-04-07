@@ -71,7 +71,7 @@ namespace EEC_ICT.Api.Controllers
 
             try
             {
-                var data = DM_CauHoiServices.SelectAllWTopicIdLogic(topicId);
+                var data = DM_CauHoiServicesbyTopic.SelectAllWTopicIdLogic(topicId);
                 // select thong tin dao tao
                 for (var i = 0; i < data.Count(); i++)
                 {
