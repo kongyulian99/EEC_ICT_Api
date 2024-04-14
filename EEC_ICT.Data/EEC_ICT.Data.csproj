@@ -58,6 +58,7 @@
     <Compile Include="Models\Command.cs" />
     <Compile Include="Models\CommandAssign.cs" />
     <Compile Include="Models\CommandInFunction.cs" />
+    <Compile Include="Models\DM_DapAnCheckCorrect.cs" />
     <Compile Include="Models\DM_DapAn.cs" />
     <Compile Include="Models\DM_Topic.cs" />
     <Compile Include="Models\DM_CauHoi.cs" />

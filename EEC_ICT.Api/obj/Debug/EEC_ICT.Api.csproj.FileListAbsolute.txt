@@ -223,9 +223,6 @@ D:\Workspace\Personal\Teach\ICT-Project-M1\FinalProject\QLMaDinhDanh\Api\EEC_ICT
 D:\Workspace\Personal\Teach\ICT-Project-M1\FinalProject\QLMaDinhDanh\Api\EEC_ICT.Api\obj\Debug\EEC_ICT.Api.csproj.CopyComplete
 D:\Workspace\Personal\Teach\ICT-Project-M1\FinalProject\QLMaDinhDanh\Api\EEC_ICT.Api\obj\Debug\QLMaDinhDanh.Api.dll
 D:\Workspace\Personal\Teach\ICT-Project-M1\FinalProject\QLMaDinhDanh\Api\EEC_ICT.Api\obj\Debug\QLMaDinhDanh.Api.pdb
-D:\Workspace\Personal\Teach\ICT-Project-M1\FinalProject\Api\EEC_ICT.Api\bin\QLMaDinhDanh.Api.dll.config
-D:\Workspace\Personal\Teach\ICT-Project-M1\FinalProject\Api\EEC_ICT.Api\bin\QLMaDinhDanh.Api.dll
-D:\Workspace\Personal\Teach\ICT-Project-M1\FinalProject\Api\EEC_ICT.Api\bin\QLMaDinhDanh.Api.pdb
 D:\Workspace\Personal\Teach\ICT-Project-M1\FinalProject\Api\EEC_ICT.Api\bin\roslyn\csc.exe
 D:\Workspace\Personal\Teach\ICT-Project-M1\FinalProject\Api\EEC_ICT.Api\bin\roslyn\csc.exe.config
 D:\Workspace\Personal\Teach\ICT-Project-M1\FinalProject\Api\EEC_ICT.Api\bin\roslyn\csc.rsp
@@ -350,8 +347,6 @@ D:\Workspace\Personal\Teach\ICT-Project-M1\FinalProject\Api\EEC_ICT.Api\bin\log4
 D:\Workspace\Personal\Teach\ICT-Project-M1\FinalProject\Api\EEC_ICT.Api\obj\Debug\EEC_ICT.Api.csproj.AssemblyReference.cache
 D:\Workspace\Personal\Teach\ICT-Project-M1\FinalProject\Api\EEC_ICT.Api\obj\Debug\EEC_ICT.Api.csproj.CoreCompileInputs.cache
 D:\Workspace\Personal\Teach\ICT-Project-M1\FinalProject\Api\EEC_ICT.Api\obj\Debug\EEC_ICT.Api.csproj.CopyComplete
-D:\Workspace\Personal\Teach\ICT-Project-M1\FinalProject\Api\EEC_ICT.Api\obj\Debug\QLMaDinhDanh.Api.dll
-D:\Workspace\Personal\Teach\ICT-Project-M1\FinalProject\Api\EEC_ICT.Api\obj\Debug\QLMaDinhDanh.Api.pdb
 D:\Workspace\Personal\Teach\ICT-Project-M1\FinalProject\Api\EEC_ICT.Api\bin\Microsoft.Win32.Primitives.dll
 D:\Workspace\Personal\Teach\ICT-Project-M1\FinalProject\Api\EEC_ICT.Api\bin\netstandard.dll
 D:\Workspace\Personal\Teach\ICT-Project-M1\FinalProject\Api\EEC_ICT.Api\bin\System.AppContext.dll
@@ -448,3 +443,8 @@ D:\Workspace\Personal\Teach\ICT-Project-M1\FinalProject\Api\EEC_ICT.Api\bin\Syst
 D:\Workspace\Personal\Teach\ICT-Project-M1\FinalProject\Api\EEC_ICT.Api\bin\System.Xml.XmlSerializer.dll
 D:\Workspace\Personal\Teach\ICT-Project-M1\FinalProject\Api\EEC_ICT.Api\bin\System.Xml.XPath.dll
 D:\Workspace\Personal\Teach\ICT-Project-M1\FinalProject\Api\EEC_ICT.Api\bin\System.Xml.XPath.XDocument.dll
+D:\Workspace\Personal\Teach\ICT-Project-M1\FinalProject\Api\EEC_ICT.Api\bin\EEC_ICT.Api.dll.config
+D:\Workspace\Personal\Teach\ICT-Project-M1\FinalProject\Api\EEC_ICT.Api\bin\EEC_ICT.Api.dll
+D:\Workspace\Personal\Teach\ICT-Project-M1\FinalProject\Api\EEC_ICT.Api\bin\EEC_ICT.Api.pdb
+D:\Workspace\Personal\Teach\ICT-Project-M1\FinalProject\Api\EEC_ICT.Api\obj\Debug\EEC_ICT.Api.dll
+D:\Workspace\Personal\Teach\ICT-Project-M1\FinalProject\Api\EEC_ICT.Api\obj\Debug\EEC_ICT.Api.pdb
