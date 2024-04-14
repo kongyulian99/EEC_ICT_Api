@@ -43,6 +43,18 @@ namespace EEC_ICT.Data.Repository
             return parameters[0].Value.ToString();
         }
 
+        public string CheckCorrect(DM_DapAnCheckCorrect entity)
+        {
+            var parameters = new List<SqlParameter>()
+            {
+                new SqlParameter("@iQuestionId", SqlDbType.Int){Value = entity.QuestionId},
+                new SqlParameter("@iAnswerId", SqlDbType.Int){Value = entity.AnswerId},
+                new SqlParameter("@iErrorCode", SqlDbType.Int) { Direction = ParameterDirection.Output }
+            };
+            SqlHelper.ExecuteNonQuery(CommonFunctions.GetConnectionString(), CommandType.StoredProcedure, "pr_DM_CauHoi_CheckCorrect", parameters.ToArray());
+            return parameters[0].Value.ToString();
+        }
+
         public string Update(DM_CauHoi entity)
         {
             var parameters = new List<SqlParameter>()

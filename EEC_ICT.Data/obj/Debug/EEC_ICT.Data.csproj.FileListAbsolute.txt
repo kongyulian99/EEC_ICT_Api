@@ -16,3 +16,12 @@ D:\Workspace\Personal\Teach\ICT-Project-M1\FinalProject\Api\EEC_ICT.Data\obj\Deb
 D:\Workspace\Personal\Teach\ICT-Project-M1\FinalProject\Api\EEC_ICT.Data\obj\Debug\EEC_ICT.Data.csproj.CopyComplete
 D:\Workspace\Personal\Teach\ICT-Project-M1\FinalProject\Api\EEC_ICT.Data\obj\Debug\QLyCtacDoanhTrai.Data.dll
 D:\Workspace\Personal\Teach\ICT-Project-M1\FinalProject\Api\EEC_ICT.Data\obj\Debug\QLyCtacDoanhTrai.Data.pdb
+D:\git ict\EEC_ICT_Api\EEC_ICT.Data\bin\Debug\QLyCtacDoanhTrai.Data.dll
+D:\git ict\EEC_ICT_Api\EEC_ICT.Data\bin\Debug\QLyCtacDoanhTrai.Data.pdb
+D:\git ict\EEC_ICT_Api\EEC_ICT.Data\bin\Debug\log4net.dll
+D:\git ict\EEC_ICT_Api\EEC_ICT.Data\bin\Debug\log4net.xml
+D:\git ict\EEC_ICT_Api\EEC_ICT.Data\obj\Debug\EEC_ICT.Data.csproj.AssemblyReference.cache
+D:\git ict\EEC_ICT_Api\EEC_ICT.Data\obj\Debug\EEC_ICT.Data.csproj.CoreCompileInputs.cache
+D:\git ict\EEC_ICT_Api\EEC_ICT.Data\obj\Debug\EEC_ICT.Data.csproj.CopyComplete
+D:\git ict\EEC_ICT_Api\EEC_ICT.Data\obj\Debug\QLyCtacDoanhTrai.Data.dll
+D:\git ict\EEC_ICT_Api\EEC_ICT.Data\obj\Debug\QLyCtacDoanhTrai.Data.pdb

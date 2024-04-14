@@ -129,6 +129,32 @@ namespace EEC_ICT.Api.Controllers
             return retval;
         }
 
+        [HttpPost]
+        [Route("checkcorrect")]
+        public object CheckCorrect(DM_DapAnCheckCorrect request)
+        {
+            Logger.Info("[DM_CauHoi_Insert]");
+            var retval = new ReturnInfo
+            {
+                Data = "",
+                Pagination = new PaginationInfo(),
+                Status = new StatusReturn { Code = 0, Message = "Không thành công" }
+            };
+            try
+            {
+                var questionId = DM_CauHoiServices.CheckCorrect(request);
+
+                retval.Data = questionId;
+                retval.Status = new StatusReturn { Code = 1, Message = "Thành công" };
+            }
+            catch (Exception ex)
+            {
+                retval.Status = new StatusReturn { Code = -1, Message = ex.Message };
+            }
+            Logger.Info("[retval]" + retval.JSONSerializer());
+            return retval;
+        }
+
         // UPDATE
         [HttpPut]
         [Route("update")]
