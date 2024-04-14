@@ -16,3 +16,12 @@ D:\Workspace\Personal\Teach\ICT-Project-M1\FinalProject\Api\EEC_ICT.Data\obj\Deb
 D:\Workspace\Personal\Teach\ICT-Project-M1\FinalProject\Api\EEC_ICT.Data\obj\Debug\EEC_ICT.Data.csproj.CopyComplete
 D:\Workspace\Personal\Teach\ICT-Project-M1\FinalProject\Api\EEC_ICT.Data\obj\Debug\QLyCtacDoanhTrai.Data.dll
 D:\Workspace\Personal\Teach\ICT-Project-M1\FinalProject\Api\EEC_ICT.Data\obj\Debug\QLyCtacDoanhTrai.Data.pdb
+D:\Pham Hoang Phuc\ICT\api test\EEC_ICT_Api\EEC_ICT.Data\bin\Debug\EEC_ICT.Data.dll
+D:\Pham Hoang Phuc\ICT\api test\EEC_ICT_Api\EEC_ICT.Data\bin\Debug\EEC_ICT.Data.pdb
+D:\Pham Hoang Phuc\ICT\api test\EEC_ICT_Api\EEC_ICT.Data\bin\Debug\log4net.dll
+D:\Pham Hoang Phuc\ICT\api test\EEC_ICT_Api\EEC_ICT.Data\bin\Debug\log4net.xml
+D:\Pham Hoang Phuc\ICT\api test\EEC_ICT_Api\EEC_ICT.Data\obj\Debug\EEC_ICT.Data.csproj.AssemblyReference.cache
+D:\Pham Hoang Phuc\ICT\api test\EEC_ICT_Api\EEC_ICT.Data\obj\Debug\EEC_ICT.Data.csproj.CoreCompileInputs.cache
+D:\Pham Hoang Phuc\ICT\api test\EEC_ICT_Api\EEC_ICT.Data\obj\Debug\EEC_ICT.Data.csproj.CopyComplete
+D:\Pham Hoang Phuc\ICT\api test\EEC_ICT_Api\EEC_ICT.Data\obj\Debug\EEC_ICT.Data.dll
+D:\Pham Hoang Phuc\ICT\api test\EEC_ICT_Api\EEC_ICT.Data\obj\Debug\EEC_ICT.Data.pdb

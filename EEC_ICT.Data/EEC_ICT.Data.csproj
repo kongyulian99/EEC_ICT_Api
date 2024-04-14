@@ -7,8 +7,8 @@
     <ProjectGuid>{6524DC84-9A4E-4134-91BF-64D8A04CA78B}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>QLyCtacDoanhTrai.Data</RootNamespace>
-    <AssemblyName>QLyCtacDoanhTrai.Data</AssemblyName>
+    <RootNamespace>EEC_ICT.Data</RootNamespace>
+    <AssemblyName>EEC_ICT.Data</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
