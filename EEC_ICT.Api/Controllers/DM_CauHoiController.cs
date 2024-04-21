@@ -128,12 +128,12 @@ namespace EEC_ICT.Api.Controllers
             Logger.Info("[retval]" + retval.JSONSerializer());
             return retval;
         }
-
+                                        
         [HttpPost]
         [Route("checkcorrect")]
         public object CheckCorrect(DM_DapAnCheckCorrect request)
         {
-            Logger.Info("[DM_CauHoi_Insert]");
+            Logger.Info("[DM_CauHoi_CheckCorrect]");
             var retval = new ReturnInfo
             {
                 Data = "",

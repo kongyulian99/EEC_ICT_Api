@@ -25,3 +25,12 @@ D:\git ict\EEC_ICT_Api\EEC_ICT.Data\obj\Debug\EEC_ICT.Data.csproj.CoreCompileInp
 D:\git ict\EEC_ICT_Api\EEC_ICT.Data\obj\Debug\EEC_ICT.Data.csproj.CopyComplete
 D:\git ict\EEC_ICT_Api\EEC_ICT.Data\obj\Debug\QLyCtacDoanhTrai.Data.dll
 D:\git ict\EEC_ICT_Api\EEC_ICT.Data\obj\Debug\QLyCtacDoanhTrai.Data.pdb
+C:\git ict\EEC_ICT_Api\EEC_ICT.Data\bin\Debug\QLyCtacDoanhTrai.Data.dll
+C:\git ict\EEC_ICT_Api\EEC_ICT.Data\bin\Debug\QLyCtacDoanhTrai.Data.pdb
+C:\git ict\EEC_ICT_Api\EEC_ICT.Data\bin\Debug\log4net.dll
+C:\git ict\EEC_ICT_Api\EEC_ICT.Data\bin\Debug\log4net.xml
+C:\git ict\EEC_ICT_Api\EEC_ICT.Data\obj\Debug\EEC_ICT.Data.csproj.AssemblyReference.cache
+C:\git ict\EEC_ICT_Api\EEC_ICT.Data\obj\Debug\EEC_ICT.Data.csproj.CoreCompileInputs.cache
+C:\git ict\EEC_ICT_Api\EEC_ICT.Data\obj\Debug\EEC_ICT.Data.csproj.CopyComplete
+C:\git ict\EEC_ICT_Api\EEC_ICT.Data\obj\Debug\QLyCtacDoanhTrai.Data.dll
+C:\git ict\EEC_ICT_Api\EEC_ICT.Data\obj\Debug\QLyCtacDoanhTrai.Data.pdb

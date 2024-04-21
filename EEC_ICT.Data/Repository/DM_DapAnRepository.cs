@@ -38,7 +38,7 @@ namespace EEC_ICT.Data.Repository
         {
             var parameters = new List<SqlParameter>()
             {
-                new SqlParameter("@iAnswerId", SqlDbType.Int){ Value = ParameterDirection.Output},
+                new SqlParameter("@iAnswerId", SqlDbType.Int){ Value = entity.AnswerId},
                 new SqlParameter("@iQuestionId", SqlDbType.Int) { Value = entity.QuestionId},
                 new SqlParameter("@iErrorCode", SqlDbType.Int) { Direction = ParameterDirection.Output }
             };
