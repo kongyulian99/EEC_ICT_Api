@@ -34,6 +34,17 @@ namespace EEC_ICT.Data.Repository
             SqlHelper.ExecuteNonQuery(CommonFunctions.GetConnectionString(), CommandType.StoredProcedure, "pr_DM_DapAn_Insert", parameters.ToArray());
             return parameters[0].Value.ToString();
         }
+        public string CheckCorrect(DM_DapAnCheckCorrect entity)
+        {
+            var parameters = new List<SqlParameter>()
+            {
+                new SqlParameter("@iAnswerId", SqlDbType.Int){ Value = entity.AnswerId},
+                new SqlParameter("@iQuestionId", SqlDbType.Int) { Value = entity.QuestionId},
+                new SqlParameter("@iErrorCode", SqlDbType.Int) { Direction = ParameterDirection.Output }
+            };
+            SqlHelper.ExecuteNonQuery(CommonFunctions.GetConnectionString(), CommandType.StoredProcedure, "pr_DM_DapAn_Insert", parameters.ToArray());
+            return parameters[0].Value.ToString();
+        }
 
         public string CheckCorrect(DM_DapAnCheckCorrect entity)
         {

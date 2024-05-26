@@ -11,6 +11,7 @@ namespace EEC_ICT.Data.Models
         public int QuestionId { get; set; }
         public string Question { get; set; }
         public string GraphUrl { get; set; }
+        
         //public int CorrectAnswerId { get; set; }
         public int TopicId { get; set; }
         public List<DM_DapAn> ChoiceList { get; set; }

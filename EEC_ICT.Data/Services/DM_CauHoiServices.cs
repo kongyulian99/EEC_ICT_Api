@@ -28,6 +28,11 @@ namespace EEC_ICT.Data.Services
             return rep.Insert(entity);
         }
 
+        public static string CheckCorrect(DM_DapAnCheckCorrect entity)
+        {
+            return rep.CheckCorrect(entity);
+        }
+
         public static string Update(DM_CauHoi entity)
         {
             return rep.Update(entity);

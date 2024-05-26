@@ -10,5 +10,6 @@ namespace EEC_ICT.Data.Models
     {
         public int AnswerId { get; set; }
         public int QuestionId { get; set; }
+        //public bool IsCorrect { get; set; }
     }
 }
