@@ -290,7 +290,6 @@ D:\Workspace\Personal\Teach\ICT-Project-M1\FinalProject\Api\EEC_ICT.Api\bin\Micr
 D:\Workspace\Personal\Teach\ICT-Project-M1\FinalProject\Api\EEC_ICT.Api\bin\Microsoft.Web.Infrastructure.dll
 D:\Workspace\Personal\Teach\ICT-Project-M1\FinalProject\Api\EEC_ICT.Api\bin\Newtonsoft.Json.dll
 D:\Workspace\Personal\Teach\ICT-Project-M1\FinalProject\Api\EEC_ICT.Api\bin\Owin.dll
-D:\Workspace\Personal\Teach\ICT-Project-M1\FinalProject\Api\EEC_ICT.Api\bin\QLyCtacDoanhTrai.Data.dll
 D:\Workspace\Personal\Teach\ICT-Project-M1\FinalProject\Api\EEC_ICT.Api\bin\Spire.Doc.dll
 D:\Workspace\Personal\Teach\ICT-Project-M1\FinalProject\Api\EEC_ICT.Api\bin\System.IdentityModel.Tokens.Jwt.dll
 D:\Workspace\Personal\Teach\ICT-Project-M1\FinalProject\Api\EEC_ICT.Api\bin\System.Net.Http.Formatting.dll
@@ -309,7 +308,6 @@ D:\Workspace\Personal\Teach\ICT-Project-M1\FinalProject\Api\EEC_ICT.Api\bin\Syst
 D:\Workspace\Personal\Teach\ICT-Project-M1\FinalProject\Api\EEC_ICT.Api\bin\System.Web.WebPages.Razor.dll
 D:\Workspace\Personal\Teach\ICT-Project-M1\FinalProject\Api\EEC_ICT.Api\bin\WebGrease.dll
 D:\Workspace\Personal\Teach\ICT-Project-M1\FinalProject\Api\EEC_ICT.Api\bin\log4net.dll
-D:\Workspace\Personal\Teach\ICT-Project-M1\FinalProject\Api\EEC_ICT.Api\bin\QLyCtacDoanhTrai.Data.pdb
 D:\Workspace\Personal\Teach\ICT-Project-M1\FinalProject\Api\EEC_ICT.Api\bin\BitMiracle.Docotic.Pdf.xml
 D:\Workspace\Personal\Teach\ICT-Project-M1\FinalProject\Api\EEC_ICT.Api\bin\DocumentFormat.OpenXml.xml
 D:\Workspace\Personal\Teach\ICT-Project-M1\FinalProject\Api\EEC_ICT.Api\bin\EPPlus.xml
@@ -673,3 +671,5 @@ D:\Pham Hoang Phuc\ICT\api test\EEC_ICT_Api\EEC_ICT.Api\obj\Debug\EEC_ICT.Api.cs
 D:\Pham Hoang Phuc\ICT\api test\EEC_ICT_Api\EEC_ICT.Api\obj\Debug\EEC_ICT.Api.csproj.CopyComplete
 D:\Pham Hoang Phuc\ICT\api test\EEC_ICT_Api\EEC_ICT.Api\obj\Debug\EEC_ICT.Api.dll
 D:\Pham Hoang Phuc\ICT\api test\EEC_ICT_Api\EEC_ICT.Api\obj\Debug\EEC_ICT.Api.pdb
+D:\Workspace\Personal\Teach\ICT-Project-M1\FinalProject\Api\EEC_ICT.Api\bin\EEC_ICT.Data.dll
+D:\Workspace\Personal\Teach\ICT-Project-M1\FinalProject\Api\EEC_ICT.Api\bin\EEC_ICT.Data.pdb

@@ -17,7 +17,7 @@ namespace EEC_ICT.Api.Controllers
         // READ
         [HttpGet]
         [Route("selectall")]
-        public object SelectAll(string filter, int pageIndex, int pageSize)
+        public object SelectAll(string filter, int pageIndex, int pageSize, int topicId)
         {
             Logger.Info("[DM_CauHoi_SelectAll]");
             var retval = new ReturnInfo
@@ -30,6 +30,9 @@ namespace EEC_ICT.Api.Controllers
             try
             {
                 var data = DM_CauHoiServices.SelectAll();
+
+                data = data.FindAll(o => o.TopicId == topicId).ToList();
+
                 // select thong tin dao tao
                 for(var i=0; i<data.Count(); i++)
                 {
