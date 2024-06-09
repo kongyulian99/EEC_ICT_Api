@@ -1,48 +1,8 @@
-D:\Workspace\Personal\Teach\ICT-Project-M1\FinalProject\QLMaDinhDanh\Api\EEC_ICT.Data\bin\Debug\QLyCtacDoanhTrai.Data.dll
-D:\Workspace\Personal\Teach\ICT-Project-M1\FinalProject\QLMaDinhDanh\Api\EEC_ICT.Data\bin\Debug\QLyCtacDoanhTrai.Data.pdb
-D:\Workspace\Personal\Teach\ICT-Project-M1\FinalProject\QLMaDinhDanh\Api\EEC_ICT.Data\bin\Debug\log4net.dll
-D:\Workspace\Personal\Teach\ICT-Project-M1\FinalProject\QLMaDinhDanh\Api\EEC_ICT.Data\bin\Debug\log4net.xml
-D:\Workspace\Personal\Teach\ICT-Project-M1\FinalProject\QLMaDinhDanh\Api\EEC_ICT.Data\obj\Debug\EEC_ICT.Data.csproj.AssemblyReference.cache
-D:\Workspace\Personal\Teach\ICT-Project-M1\FinalProject\QLMaDinhDanh\Api\EEC_ICT.Data\obj\Debug\EEC_ICT.Data.csproj.CoreCompileInputs.cache
-D:\Workspace\Personal\Teach\ICT-Project-M1\FinalProject\QLMaDinhDanh\Api\EEC_ICT.Data\obj\Debug\EEC_ICT.Data.csproj.CopyComplete
-D:\Workspace\Personal\Teach\ICT-Project-M1\FinalProject\QLMaDinhDanh\Api\EEC_ICT.Data\obj\Debug\QLyCtacDoanhTrai.Data.dll
-D:\Workspace\Personal\Teach\ICT-Project-M1\FinalProject\QLMaDinhDanh\Api\EEC_ICT.Data\obj\Debug\QLyCtacDoanhTrai.Data.pdb
-D:\Workspace\Personal\Teach\ICT-Project-M1\FinalProject\Api\EEC_ICT.Data\bin\Debug\QLyCtacDoanhTrai.Data.dll
-D:\Workspace\Personal\Teach\ICT-Project-M1\FinalProject\Api\EEC_ICT.Data\bin\Debug\QLyCtacDoanhTrai.Data.pdb
-D:\Workspace\Personal\Teach\ICT-Project-M1\FinalProject\Api\EEC_ICT.Data\bin\Debug\log4net.dll
-D:\Workspace\Personal\Teach\ICT-Project-M1\FinalProject\Api\EEC_ICT.Data\bin\Debug\log4net.xml
-D:\Workspace\Personal\Teach\ICT-Project-M1\FinalProject\Api\EEC_ICT.Data\obj\Debug\EEC_ICT.Data.csproj.AssemblyReference.cache
-D:\Workspace\Personal\Teach\ICT-Project-M1\FinalProject\Api\EEC_ICT.Data\obj\Debug\EEC_ICT.Data.csproj.CoreCompileInputs.cache
-D:\Workspace\Personal\Teach\ICT-Project-M1\FinalProject\Api\EEC_ICT.Data\obj\Debug\EEC_ICT.Data.csproj.CopyComplete
-D:\Workspace\Personal\Teach\ICT-Project-M1\FinalProject\Api\EEC_ICT.Data\obj\Debug\QLyCtacDoanhTrai.Data.dll
-D:\Workspace\Personal\Teach\ICT-Project-M1\FinalProject\Api\EEC_ICT.Data\obj\Debug\QLyCtacDoanhTrai.Data.pdb
-<<<<<<< HEAD
-D:\git ict\EEC_ICT_Api\EEC_ICT.Data\bin\Debug\QLyCtacDoanhTrai.Data.dll
-D:\git ict\EEC_ICT_Api\EEC_ICT.Data\bin\Debug\QLyCtacDoanhTrai.Data.pdb
-D:\git ict\EEC_ICT_Api\EEC_ICT.Data\bin\Debug\log4net.dll
-D:\git ict\EEC_ICT_Api\EEC_ICT.Data\bin\Debug\log4net.xml
-D:\git ict\EEC_ICT_Api\EEC_ICT.Data\obj\Debug\EEC_ICT.Data.csproj.AssemblyReference.cache
-D:\git ict\EEC_ICT_Api\EEC_ICT.Data\obj\Debug\EEC_ICT.Data.csproj.CoreCompileInputs.cache
-D:\git ict\EEC_ICT_Api\EEC_ICT.Data\obj\Debug\EEC_ICT.Data.csproj.CopyComplete
-D:\git ict\EEC_ICT_Api\EEC_ICT.Data\obj\Debug\QLyCtacDoanhTrai.Data.dll
-D:\git ict\EEC_ICT_Api\EEC_ICT.Data\obj\Debug\QLyCtacDoanhTrai.Data.pdb
-C:\git ict\EEC_ICT_Api\EEC_ICT.Data\bin\Debug\QLyCtacDoanhTrai.Data.dll
-C:\git ict\EEC_ICT_Api\EEC_ICT.Data\bin\Debug\QLyCtacDoanhTrai.Data.pdb
-C:\git ict\EEC_ICT_Api\EEC_ICT.Data\bin\Debug\log4net.dll
-C:\git ict\EEC_ICT_Api\EEC_ICT.Data\bin\Debug\log4net.xml
-C:\git ict\EEC_ICT_Api\EEC_ICT.Data\obj\Debug\EEC_ICT.Data.csproj.AssemblyReference.cache
-C:\git ict\EEC_ICT_Api\EEC_ICT.Data\obj\Debug\EEC_ICT.Data.csproj.CoreCompileInputs.cache
-C:\git ict\EEC_ICT_Api\EEC_ICT.Data\obj\Debug\EEC_ICT.Data.csproj.CopyComplete
-C:\git ict\EEC_ICT_Api\EEC_ICT.Data\obj\Debug\QLyCtacDoanhTrai.Data.dll
-C:\git ict\EEC_ICT_Api\EEC_ICT.Data\obj\Debug\QLyCtacDoanhTrai.Data.pdb
-=======
-D:\Pham Hoang Phuc\ICT\api test\EEC_ICT_Api\EEC_ICT.Data\bin\Debug\EEC_ICT.Data.dll
-D:\Pham Hoang Phuc\ICT\api test\EEC_ICT_Api\EEC_ICT.Data\bin\Debug\EEC_ICT.Data.pdb
-D:\Pham Hoang Phuc\ICT\api test\EEC_ICT_Api\EEC_ICT.Data\bin\Debug\log4net.dll
-D:\Pham Hoang Phuc\ICT\api test\EEC_ICT_Api\EEC_ICT.Data\bin\Debug\log4net.xml
-D:\Pham Hoang Phuc\ICT\api test\EEC_ICT_Api\EEC_ICT.Data\obj\Debug\EEC_ICT.Data.csproj.AssemblyReference.cache
-D:\Pham Hoang Phuc\ICT\api test\EEC_ICT_Api\EEC_ICT.Data\obj\Debug\EEC_ICT.Data.csproj.CoreCompileInputs.cache
-D:\Pham Hoang Phuc\ICT\api test\EEC_ICT_Api\EEC_ICT.Data\obj\Debug\EEC_ICT.Data.csproj.CopyComplete
-D:\Pham Hoang Phuc\ICT\api test\EEC_ICT_Api\EEC_ICT.Data\obj\Debug\EEC_ICT.Data.dll
-D:\Pham Hoang Phuc\ICT\api test\EEC_ICT_Api\EEC_ICT.Data\obj\Debug\EEC_ICT.Data.pdb
->>>>>>> phuc
+D:\Pham Hoang Phuc\ICT\EEC_ICT_Api\EEC_ICT.Data\bin\Debug\EEC_ICT.Data.dll
+D:\Pham Hoang Phuc\ICT\EEC_ICT_Api\EEC_ICT.Data\bin\Debug\EEC_ICT.Data.pdb
+D:\Pham Hoang Phuc\ICT\EEC_ICT_Api\EEC_ICT.Data\bin\Debug\log4net.dll
+D:\Pham Hoang Phuc\ICT\EEC_ICT_Api\EEC_ICT.Data\bin\Debug\log4net.xml
+D:\Pham Hoang Phuc\ICT\EEC_ICT_Api\EEC_ICT.Data\obj\Debug\EEC_ICT.Data.csproj.CoreCompileInputs.cache
+D:\Pham Hoang Phuc\ICT\EEC_ICT_Api\EEC_ICT.Data\obj\Debug\EEC_ICT.Data.csproj.CopyComplete
+D:\Pham Hoang Phuc\ICT\EEC_ICT_Api\EEC_ICT.Data\obj\Debug\EEC_ICT.Data.dll
+D:\Pham Hoang Phuc\ICT\EEC_ICT_Api\EEC_ICT.Data\obj\Debug\EEC_ICT.Data.pdb

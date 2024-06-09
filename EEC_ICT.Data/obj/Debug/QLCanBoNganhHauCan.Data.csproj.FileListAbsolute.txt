@@ -1,9 +1,0 @@
-D:\Workspace\PHTQLDH\2023\Code\QLCanBoNganhHauCan\Api\QLCanBoNganhHauCan.Data\bin\Debug\QLyCtacDoanhTrai.Data.dll
-D:\Workspace\PHTQLDH\2023\Code\QLCanBoNganhHauCan\Api\QLCanBoNganhHauCan.Data\bin\Debug\QLyCtacDoanhTrai.Data.pdb
-D:\Workspace\PHTQLDH\2023\Code\QLCanBoNganhHauCan\Api\QLCanBoNganhHauCan.Data\bin\Debug\log4net.dll
-D:\Workspace\PHTQLDH\2023\Code\QLCanBoNganhHauCan\Api\QLCanBoNganhHauCan.Data\bin\Debug\log4net.xml
-D:\Workspace\PHTQLDH\2023\Code\QLCanBoNganhHauCan\Api\QLCanBoNganhHauCan.Data\obj\Debug\QLCanBoNganhHauCan.Data.csproj.AssemblyReference.cache
-D:\Workspace\PHTQLDH\2023\Code\QLCanBoNganhHauCan\Api\QLCanBoNganhHauCan.Data\obj\Debug\QLCanBoNganhHauCan.Data.csproj.CoreCompileInputs.cache
-D:\Workspace\PHTQLDH\2023\Code\QLCanBoNganhHauCan\Api\QLCanBoNganhHauCan.Data\obj\Debug\QLCanBoNganhHauCan.Data.csproj.CopyComplete
-D:\Workspace\PHTQLDH\2023\Code\QLCanBoNganhHauCan\Api\QLCanBoNganhHauCan.Data\obj\Debug\QLyCtacDoanhTrai.Data.dll
-D:\Workspace\PHTQLDH\2023\Code\QLCanBoNganhHauCan\Api\QLCanBoNganhHauCan.Data\obj\Debug\QLyCtacDoanhTrai.Data.pdb
