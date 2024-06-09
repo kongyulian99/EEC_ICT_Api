@@ -1,6 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<parameters>
-  <parameter name="QLCanBoHauCan-Web.config Connection String" description="QLCanBoHauCan Connection String used in web.config by the application to access the database." defaultValue="Data Source=eec-database.database.windows.net;Initial Catalog=EEC_ICT;Persist Security Info=True;User ID=eec;Password=sa@123456" tags="SqlConnectionString">
-    <parameterEntry kind="XmlFile" scope="D:\\Workspace\\Personal\\Teach\\ICT-Project-M1\\FinalProject\\Api\\EEC_ICT\.Api\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='QLCanBoHauCan']/@connectionString" />
-  </parameter>
-</parameters>
