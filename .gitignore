@@ -2,3 +2,4 @@ packages/
 .git/
 .vs/
 EEC_ICT.Api/bin
+EEC_ICT.Api/obj

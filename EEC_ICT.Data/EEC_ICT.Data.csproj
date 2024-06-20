@@ -58,10 +58,7 @@
     <Compile Include="Models\Command.cs" />
     <Compile Include="Models\CommandAssign.cs" />
     <Compile Include="Models\CommandInFunction.cs" />
-<<<<<<< HEAD
-=======
     <Compile Include="Models\DM_DapAnCheckCorrect_Result.cs" />
->>>>>>> origin/duong
     <Compile Include="Models\DM_DapAnCheckCorrect.cs" />
     <Compile Include="Models\DM_DapAn.cs" />
     <Compile Include="Models\DM_Topic.cs" />
