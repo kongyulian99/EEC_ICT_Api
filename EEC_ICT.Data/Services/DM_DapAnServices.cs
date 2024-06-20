@@ -27,11 +27,6 @@ namespace EEC_ICT.Data.Services
             return rep.CheckCorrect(entity);
         }
 
-        public static string CheckCorrect(DM_DapAnCheckCorrect entity)
-        {
-            return rep.CheckCorrect(entity);
-        }
-
         public static string Update(DM_DapAn entity)
         {
             return rep.Update(entity);

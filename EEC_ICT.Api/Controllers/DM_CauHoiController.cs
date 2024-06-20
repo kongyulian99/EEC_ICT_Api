@@ -35,11 +35,11 @@ namespace EEC_ICT.Api.Controllers
                 {
                     data[i].ChoiceList = DM_DapAnServices.SelectAllWQuestionId(data[i].QuestionId);
                 }
-                
-                //if (!string.IsNullOrEmpty(filter))
-                //{
-                //    data = data.Where(o => UtilityServices.convertToUnSign(o.TenCapBac).IndexOf(UtilityServices.convertToUnSign(filter), StringComparison.CurrentCultureIgnoreCase) >= 0).ToList();
-                //}
+
+                if (!string.IsNullOrEmpty(filter))
+                {
+                    data = data.Where(o => UtilityServices.convertToUnSign(o.Question).IndexOf(UtilityServices.convertToUnSign(filter), StringComparison.CurrentCultureIgnoreCase) >= 0).ToList();
+                }
                 retval.Pagination.TotalRows = data.Count;
                 if (pageSize > 0)
                 {
