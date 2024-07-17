@@ -1,0 +1,9 @@
+D:\Workspace\Teach\ICT\FinalProject\Api\EEC_ICT.Data\bin\Release\EEC_ICT.Data.dll
+D:\Workspace\Teach\ICT\FinalProject\Api\EEC_ICT.Data\bin\Release\EEC_ICT.Data.pdb
+D:\Workspace\Teach\ICT\FinalProject\Api\EEC_ICT.Data\bin\Release\log4net.dll
+D:\Workspace\Teach\ICT\FinalProject\Api\EEC_ICT.Data\bin\Release\log4net.xml
+D:\Workspace\Teach\ICT\FinalProject\Api\EEC_ICT.Data\obj\Release\EEC_ICT.Data.csproj.AssemblyReference.cache
+D:\Workspace\Teach\ICT\FinalProject\Api\EEC_ICT.Data\obj\Release\EEC_ICT.Data.csproj.CoreCompileInputs.cache
+D:\Workspace\Teach\ICT\FinalProject\Api\EEC_ICT.Data\obj\Release\EEC_ICT..40FDB892.Up2Date
+D:\Workspace\Teach\ICT\FinalProject\Api\EEC_ICT.Data\obj\Release\EEC_ICT.Data.dll
+D:\Workspace\Teach\ICT\FinalProject\Api\EEC_ICT.Data\obj\Release\EEC_ICT.Data.pdb
