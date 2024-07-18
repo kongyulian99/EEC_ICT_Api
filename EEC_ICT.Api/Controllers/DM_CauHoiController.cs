@@ -17,7 +17,7 @@ namespace EEC_ICT.Api.Controllers
         // READ
         [HttpGet]
         [Route("selectall")]
-        public object SelectAll(string filter, int pageIndex, int pageSize)
+        public object SelectAll(string filter, int pageIndex, int pageSize, int topicId)
         {
             Logger.Info("[DM_CauHoi_SelectAll]");
             var retval = new ReturnInfo
@@ -30,6 +30,11 @@ namespace EEC_ICT.Api.Controllers
             try
             {
                 var data = DM_CauHoiServices.SelectAll();
+
+                if (topicId > 0) { 
+                    data = data.FindAll(o => o.TopicId == topicId);
+                }
+
                 // select thong tin dao tao
                 for(var i=0; i<data.Count(); i++)
                 {
@@ -80,7 +85,7 @@ namespace EEC_ICT.Api.Controllers
             return retval;
         }
 
-        //CREAT
+        //CREATE
         [HttpPost]
         [Route("insert")]
         public object Insert(DM_CauHoi request)
@@ -131,7 +136,7 @@ namespace EEC_ICT.Api.Controllers
                                         
         [HttpPost]
         [Route("checkcorrect")]
-        public object CheckCorrect(List<DM_DapAnCheckCorrect> listRequest)
+        public object CheckCorrect(List<DM_DapAnCheckCorrect> listRequest, string userId)
         {
             Logger.Info("[DM_CauHoi_CheckCorrect]");
             var retval = new ReturnInfo
@@ -150,7 +155,15 @@ namespace EEC_ICT.Api.Controllers
                     var t = DM_CauHoiServices.CheckCorrect(listRequest[i]);
                     ketQua.IsCorrect = DM_CauHoiServices.CheckCorrect(listRequest[i]) == "True" ? true: false;
                     listKetQua.Add(ketQua);
+
+                    var testResult = new TestResult();
+                    testResult.UserId = userId;
+                    testResult.QuestionId = listRequest[i].QuestionId;
+                    testResult.Result = ketQua.IsCorrect;
+                    testResult.TestDate = DateTime.Now;
+                    TestResultServices.Insert(testResult);
                 }
+
                 retval.Data = listKetQua;
                 retval.Status = new StatusReturn { Code = 1, Message = "Thành công" };
             }

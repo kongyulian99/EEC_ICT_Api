@@ -16,7 +16,7 @@ namespace EEC_ICT.Data.Common
         //================================================================================
         public static string GetConnectionString()
         {
-            return ConfigurationManager.ConnectionStrings["QLCanBoHauCan"].ConnectionString;
+            return ConfigurationManager.ConnectionStrings["EEC_ICT"].ConnectionString;
         }
 
         //================================================================================
