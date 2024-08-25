@@ -9,21 +9,21 @@ using System.Threading.Tasks;
 
 namespace EEC_ICT.Data.Services
 {
-    public class TestResultServices
+    public class TestResultsServices
     {
         private static TestResultRepository rep = new TestResultRepository();
 
-        public static List<TestResult> SelectAll()
+        public static List<TestResults> SelectAll()
         {
-            return SqlHelper.GetList<TestResult>(rep.SelectAll());
+            return SqlHelper.GetList<TestResults>(rep.SelectAll());
         }
 
-        public static TestResult SelectOne(int questionId)
+        public static TestResults SelectOne(int questionId)
         {
-            return SqlHelper.GetInfo<TestResult>(rep.SelectOne(questionId));
+            return SqlHelper.GetInfo<TestResults>(rep.SelectOne(questionId));
         }
 
-        public static string Insert(TestResult entity)
+        public static string Insert(TestResults entity)
         {
             return rep.Insert(entity);
         }

@@ -7,3 +7,12 @@ D:\Workspace\Teach\ICT\FinalProject\Api\EEC_ICT.Data\obj\Debug\EEC_ICT.Data.cspr
 D:\Workspace\Teach\ICT\FinalProject\Api\EEC_ICT.Data\obj\Debug\EEC_ICT..40FDB892.Up2Date
 D:\Workspace\Teach\ICT\FinalProject\Api\EEC_ICT.Data\obj\Debug\EEC_ICT.Data.dll
 D:\Workspace\Teach\ICT\FinalProject\Api\EEC_ICT.Data\obj\Debug\EEC_ICT.Data.pdb
+D:\Pham Hoang Phuc\ICT\EEC_ICT_Api\EEC_ICT.Data\obj\Debug\EEC_ICT.Data.csproj.AssemblyReference.cache
+D:\Pham Hoang Phuc\ICT\EEC_ICT_Api\EEC_ICT.Data\obj\Debug\EEC_ICT.Data.csproj.CoreCompileInputs.cache
+D:\Pham Hoang Phuc\ICT\EEC_ICT_Api\EEC_ICT.Data\obj\Debug\EEC_ICT.Data.dll
+D:\Pham Hoang Phuc\ICT\EEC_ICT_Api\EEC_ICT.Data\obj\Debug\EEC_ICT.Data.pdb
+D:\Pham Hoang Phuc\ICT\EEC_ICT_Api\EEC_ICT.Data\bin\Debug\EEC_ICT.Data.dll
+D:\Pham Hoang Phuc\ICT\EEC_ICT_Api\EEC_ICT.Data\bin\Debug\EEC_ICT.Data.pdb
+D:\Pham Hoang Phuc\ICT\EEC_ICT_Api\EEC_ICT.Data\bin\Debug\log4net.dll
+D:\Pham Hoang Phuc\ICT\EEC_ICT_Api\EEC_ICT.Data\bin\Debug\log4net.xml
+D:\Pham Hoang Phuc\ICT\EEC_ICT_Api\EEC_ICT.Data\obj\Debug\EEC_ICT.Data.csproj.CopyComplete

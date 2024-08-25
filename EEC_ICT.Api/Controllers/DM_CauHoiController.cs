@@ -156,12 +156,12 @@ namespace EEC_ICT.Api.Controllers
                     ketQua.IsCorrect = DM_CauHoiServices.CheckCorrect(listRequest[i]) == "True" ? true: false;
                     listKetQua.Add(ketQua);
 
-                    var testResult = new TestResult();
+                    var testResult = new TestResults();
                     testResult.UserId = userId;
                     testResult.QuestionId = listRequest[i].QuestionId;
                     testResult.Result = ketQua.IsCorrect;
                     testResult.TestDate = DateTime.Now;
-                    TestResultServices.Insert(testResult);
+                    TestResultsServices.Insert(testResult);
                 }
 
                 retval.Data = listKetQua;

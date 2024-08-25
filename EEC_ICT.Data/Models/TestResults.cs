@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace EEC_ICT.Data.Models
 {
-    public class TestResult
+    public class TestResults
     {
         //public int AnswerId { get; set; }
         public long Id { get; set; }

@@ -18,17 +18,17 @@ namespace EEC_ICT.Data.Repository
                 //new SqlParameter("@iTopicId", SqlDbType.Int){ Value = topicId},
                 new SqlParameter("@iErrorCode", SqlDbType.Int) {Direction = ParameterDirection.Output}
             };
-            var data = SqlHelper.ExecuteReader(CommonFunctions.GetConnectionString(), CommandType.StoredProcedure, "pr_TestResult_SelectAll", parameters.ToArray());
+            var data = SqlHelper.ExecuteReader(CommonFunctions.GetConnectionString(), CommandType.StoredProcedure, "pr_TestResults_SelectAll", parameters.ToArray());
             return data;
         }
 
         public IDataReader SelectOne(int questionId)
         {
             var parameter = new SqlParameter("@iQuestionId", SqlDbType.Int) { Value = questionId };
-            return SqlHelper.ExecuteReader(CommonFunctions.GetConnectionString(), CommandType.StoredProcedure, "pr_TestResult_SelectOne", parameter);
+            return SqlHelper.ExecuteReader(CommonFunctions.GetConnectionString(), CommandType.StoredProcedure, "pr_TestResults_SelectOne", parameter);
         }
 
-        public string Insert(TestResult entity)
+        public string Insert(TestResults entity)
         {
             var parameters = new List<SqlParameter>()
             {
@@ -40,7 +40,7 @@ namespace EEC_ICT.Data.Repository
                 new SqlParameter("@daTestDate", SqlDbType.DateTime) { Value = entity.TestDate},
                 new SqlParameter("@iErrorCode", SqlDbType.Int) { Direction = ParameterDirection.Output }
             };
-            SqlHelper.ExecuteNonQuery(CommonFunctions.GetConnectionString(), CommandType.StoredProcedure, "pr_TestResults_Insert", parameters.ToArray());
+            SqlHelper.ExecuteNonQuery(CommonFunctions.GetConnectionString(), CommandType.StoredProcedure, "pr_TestResultss_Insert", parameters.ToArray());
             return parameters[0].Value.ToString();
         }
     }
