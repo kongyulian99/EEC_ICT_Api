@@ -69,11 +69,30 @@ namespace EEC_ICT.Api.Controllers
                 st4.Count = scores.Count(o => o <= 1 && o > 0.8);
                 statistics.Add(st4);
 
-                //if (!string.IsNullOrEmpty(filter))
-                //{
-                //    data = data.Where(o => UtilityServices.convertToUnSign(o.TenCapBac).IndexOf(UtilityServices.convertToUnSign(filter), StringComparison.CurrentCultureIgnoreCase) >= 0).ToList();
-                //}
-                retval.Data = statistics;
+                //Time frame
+                DateTime startDate = new DateTime(2024, 9, 1);
+                DateTime endDate = new DateTime(2024, 9, 10);
+                
+                //filter by date
+                var filteredResults = data
+                    .Where(result => result.TestDate >= startDate && result.TestDate <= endDate);
+                    .ToList();
+
+                // Output the filtered results
+                List<double> filteredscores = new List<double>();
+                foreach (var result in filteredResults)
+                {
+                    double filteredscore = data.Count(o => o.UserId == userIds[i] && o.Result == true) / data.Count(record => record.UserId == userIds[i]);
+                    filteredscores.Add(filteredscore);
+                }
+
+
+
+                    //if (!string.IsNullOrEmpty(filter))
+                    //{
+                    //    data = data.Where(o => UtilityServices.convertToUnSign(o.TenCapBac).IndexOf(UtilityServices.convertToUnSign(filter), StringComparison.CurrentCultureIgnoreCase) >= 0).ToList();
+                    //}
+                    retval.Data = statistics;
                 retval.Status = new StatusReturn { Code = 1, Message = "Thành công" };
             }
             catch (Exception ex)
