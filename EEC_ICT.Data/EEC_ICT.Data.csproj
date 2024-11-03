@@ -58,6 +58,7 @@
     <Compile Include="Models\Command.cs" />
     <Compile Include="Models\CommandAssign.cs" />
     <Compile Include="Models\CommandInFunction.cs" />
+    <Compile Include="Models\DM_DeThi.cs" />
     <Compile Include="Models\ResultStatistic.cs" />
     <Compile Include="Models\TestResults.cs" />
     <Compile Include="Models\DM_DapAnCheckCorrect_Result.cs" />
@@ -86,6 +87,8 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repository\CommandInFunctionRepository.cs" />
     <Compile Include="Repository\CommandRepository.cs" />
+    <Compile Include="Repository\DM_DeThiRepository.cs" />
+    <Compile Include="Repository\DM_TestGroupRepository.cs" />
     <Compile Include="Repository\DM_TestResultsRepository.cs" />
     <Compile Include="Repository\TestResultRepository.cs" />
     <Compile Include="Repository\DM_DapAnRepository.cs" />
@@ -100,6 +103,8 @@
     <Compile Include="Repository\UsersRepository.cs" />
     <Compile Include="Services\CommandInFunctionServices.cs" />
     <Compile Include="Services\CommandServices.cs" />
+    <Compile Include="Services\DM_DeThiServices.cs" />
+    <Compile Include="Services\DM_TestGroupServices.cs" />
     <Compile Include="Services\TestResultsServices.cs" />
     <Compile Include="Services\DM_DapAnServices.cs" />
     <Compile Include="Services\DM_TopicServices.cs" />

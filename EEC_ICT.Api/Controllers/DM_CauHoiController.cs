@@ -29,7 +29,7 @@ namespace EEC_ICT.Api.Controllers
             
             try
             {
-                var data = DM_TestGroupServices.SelectAll();
+                var data = DM_CauHoiServices.SelectAll();
 
                 if (topicId > 0) { 
                     data = data.FindAll(o => o.TopicId == topicId);
@@ -74,7 +74,7 @@ namespace EEC_ICT.Api.Controllers
             };
             try
             {
-                retval.Data = DM_TestGroupServices.SelectOne(questionId);
+                retval.Data = DM_CauHoiServices.SelectOne(questionId);
                 retval.Status = new StatusReturn { Code = 1, Message = "Thành công" };
             }
             catch (Exception ex)
@@ -99,7 +99,7 @@ namespace EEC_ICT.Api.Controllers
             };
             try
             {
-                var questionId = DM_TestGroupServices.Insert(request);
+                var questionId = DM_CauHoiServices.Insert(request);
                 if (request.ChoiceList != null)
                 {
                     for (int i = 0; i < request.ChoiceList.Count(); i++)
@@ -152,8 +152,8 @@ namespace EEC_ICT.Api.Controllers
                 {
                     var ketQua = new DM_DapAnCheckCorrect_Result();
                     ketQua.QuestionId = listRequest[i].QuestionId;
-                    var t = DM_TestGroupServices.CheckCorrect(listRequest[i]);
-                    ketQua.IsCorrect = DM_TestGroupServices.CheckCorrect(listRequest[i]) == "True" ? true: false;
+                    var t = DM_CauHoiServices.CheckCorrect(listRequest[i]);
+                    ketQua.IsCorrect = DM_CauHoiServices.CheckCorrect(listRequest[i]) == "True" ? true: false;
                     listKetQua.Add(ketQua);
 
                     var testResult = new TestResults();
@@ -189,7 +189,7 @@ namespace EEC_ICT.Api.Controllers
             };
             try
             {
-                var questionId = int.Parse(DM_TestGroupServices.Update(request));
+                var questionId = int.Parse(DM_CauHoiServices.Update(request));
 
                 if (request.ChoiceList != null)
                 {
@@ -239,7 +239,7 @@ namespace EEC_ICT.Api.Controllers
             };
             try
             {
-                retval.Data = DM_TestGroupServices.Delete(questionId);
+                retval.Data = DM_CauHoiServices.Delete(questionId);
                 retval.Status = new StatusReturn { Code = 1, Message = "Thành công" };
             }
             catch (Exception ex)

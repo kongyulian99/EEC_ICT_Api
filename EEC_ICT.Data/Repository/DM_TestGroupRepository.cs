@@ -8,7 +8,7 @@ using System.Data.SqlClient;
 
 namespace EEC_ICT.Data.Repository
 {
-    public class DM_CauHoiRepository
+    public class DM_TestGroupRepository
     {
         public IDataReader SelectAll()
         {
@@ -18,14 +18,14 @@ namespace EEC_ICT.Data.Repository
                 //new SqlParameter("@iTopicId", SqlDbType.Int){ Value = topicId},
                 new SqlParameter("@iErrorCode", SqlDbType.Int) {Direction = ParameterDirection.Output}
             };
-            var data = SqlHelper.ExecuteReader(CommonFunctions.GetConnectionString(), CommandType.StoredProcedure, "pr_DM_CauHoi_SelectAll", parameters.ToArray());
+            var data = SqlHelper.ExecuteReader(CommonFunctions.GetConnectionString(), CommandType.StoredProcedure, "pr_DM_TestGroup_SelectAll", parameters.ToArray());
             return data;
         }
 
         public IDataReader SelectOne(int questionId)
         {
             var parameter = new SqlParameter("@iQuestionId", SqlDbType.Int) { Value = questionId };
-            return SqlHelper.ExecuteReader(CommonFunctions.GetConnectionString(), CommandType.StoredProcedure, "pr_DM_CauHoi_SelectOne", parameter);
+            return SqlHelper.ExecuteReader(CommonFunctions.GetConnectionString(), CommandType.StoredProcedure, "pr_DM_TestGroup_SelectOne", parameter);
         }
 
         public string Insert(DM_CauHoi entity)
@@ -39,7 +39,7 @@ namespace EEC_ICT.Data.Repository
                 new SqlParameter("@iTopicId", SqlDbType.Int) { Value = entity.TopicId},
                 new SqlParameter("@iErrorCode", SqlDbType.Int) { Direction = ParameterDirection.Output }
             };
-            SqlHelper.ExecuteNonQuery(CommonFunctions.GetConnectionString(), CommandType.StoredProcedure, "pr_DM_CauHoi_Insert", parameters.ToArray());
+            SqlHelper.ExecuteNonQuery(CommonFunctions.GetConnectionString(), CommandType.StoredProcedure, "pr_DM_TestGroup_Insert", parameters.ToArray());
             return parameters[0].Value.ToString();
         }
 
@@ -67,7 +67,7 @@ namespace EEC_ICT.Data.Repository
                 new SqlParameter("@iTopicId", SqlDbType.Int) { Value = entity.TopicId},
                 new SqlParameter("@iErrorCode", SqlDbType.Int) { Direction = ParameterDirection.Output }
             };
-            SqlHelper.ExecuteNonQuery(CommonFunctions.GetConnectionString(), CommandType.StoredProcedure, "pr_DM_CauHoi_Update", parameters.ToArray());
+            SqlHelper.ExecuteNonQuery(CommonFunctions.GetConnectionString(), CommandType.StoredProcedure, "pr_DM_TestGroup_Update", parameters.ToArray());
             return entity.QuestionId.ToString();
         }
 
@@ -78,7 +78,7 @@ namespace EEC_ICT.Data.Repository
                 new SqlParameter("@iQuestionId", SqlDbType.Int){ Value = questionId},
                 new SqlParameter("@iErrorCode", SqlDbType.Int) {Direction = ParameterDirection.Output}
             };
-            SqlHelper.ExecuteNonQuery(CommonFunctions.GetConnectionString(), CommandType.StoredProcedure, "pr_DM_CauHoi_Delete", parameters.ToArray());
+            SqlHelper.ExecuteNonQuery(CommonFunctions.GetConnectionString(), CommandType.StoredProcedure, "pr_DM_TestGroup_Delete", parameters.ToArray());
             return questionId.ToString();
         }
     }

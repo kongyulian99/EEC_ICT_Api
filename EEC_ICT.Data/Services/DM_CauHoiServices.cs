@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace EEC_ICT.Data.Services
 {
-    public class DM_TestGroup
+    public class DM_CauHoiServices
     {
         private static DM_CauHoiRepository rep = new DM_CauHoiRepository();
 
