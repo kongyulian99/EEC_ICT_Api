@@ -65,7 +65,7 @@ namespace EEC_ICT.Api.Controllers
                 string newPath = baseUrl + newFileName;
                 img.Save(newPath);
                 //return await Task.FromResult(new { url = serverIp + folderPath + newFileName });
-                return await Task.FromResult(new { url = folderPath + newFileName });
+                return await Task.FromResult(new { url = "https://eecictapi.azurewebsites.net/" + folderPath + newFileName });
             }
             catch (Exception exeption)
             {
