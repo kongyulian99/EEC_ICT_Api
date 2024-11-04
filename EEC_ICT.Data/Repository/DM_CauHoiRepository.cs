@@ -10,12 +10,12 @@ namespace EEC_ICT.Data.Repository
 {
     public class DM_CauHoiRepository
     {
-        public IDataReader SelectAll()
+        public IDataReader SelectAll(long idDeThi)
         {
             var parameters = new List<SqlParameter>()
             {
                 //new SqlParameter("@sFilter", SqlDbType.NVarChar, 300){ Value = filter},
-                //new SqlParameter("@iTopicId", SqlDbType.Int){ Value = topicId},
+                new SqlParameter("@lIdDeThi", SqlDbType.Int){ Value = idDeThi},
                 new SqlParameter("@iErrorCode", SqlDbType.Int) {Direction = ParameterDirection.Output}
             };
             var data = SqlHelper.ExecuteReader(CommonFunctions.GetConnectionString(), CommandType.StoredProcedure, "pr_DM_CauHoi_SelectAll", parameters.ToArray());
@@ -37,6 +37,7 @@ namespace EEC_ICT.Data.Repository
                 new SqlParameter("@sGraphUrl", SqlDbType.NVarChar, 200) { Value = entity.GraphUrl},
                 //new SqlParameter("@iCorrectAnswerId", SqlDbType.Int) { Value = entity.CorrectAnswerId},
                 new SqlParameter("@iTopicId", SqlDbType.Int) { Value = entity.TopicId},
+                new SqlParameter("@lIdDeThi", SqlDbType.BigInt) { Value = entity.IdDeThi},
                 new SqlParameter("@iErrorCode", SqlDbType.Int) { Direction = ParameterDirection.Output }
             };
             SqlHelper.ExecuteNonQuery(CommonFunctions.GetConnectionString(), CommandType.StoredProcedure, "pr_DM_CauHoi_Insert", parameters.ToArray());
@@ -65,6 +66,7 @@ namespace EEC_ICT.Data.Repository
                 new SqlParameter("@sGraphUrl", SqlDbType.NVarChar, 200) { Value = entity.GraphUrl},
                 //new SqlParameter("@iCorrectAnswerId", SqlDbType.Int) { Value = entity.CorrectAnswerId},
                 new SqlParameter("@iTopicId", SqlDbType.Int) { Value = entity.TopicId},
+                new SqlParameter("@lIdDeThi", SqlDbType.BigInt) { Value = entity.IdDeThi},
                 new SqlParameter("@iErrorCode", SqlDbType.Int) { Direction = ParameterDirection.Output }
             };
             SqlHelper.ExecuteNonQuery(CommonFunctions.GetConnectionString(), CommandType.StoredProcedure, "pr_DM_CauHoi_Update", parameters.ToArray());

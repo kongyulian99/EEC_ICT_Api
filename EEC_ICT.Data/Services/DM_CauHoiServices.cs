@@ -13,9 +13,9 @@ namespace EEC_ICT.Data.Services
     {
         private static DM_CauHoiRepository rep = new DM_CauHoiRepository();
 
-        public static List<DM_CauHoi> SelectAll()
+        public static List<DM_CauHoi> SelectAll(long idDeThi)
         {
-            return SqlHelper.GetList<DM_CauHoi>(rep.SelectAll());
+            return SqlHelper.GetList<DM_CauHoi>(rep.SelectAll(idDeThi));
         }
 
         public static DM_CauHoi SelectOne(int questionId)

@@ -29,7 +29,7 @@ namespace EEC_ICT.Api.Controllers
             
             try
             {
-                var data = DM_CauHoiServices.SelectAll();
+                var data = DM_CauHoiServices.SelectAll(0);
 
                 if (topicId > 0) { 
                     data = data.FindAll(o => o.TopicId == topicId);

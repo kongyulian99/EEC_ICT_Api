@@ -24,8 +24,12 @@ namespace EEC_ICT.Data.Repository
 
         public IDataReader SelectOne(int idDeThi)
         {
-            var parameter = new SqlParameter("@lIdDeThi", SqlDbType.Int) { Value = idDeThi };
-            return SqlHelper.ExecuteReader(CommonFunctions.GetConnectionString(), CommandType.StoredProcedure, "pr_DM_DeThi_SelectOne", parameter);
+            var parameters = new List<SqlParameter>()
+            {
+                new SqlParameter("@lIdDeThi", SqlDbType.BigInt){ Value = idDeThi},
+                new SqlParameter("@iErrorCode", SqlDbType.Int) { Direction = ParameterDirection.Output }
+            };
+            return SqlHelper.ExecuteReader(CommonFunctions.GetConnectionString(), CommandType.StoredProcedure, "pr_DM_DeThi_SelectOne", parameters.ToArray());
         }
 
         public string Insert(DM_DeThi entity)

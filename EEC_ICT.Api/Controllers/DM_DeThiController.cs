@@ -17,7 +17,7 @@ namespace EEC_ICT.Api.Controllers
         // READ
         [HttpGet]
         [Route("selectall")]
-        public object SelectAll(string filter, int pageIndex, int pageSize, int topicId)
+        public object SelectAll(string filter, int pageIndex, int pageSize)
         {
             Logger.Info("[DM_DeThi_SelectAll]");
             var retval = new ReturnInfo
@@ -64,12 +64,18 @@ namespace EEC_ICT.Api.Controllers
             };
             try
             {
-                retval.Data = DM_DeThiServices.SelectOne(idDeThi);
+                var deThi = DM_DeThiServices.SelectOne(idDeThi);
+
+                deThi.ListCauHoi = DM_CauHoiServices.SelectAll(idDeThi);
+
+                for (int i = 0; i < deThi.ListCauHoi.Count; i++) {
+                    deThi.ListCauHoi[i].ChoiceList = DM_DapAnServices.SelectAllWQuestionId(deThi.ListCauHoi[i].QuestionId);
+                }
 
                 // TODO
                 // SELECT ALL QUESTION FROM DETHI
 
-
+                retval.Data = deThi;
                 retval.Status = new StatusReturn { Code = 1, Message = "Thành công" };
             }
             catch (Exception ex)
@@ -184,7 +190,19 @@ namespace EEC_ICT.Api.Controllers
             };
             try
             {
-                var questionId = int.Parse(DM_DeThiServices.Update(request));
+                for (int i = 0; i < request.ListCauHoi?.Count; i++) {
+                    request.ListCauHoi[i].IdDeThi = request.IdDeThi;
+                    if (request.ListCauHoi[i].QuestionId > 0) DM_CauHoiServices.Update(request.ListCauHoi[i]);
+                    else request.ListCauHoi[i].QuestionId = int.Parse(DM_CauHoiServices.Insert(request.ListCauHoi[i]));
+
+                    for (int j = 0; j < request.ListCauHoi[i].ChoiceList?.Count; j++) {
+                        request.ListCauHoi[i].ChoiceList[j].QuestionId = request.ListCauHoi[i].QuestionId;
+                        if (request.ListCauHoi[i].ChoiceList[j].AnswerId > 0) DM_DapAnServices.Update(request.ListCauHoi[i].ChoiceList[j]);
+                        else DM_DapAnServices.Insert(request.ListCauHoi[i].ChoiceList[j]);
+                    }
+                }
+
+                string id = DM_DeThiServices.Update(request);
 
                 //if (request.ChoiceList != null)
                 //{
@@ -209,7 +227,7 @@ namespace EEC_ICT.Api.Controllers
                 //    }
                 //}
 
-                retval.Data = questionId;
+                retval.Data = id;
                 retval.Status = new StatusReturn { Code = 1, Message = "Thành công" };
             }
             catch (Exception ex)

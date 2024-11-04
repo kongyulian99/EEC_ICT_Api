@@ -8,7 +8,7 @@ namespace EEC_ICT.Data.Models
 {
     public class DM_DeThi
     {
-        public int IdDeThi { get; set; }
+        public long IdDeThi { get; set; }
         public string TenDeThi { get; set; }
         public string GhiChu { get; set; }
         public List<DM_CauHoi> ListCauHoi { get; set; }

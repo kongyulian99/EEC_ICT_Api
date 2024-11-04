@@ -15,7 +15,7 @@ namespace EEC_ICT.Data.Services
 
         public static List<DM_CauHoi> SelectAll()
         {
-            return SqlHelper.GetList<DM_CauHoi>(rep.SelectAll());
+            return SqlHelper.GetList<DM_CauHoi>(rep.SelectAll(0));
         }
 
         public static DM_CauHoi SelectOne(int questionId)

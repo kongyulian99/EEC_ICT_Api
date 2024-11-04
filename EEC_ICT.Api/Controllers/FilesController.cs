@@ -24,7 +24,7 @@ namespace EEC_ICT.Api.Controllers
     {
         [HttpPost]
         [Route("ckeditor-images")]
-        [Permission]
+        //[Permission]
         public async Task<object> ImageUpload()
         {
             try
