@@ -12,5 +12,7 @@ namespace EEC_ICT.Data.Models
         public string TenDeThi { get; set; }
         public string GhiChu { get; set; }
         public List<DM_CauHoi> ListCauHoi { get; set; }
+        public DateTime StartTime { get; set; }
+        public DateTime EndTime { get; set; }
     }
 }
