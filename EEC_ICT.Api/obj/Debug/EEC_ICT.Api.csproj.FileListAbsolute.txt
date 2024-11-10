@@ -152,7 +152,6 @@ D:\Workspace\Teach\ICT\FinalProject\Api\EEC_ICT.Api\bin\DocumentFormat.OpenXml.d
 D:\Workspace\Teach\ICT\FinalProject\Api\EEC_ICT.Api\bin\EEC_ICT.Data.dll
 D:\Workspace\Teach\ICT\FinalProject\Api\EEC_ICT.Api\bin\EPPlus.dll
 D:\Workspace\Teach\ICT\FinalProject\Api\EEC_ICT.Api\bin\Microsoft.AspNet.SignalR.Core.dll
-D:\Workspace\Teach\ICT\FinalProject\Api\EEC_ICT.Api\bin\Microsoft.AspNet.SignalR.SystemWeb.dll
 D:\Workspace\Teach\ICT\FinalProject\Api\EEC_ICT.Api\bin\Microsoft.Bcl.AsyncInterfaces.dll
 D:\Workspace\Teach\ICT\FinalProject\Api\EEC_ICT.Api\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
 D:\Workspace\Teach\ICT\FinalProject\Api\EEC_ICT.Api\bin\Microsoft.IdentityModel.JsonWebTokens.dll
@@ -189,8 +188,6 @@ D:\Workspace\Teach\ICT\FinalProject\Api\EEC_ICT.Api\bin\DocumentFormat.OpenXml.x
 D:\Workspace\Teach\ICT\FinalProject\Api\EEC_ICT.Api\bin\EPPlus.xml
 D:\Workspace\Teach\ICT\FinalProject\Api\EEC_ICT.Api\bin\Microsoft.AspNet.SignalR.Core.pdb
 D:\Workspace\Teach\ICT\FinalProject\Api\EEC_ICT.Api\bin\Microsoft.AspNet.SignalR.Core.xml
-D:\Workspace\Teach\ICT\FinalProject\Api\EEC_ICT.Api\bin\Microsoft.AspNet.SignalR.SystemWeb.pdb
-D:\Workspace\Teach\ICT\FinalProject\Api\EEC_ICT.Api\bin\Microsoft.AspNet.SignalR.SystemWeb.xml
 D:\Workspace\Teach\ICT\FinalProject\Api\EEC_ICT.Api\bin\Microsoft.Bcl.AsyncInterfaces.xml
 D:\Workspace\Teach\ICT\FinalProject\Api\EEC_ICT.Api\bin\Microsoft.IdentityModel.JsonWebTokens.xml
 D:\Workspace\Teach\ICT\FinalProject\Api\EEC_ICT.Api\bin\Microsoft.IdentityModel.Logging.xml

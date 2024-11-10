@@ -86,6 +86,46 @@ namespace EEC_ICT.Api.Controllers
             return retval;
         }
 
+        [HttpGet]
+        [Route("selectonefortest/{idDeThi}")]
+        public object SelectOneForTest(int idDeThi)
+        {
+            Logger.Info("[DM_DeThi_SelecOneForTest]");
+            var retval = new ReturnInfo
+            {
+                Data = new DM_DeThi(),
+                Pagination = new PaginationInfo(),
+                Status = new StatusReturn { Code = 0, Message = "Không thành công" }
+            };
+            try
+            {
+                var deThi = DM_DeThiServices.SelectOne(idDeThi);
+
+                deThi.ListCauHoi = DM_CauHoiServices.SelectAll(idDeThi);
+
+                for (int i = 0; i < deThi.ListCauHoi.Count; i++)
+                {
+                    deThi.ListCauHoi[i].ChoiceList = DM_DapAnServices.SelectAllWQuestionId(deThi.ListCauHoi[i].QuestionId);
+                    for(int j=0; j < deThi.ListCauHoi[i].ChoiceList.Count; j++)
+                    {
+                        deThi.ListCauHoi[i].ChoiceList[j].IsCorrect = false;
+                    }
+                }
+
+                // TODO
+                // SELECT ALL QUESTION FROM DETHI
+
+                retval.Data = deThi;
+                retval.Status = new StatusReturn { Code = 1, Message = "Thành công" };
+            }
+            catch (Exception ex)
+            {
+                retval.Status = new StatusReturn { Code = -1, Message = ex.Message };
+            }
+            Logger.Info("[retval]" + retval.JSONSerializer());
+            return retval;
+        }
+
         //CREATE
         [HttpPost]
         [Route("insert")]
@@ -228,6 +268,40 @@ namespace EEC_ICT.Api.Controllers
                 //}
 
                 retval.Data = id;
+                retval.Status = new StatusReturn { Code = 1, Message = "Thành công" };
+            }
+            catch (Exception ex)
+            {
+                retval.Status = new StatusReturn { Code = -1, Message = ex.Message };
+            }
+            Logger.Info("[retval]" + retval.JSONSerializer());
+            return retval;
+        }
+
+        [HttpPost]
+        [Route("submit/{userId}")]
+        public object Submit(string userId, DM_DeThi request)
+        {
+            Logger.Info("[DM_DeThi_Update]");
+            var retval = new ReturnInfo
+            {
+                Data = "",
+                Pagination = new PaginationInfo(),
+                Status = new StatusReturn { Code = 0, Message = "Không thành công" }
+            };
+            try
+            {
+                var correctCount = 0;
+                for (int i = 0; i < request.ListCauHoi?.Count; i++)
+                {
+                    var listDapAn = DM_DapAnServices.SelectAllWQuestionId(request.ListCauHoi[i].QuestionId);
+                    var correctAnswerId = listDapAn.Find(o => o.IsCorrect == true).AnswerId;
+                    if (request.ListCauHoi[i].ChoiceList.Find(o => o.IsCorrect == true)?.AnswerId == correctAnswerId) { 
+                        correctCount ++;
+                    }
+                }
+
+                retval.Data = correctCount;
                 retval.Status = new StatusReturn { Code = 1, Message = "Thành công" };
             }
             catch (Exception ex)
