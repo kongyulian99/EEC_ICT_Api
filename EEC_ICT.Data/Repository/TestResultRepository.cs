@@ -22,10 +22,10 @@ namespace EEC_ICT.Data.Repository
             return data;
         }
 
-        public IDataReader SelectOne(int questionId)
+        public IDataReader SelectByUser(string userId)
         {
-            var parameter = new SqlParameter("@iQuestionId", SqlDbType.Int) { Value = questionId };
-            return SqlHelper.ExecuteReader(CommonFunctions.GetConnectionString(), CommandType.StoredProcedure, "pr_TestResults_SelectOne", parameter);
+            var parameter = new SqlParameter("@sUserId", SqlDbType.NVarChar, 128) { Value = userId };
+            return SqlHelper.ExecuteReader(CommonFunctions.GetConnectionString(), CommandType.StoredProcedure, "pr_TestResults_SelectByUser", parameter);
         }
 
         public string Insert(TestResults entity)
@@ -34,13 +34,14 @@ namespace EEC_ICT.Data.Repository
             {
                 new SqlParameter("@lId", SqlDbType.BigInt){ Direction = ParameterDirection.Output},
                 new SqlParameter("@sUserId", SqlDbType.NVarChar, 128) { Value = entity.UserId},
-                new SqlParameter("@iQuestionId", SqlDbType.Int) { Value = entity.QuestionId},
-                new SqlParameter("@bResult", SqlDbType.Bit) { Value = entity.Result},
+                new SqlParameter("@lIdDeThi", SqlDbType.BigInt) { Value = entity.IdDeThi},
+                new SqlParameter("@fScore", SqlDbType.Float) { Value = entity.Score},
                 //new SqlParameter("@iCorrectAnswerId", SqlDbType.Int) { Value = entity.CorrectAnswerId},
-                new SqlParameter("@daTestDate", SqlDbType.DateTime) { Value = entity.TestDate},
+                new SqlParameter("@daStartTime", SqlDbType.DateTime) { Value = entity.StartTime},
+                new SqlParameter("@daEndTime", SqlDbType.DateTime) { Value = entity.EndTime},
                 new SqlParameter("@iErrorCode", SqlDbType.Int) { Direction = ParameterDirection.Output }
             };
-            SqlHelper.ExecuteNonQuery(CommonFunctions.GetConnectionString(), CommandType.StoredProcedure, "pr_TestResultss_Insert", parameters.ToArray());
+            SqlHelper.ExecuteNonQuery(CommonFunctions.GetConnectionString(), CommandType.StoredProcedure, "pr_TestResults_Insert", parameters.ToArray());
             return parameters[0].Value.ToString();
         }
     }

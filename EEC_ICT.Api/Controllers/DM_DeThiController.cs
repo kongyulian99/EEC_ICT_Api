@@ -301,6 +301,15 @@ namespace EEC_ICT.Api.Controllers
                     }
                 }
 
+                // insert test result
+                var testResult = new TestResults();
+                testResult.UserId = userId;
+                testResult.IdDeThi = request.IdDeThi;
+                testResult.Score = float.Parse(correctCount.ToString()) / request.ListCauHoi.Count;
+                testResult.StartTime = request.StartTime;
+                testResult.EndTime = request.EndTime;
+                TestResultsServices.Insert(testResult);
+
                 retval.Data = correctCount;
                 retval.Status = new StatusReturn { Code = 1, Message = "Thành công" };
             }

@@ -18,9 +18,9 @@ namespace EEC_ICT.Data.Services
             return SqlHelper.GetList<TestResults>(rep.SelectAll());
         }
 
-        public static TestResults SelectOne(int questionId)
+        public static TestResults SelectByUser(string userId)
         {
-            return SqlHelper.GetInfo<TestResults>(rep.SelectOne(questionId));
+            return SqlHelper.GetInfo<TestResults>(rep.SelectByUser(userId));
         }
 
         public static string Insert(TestResults entity)

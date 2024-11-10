@@ -11,8 +11,9 @@ namespace EEC_ICT.Data.Models
         //public int AnswerId { get; set; }
         public long Id { get; set; }
         public string UserId { get; set; }
-        public int QuestionId { get; set; }
-        public bool Result { get; set; }
-        public DateTime TestDate { get; set; }
+        public long IdDeThi { get; set; }
+        public float Score { get; set; }
+        public DateTime StartTime { get; set; }
+        public DateTime EndTime { get; set; }
     }
 }
