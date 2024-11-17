@@ -9,5 +9,6 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAvQ8y8sqJU0+wb9e9iRMAIQAAAAACAAAAAAAQZgAAAAEAACAAAABP6j4bQQRzfStSW1wrqxkhzrOo2SELrt9DjuEsqOx1sQAAAAAOgAAAAAIAACAAAAAamOzPv3J/LX0H48IDSUwGbLF4bcbPexNqWYCiSH7yC4AAAADJ3OI0R/cajUNq/aP5jn+9B8V5QB90DwQaZaKfJFRhkkjunYAtZb491ccjcRUOCYAOVgYzxDfo9dImSJx/UCXQNfnCsWGQo7MoskQip5NfCtbL2HYEyazW1uX8QUGu4rLXXPEbFLghBLa+b3/ZJZ+t6SBARKnUREQlEg9ZbzySVkAAAACXNkIimIqg7vE03R+7jCfpMTgSMqJT5emOtSIQowPCSGqYotiQx04BRd2FpMJDpKfh0S9ZFHw4/4uB0fxpLe0V</EncryptedPassword>
     <History>True|2024-11-04T14:23:18.1568307Z||;True|2024-11-04T21:20:33.8153358+07:00||;True|2024-11-04T20:59:35.9420506+07:00||;True|2024-11-04T20:47:42.3496606+07:00||;True|2024-11-04T20:12:55.3510348+07:00||;True|2024-06-20T18:30:22.3700509+07:00||;</History>
     <LastFailureDetails />
+    <IsBasicAuthAllowed>True</IsBasicAuthAllowed>
   </PropertyGroup>
 </Project>

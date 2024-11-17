@@ -1,4 +1,5 @@
-﻿using EEC_ICT.Api.Providers;
+﻿using DocumentFormat.OpenXml.Spreadsheet;
+using EEC_ICT.Api.Providers;
 using EEC_ICT.Api.Services;
 using EEC_ICT.Data.Common;
 using EEC_ICT.Data.Core;
@@ -11,7 +12,7 @@ using System.Web.Http;
 
 namespace EEC_ICT.Api.Controllers
 {
-    [RoutePrefix("api/dm-TestResults")]
+    [RoutePrefix("api/TestResults")]
     public class TestResultsController : ApiController
     {
         //[HttpGet]
@@ -185,6 +186,29 @@ namespace EEC_ICT.Api.Controllers
             try
             {
                 retval.Data = TestResultsServices.Insert(request);
+                retval.Status = new StatusReturn { Code = 1, Message = "Thành công" };
+            }
+            catch (Exception ex)
+            {
+                retval.Status = new StatusReturn { Code = -1, Message = ex.Message };
+            }
+            Logger.Info("[retval]" + retval.JSONSerializer());
+            return retval;
+        }
+
+        [HttpGet]
+        [Route("getMaxScoreByUser")]
+        public object GetMaxScoreByUser(string userId) {
+            Logger.Info("[TestResults_SelecOne]");
+            var retval = new ReturnInfo
+            {
+                Data = new MaxScoreAndIdDeThi(),
+                Pagination = new PaginationInfo(),
+                Status = new StatusReturn { Code = 0, Message = "Không thành công" }
+            };
+            try
+            {
+                retval.Data = TestResultsServices.SelectBestScoreByUser(userId);
                 retval.Status = new StatusReturn { Code = 1, Message = "Thành công" };
             }
             catch (Exception ex)

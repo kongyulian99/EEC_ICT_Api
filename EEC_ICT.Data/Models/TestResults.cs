@@ -16,4 +16,10 @@ namespace EEC_ICT.Data.Models
         public DateTime StartTime { get; set; }
         public DateTime EndTime { get; set; }
     }
+
+    public class MaxScoreAndIdDeThi
+    {
+        public long IdDeThi { get; set; }
+        public double MaxScore { get; set; }
+    }
 }

@@ -44,5 +44,19 @@ namespace EEC_ICT.Data.Repository
             SqlHelper.ExecuteNonQuery(CommonFunctions.GetConnectionString(), CommandType.StoredProcedure, "pr_TestResults_Insert", parameters.ToArray());
             return parameters[0].Value.ToString();
         }
+
+        // for dashboard
+        public IDataReader SelectBestScoreByUser(string userId)
+        {
+            var parameters = new List<SqlParameter>()
+            {
+                //new SqlParameter("@sFilter", SqlDbType.NVarChar, 300){ Value = filter},
+                //new SqlParameter("@iTopicId", SqlDbType.Int){ Value = topicId},
+                new SqlParameter("@sUserId", SqlDbType.NVarChar, 128){ Value = userId},
+                new SqlParameter("@iErrorCode", SqlDbType.Int) {Direction = ParameterDirection.Output}
+            };
+            var data = SqlHelper.ExecuteReader(CommonFunctions.GetConnectionString(), CommandType.StoredProcedure, "pr_TestResults_SelectBestScoreByUser", parameters.ToArray());
+            return data;
+        }
     }
 }

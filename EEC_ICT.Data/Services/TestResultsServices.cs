@@ -27,5 +27,10 @@ namespace EEC_ICT.Data.Services
         {
             return rep.Insert(entity);
         }
+
+        public static List<MaxScoreAndIdDeThi> SelectBestScoreByUser(string userId)
+        {
+            return SqlHelper.GetList<MaxScoreAndIdDeThi>(rep.SelectBestScoreByUser(userId));
+        }
     }
 }
