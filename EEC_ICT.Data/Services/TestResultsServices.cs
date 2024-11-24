@@ -32,5 +32,15 @@ namespace EEC_ICT.Data.Services
         {
             return SqlHelper.GetList<MaxScoreAndIdDeThi>(rep.SelectBestScoreByUser(userId));
         }
+
+        public static List<MinScoreAndIdDeThi> SelectMinScoreByUser(string userId)
+        {
+            return SqlHelper.GetList<MinScoreAndIdDeThi>(rep.SelectMinScoreByUser(userId));
+        }
+
+        public static List<AverageScoreAndIdDeThi> SelectAverageScoreByUser(string userId)
+        {
+            return SqlHelper.GetList<AverageScoreAndIdDeThi>(rep.SelectAverageScoreByUser(userId));
+        }
     }
 }

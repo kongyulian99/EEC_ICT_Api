@@ -22,4 +22,16 @@ namespace EEC_ICT.Data.Models
         public long IdDeThi { get; set; }
         public double MaxScore { get; set; }
     }
+    public class AverageScoreAndIdDeThi
+    {
+        public long IdDeThi { get; set; }
+        public double AverageScore { get; set; }
+    }
+
+    public class MinScoreAndIdDeThi
+    {
+        public long IdDeThi { get; set; }
+        public double MinScore { get; set; }
+    }
+
 }
