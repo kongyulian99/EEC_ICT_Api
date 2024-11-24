@@ -232,7 +232,7 @@ namespace EEC_ICT.Api.Controllers
             };
             try
             {
-                retval.Data = TestResultsServices.SelectAverageScoreByUser(userId);
+                retval.Data = TestResultsServices.SelectMinScoreByUser(userId);
                 retval.Status = new StatusReturn { Code = 1, Message = "Thành công" };
             }
             catch (Exception ex)
