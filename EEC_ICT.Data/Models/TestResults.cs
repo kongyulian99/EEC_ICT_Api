@@ -34,4 +34,9 @@ namespace EEC_ICT.Data.Models
         public double MinScore { get; set; }
     }
 
+    public class AverageTimespanAndIdDeThi
+    {
+        public long IdDeThi { get; set; }
+        public double AverageTimespan { get; set; }
+    }
 }

@@ -84,5 +84,18 @@ namespace EEC_ICT.Data.Repository
             var data = SqlHelper.ExecuteReader(CommonFunctions.GetConnectionString(), CommandType.StoredProcedure, "pr_TestResults_SelectAverageScoreByUser", parameters.ToArray());
             return data;
         }
+
+        public IDataReader SelectAverageTimespanByUser(string userId)
+        {
+            var parameters = new List<SqlParameter>()
+            {
+                //new SqlParameter("@sFilter", SqlDbType.NVarChar, 300){ Value = filter},
+                //new SqlParameter("@iTopicId", SqlDbType.Int){ Value = topicId},
+                new SqlParameter("@sUserId", SqlDbType.NVarChar, 128){ Value = userId},
+                new SqlParameter("@iErrorCode", SqlDbType.Int) {Direction = ParameterDirection.Output}
+            };
+            var data = SqlHelper.ExecuteReader(CommonFunctions.GetConnectionString(), CommandType.StoredProcedure, "pr_TestResults_SelectAverageTimespanByUser", parameters.ToArray());
+            return data;
+        }
     }
 }
