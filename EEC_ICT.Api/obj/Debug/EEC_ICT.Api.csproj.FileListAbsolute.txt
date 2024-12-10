@@ -378,7 +378,6 @@ D:\Pham Hoang Phuc\ICT\EEC_ICT_Api\EEC_ICT.Api\bin\DocumentFormat.OpenXml.dll
 D:\Pham Hoang Phuc\ICT\EEC_ICT_Api\EEC_ICT.Api\bin\EEC_ICT.Data.dll
 D:\Pham Hoang Phuc\ICT\EEC_ICT_Api\EEC_ICT.Api\bin\EPPlus.dll
 D:\Pham Hoang Phuc\ICT\EEC_ICT_Api\EEC_ICT.Api\bin\Microsoft.AspNet.SignalR.Core.dll
-D:\Pham Hoang Phuc\ICT\EEC_ICT_Api\EEC_ICT.Api\bin\Microsoft.AspNet.SignalR.SystemWeb.dll
 D:\Pham Hoang Phuc\ICT\EEC_ICT_Api\EEC_ICT.Api\bin\Microsoft.Bcl.AsyncInterfaces.dll
 D:\Pham Hoang Phuc\ICT\EEC_ICT_Api\EEC_ICT.Api\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
 D:\Pham Hoang Phuc\ICT\EEC_ICT_Api\EEC_ICT.Api\bin\Microsoft.IdentityModel.JsonWebTokens.dll
@@ -415,8 +414,6 @@ D:\Pham Hoang Phuc\ICT\EEC_ICT_Api\EEC_ICT.Api\bin\DocumentFormat.OpenXml.xml
 D:\Pham Hoang Phuc\ICT\EEC_ICT_Api\EEC_ICT.Api\bin\EPPlus.xml
 D:\Pham Hoang Phuc\ICT\EEC_ICT_Api\EEC_ICT.Api\bin\Microsoft.AspNet.SignalR.Core.pdb
 D:\Pham Hoang Phuc\ICT\EEC_ICT_Api\EEC_ICT.Api\bin\Microsoft.AspNet.SignalR.Core.xml
-D:\Pham Hoang Phuc\ICT\EEC_ICT_Api\EEC_ICT.Api\bin\Microsoft.AspNet.SignalR.SystemWeb.pdb
-D:\Pham Hoang Phuc\ICT\EEC_ICT_Api\EEC_ICT.Api\bin\Microsoft.AspNet.SignalR.SystemWeb.xml
 D:\Pham Hoang Phuc\ICT\EEC_ICT_Api\EEC_ICT.Api\bin\Microsoft.Bcl.AsyncInterfaces.xml
 D:\Pham Hoang Phuc\ICT\EEC_ICT_Api\EEC_ICT.Api\bin\Microsoft.IdentityModel.JsonWebTokens.xml
 D:\Pham Hoang Phuc\ICT\EEC_ICT_Api\EEC_ICT.Api\bin\Microsoft.IdentityModel.Logging.xml

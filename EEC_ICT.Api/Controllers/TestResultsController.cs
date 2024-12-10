@@ -218,5 +218,77 @@ namespace EEC_ICT.Api.Controllers
             Logger.Info("[retval]" + retval.JSONSerializer());
             return retval;
         }
+
+        [HttpGet]
+        [Route("getMinScoreByUser")]
+        public object GetMinScoreByUser(string userId)
+        {
+            Logger.Info("[TestResults_SelecOne]");
+            var retval = new ReturnInfo
+            {
+                Data = new MinScoreAndIdDeThi(),
+                Pagination = new PaginationInfo(),
+                Status = new StatusReturn { Code = 0, Message = "Không thành công" }
+            };
+            try
+            {
+                retval.Data = TestResultsServices.SelectMinScoreByUser(userId);
+                retval.Status = new StatusReturn { Code = 1, Message = "Thành công" };
+            }
+            catch (Exception ex)
+            {
+                retval.Status = new StatusReturn { Code = -1, Message = ex.Message };
+            }
+            Logger.Info("[retval]" + retval.JSONSerializer());
+            return retval;
+        }
+
+        [HttpGet]
+        [Route("getAverageScoreByUser")]
+        public object GetAverageScoreByUser(string userId)
+        {
+            Logger.Info("[TestResults_SelecOne]");
+            var retval = new ReturnInfo
+            {
+                Data = new AverageScoreAndIdDeThi(),
+                Pagination = new PaginationInfo(),
+                Status = new StatusReturn { Code = 0, Message = "Không thành công" }
+            };
+            try
+            {
+                retval.Data = TestResultsServices.SelectAverageScoreByUser(userId);
+                retval.Status = new StatusReturn { Code = 1, Message = "Thành công" };
+            }
+            catch (Exception ex)
+            {
+                retval.Status = new StatusReturn { Code = -1, Message = ex.Message };
+            }
+            Logger.Info("[retval]" + retval.JSONSerializer());
+            return retval;
+        }
+
+        [HttpGet]
+        [Route("getAverageTimespanByUser")]
+        public object GetAverageTimespanByUser(string userId)
+        {
+            Logger.Info("[TestResults_SelecOne]");
+            var retval = new ReturnInfo
+            {
+                Data = new AverageTimespanAndIdDeThi(),
+                Pagination = new PaginationInfo(),
+                Status = new StatusReturn { Code = 0, Message = "Không thành công" }
+            };
+            try
+            {
+                retval.Data = TestResultsServices.SelectAverageTimespanByUser(userId);
+                retval.Status = new StatusReturn { Code = 1, Message = "Thành công" };
+            }
+            catch (Exception ex)
+            {
+                retval.Status = new StatusReturn { Code = -1, Message = ex.Message };
+            }
+            Logger.Info("[retval]" + retval.JSONSerializer());
+            return retval;
+        }
     }
 }
