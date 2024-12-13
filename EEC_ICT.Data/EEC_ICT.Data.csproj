@@ -58,8 +58,10 @@
     <Compile Include="Models\Command.cs" />
     <Compile Include="Models\CommandAssign.cs" />
     <Compile Include="Models\CommandInFunction.cs" />
+    <Compile Include="Models\MultipleChoice.cs" />
     <Compile Include="Models\DM_DeThi.cs" />
     <Compile Include="Models\ResultStatistic.cs" />
+    <Compile Include="Models\Enum.cs" />
     <Compile Include="Models\TestResults.cs" />
     <Compile Include="Models\DM_DapAnCheckCorrect_Result.cs" />
     <Compile Include="Models\DM_DapAnCheckCorrect.cs" />

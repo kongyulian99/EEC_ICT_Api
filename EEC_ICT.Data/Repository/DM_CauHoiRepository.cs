@@ -34,8 +34,10 @@ namespace EEC_ICT.Data.Repository
             {
                 new SqlParameter("@iQuestionId", SqlDbType.Int){ Direction = ParameterDirection.Output},
                 new SqlParameter("@sQuestion", SqlDbType.NVarChar, -1) { Value = entity.Question},
-                new SqlParameter("@sGraphUrl", SqlDbType.NVarChar, 200) { Value = entity.GraphUrl},
+                //new SqlParameter("@sGraphUrl", SqlDbType.NVarChar, 200) { Value = entity.GraphUrl},
                 //new SqlParameter("@iCorrectAnswerId", SqlDbType.Int) { Value = entity.CorrectAnswerId},
+                new SqlParameter("@sChoices", SqlDbType.NVarChar, -1) { Value = entity.Choices},
+                new SqlParameter("@byQuestionType", SqlDbType.TinyInt) { Value = entity.QuestionType},
                 new SqlParameter("@iTopicId", SqlDbType.Int) { Value = entity.TopicId},
                 new SqlParameter("@lIdDeThi", SqlDbType.BigInt) { Value = entity.IdDeThi},
                 new SqlParameter("@sNote", SqlDbType.NVarChar, 4000) { Value = entity.Note},
@@ -64,8 +66,10 @@ namespace EEC_ICT.Data.Repository
             {
                 new SqlParameter("@iQuestionId", SqlDbType.Int){ Value = entity.QuestionId},
                 new SqlParameter("@sQuestion", SqlDbType.NVarChar, -1) { Value = entity.Question},
-                new SqlParameter("@sGraphUrl", SqlDbType.NVarChar, 200) { Value = entity.GraphUrl},
+                //new SqlParameter("@sGraphUrl", SqlDbType.NVarChar, 200) { Value = entity.GraphUrl},
                 //new SqlParameter("@iCorrectAnswerId", SqlDbType.Int) { Value = entity.CorrectAnswerId},
+                new SqlParameter("@sChoices", SqlDbType.NVarChar, -1) { Value = entity.Choices},
+                new SqlParameter("@byQuestionType", SqlDbType.TinyInt) { Value = entity.QuestionType},
                 new SqlParameter("@iTopicId", SqlDbType.Int) { Value = entity.TopicId},
                 new SqlParameter("@lIdDeThi", SqlDbType.BigInt) { Value = entity.IdDeThi},
                 new SqlParameter("@sNote", SqlDbType.NVarChar, 4000) { Value = entity.Note},

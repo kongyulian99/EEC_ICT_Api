@@ -68,9 +68,9 @@ namespace EEC_ICT.Api.Controllers
 
                 deThi.ListCauHoi = DM_CauHoiServices.SelectAll(idDeThi);
 
-                for (int i = 0; i < deThi.ListCauHoi.Count; i++) {
-                    deThi.ListCauHoi[i].ChoiceList = DM_DapAnServices.SelectAllWQuestionId(deThi.ListCauHoi[i].QuestionId);
-                }
+                //for (int i = 0; i < deThi.ListCauHoi.Count; i++) {
+                //    deThi.ListCauHoi[i].ChoiceList = DM_DapAnServices.SelectAllWQuestionId(deThi.ListCauHoi[i].QuestionId);
+                //}
 
                 // TODO
                 // SELECT ALL QUESTION FROM DETHI
@@ -103,14 +103,14 @@ namespace EEC_ICT.Api.Controllers
 
                 deThi.ListCauHoi = DM_CauHoiServices.SelectAll(idDeThi);
 
-                for (int i = 0; i < deThi.ListCauHoi.Count; i++)
-                {
-                    deThi.ListCauHoi[i].ChoiceList = DM_DapAnServices.SelectAllWQuestionId(deThi.ListCauHoi[i].QuestionId);
-                    for(int j=0; j < deThi.ListCauHoi[i].ChoiceList.Count; j++)
-                    {
-                        deThi.ListCauHoi[i].ChoiceList[j].IsCorrect = false;
-                    }
-                }
+                //for (int i = 0; i < deThi.ListCauHoi.Count; i++)
+                //{
+                //    deThi.ListCauHoi[i].ChoiceList = DM_DapAnServices.SelectAllWQuestionId(deThi.ListCauHoi[i].QuestionId);
+                //    for(int j=0; j < deThi.ListCauHoi[i].ChoiceList.Count; j++)
+                //    {
+                //        deThi.ListCauHoi[i].ChoiceList[j].IsCorrect = false;
+                //    }
+                //}
 
                 // TODO
                 // SELECT ALL QUESTION FROM DETHI
@@ -230,19 +230,32 @@ namespace EEC_ICT.Api.Controllers
             };
             try
             {
-                for (int i = 0; i < request.ListCauHoi?.Count; i++) {
-                    request.ListCauHoi[i].IdDeThi = request.IdDeThi;
-                    if (request.ListCauHoi[i].QuestionId > 0) DM_CauHoiServices.Update(request.ListCauHoi[i]);
-                    else request.ListCauHoi[i].QuestionId = int.Parse(DM_CauHoiServices.Insert(request.ListCauHoi[i]));
+                //for (int i = 0; i < request.ListCauHoi?.Count; i++) {
+                //    request.ListCauHoi[i].IdDeThi = request.IdDeThi;
+                //    if (request.ListCauHoi[i].QuestionId > 0) DM_CauHoiServices.Update(request.ListCauHoi[i]);
+                //    else request.ListCauHoi[i].QuestionId = int.Parse(DM_CauHoiServices.Insert(request.ListCauHoi[i]));
 
-                    for (int j = 0; j < request.ListCauHoi[i].ChoiceList?.Count; j++) {
-                        request.ListCauHoi[i].ChoiceList[j].QuestionId = request.ListCauHoi[i].QuestionId;
-                        if (request.ListCauHoi[i].ChoiceList[j].AnswerId > 0) DM_DapAnServices.Update(request.ListCauHoi[i].ChoiceList[j]);
-                        else DM_DapAnServices.Insert(request.ListCauHoi[i].ChoiceList[j]);
-                    }
-                }
+                //    for (int j = 0; j < request.ListCauHoi[i].ChoiceList?.Count; j++) {
+                //        request.ListCauHoi[i].ChoiceList[j].QuestionId = request.ListCauHoi[i].QuestionId;
+                //        if (request.ListCauHoi[i].ChoiceList[j].AnswerId > 0) DM_DapAnServices.Update(request.ListCauHoi[i].ChoiceList[j]);
+                //        else DM_DapAnServices.Insert(request.ListCauHoi[i].ChoiceList[j]);
+                //    }
+                //}
 
                 string id = DM_DeThiServices.Update(request);
+
+                for (int i = 0; i < request.ListCauHoi?.Count; i++) {
+                    request.ListCauHoi[i].IdDeThi = request.IdDeThi;
+
+                    if(request.ListCauHoi[i].QuestionId <= 0)
+                    {
+                        var questionId = DM_CauHoiServices.Insert(request.ListCauHoi[i]);
+                        request.ListCauHoi[i].QuestionId = int.Parse(questionId);
+                    } else
+                    {
+                        DM_CauHoiServices.Update(request.ListCauHoi[i]);
+                    }                    
+                }
 
                 //if (request.ChoiceList != null)
                 //{
@@ -296,9 +309,10 @@ namespace EEC_ICT.Api.Controllers
                 {
                     var listDapAn = DM_DapAnServices.SelectAllWQuestionId(request.ListCauHoi[i].QuestionId);
                     var correctAnswerId = listDapAn.Find(o => o.IsCorrect == true).AnswerId;
-                    if (request.ListCauHoi[i].ChoiceList.Find(o => o.IsCorrect == true)?.AnswerId == correctAnswerId) { 
-                        correctCount ++;
-                    }
+
+                    //if (request.ListCauHoi[i].ChoiceList.Find(o => o.IsCorrect == true)?.AnswerId == correctAnswerId) { 
+                    //    correctCount ++;
+                    //}
                 }
 
                 // insert test result

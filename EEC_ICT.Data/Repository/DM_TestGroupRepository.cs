@@ -34,7 +34,7 @@ namespace EEC_ICT.Data.Repository
             {
                 new SqlParameter("@iQuestionId", SqlDbType.Int){ Direction = ParameterDirection.Output},
                 new SqlParameter("@sQuestion", SqlDbType.NVarChar, -1) { Value = entity.Question},
-                new SqlParameter("@sGraphUrl", SqlDbType.NVarChar, 200) { Value = entity.GraphUrl},
+                //new SqlParameter("@sGraphUrl", SqlDbType.NVarChar, 200) { Value = entity.GraphUrl},
                 //new SqlParameter("@iCorrectAnswerId", SqlDbType.Int) { Value = entity.CorrectAnswerId},
                 new SqlParameter("@iTopicId", SqlDbType.Int) { Value = entity.TopicId},
                 new SqlParameter("@iErrorCode", SqlDbType.Int) { Direction = ParameterDirection.Output }
@@ -62,7 +62,7 @@ namespace EEC_ICT.Data.Repository
             {
                 new SqlParameter("@iQuestionId", SqlDbType.Int){ Value = entity.QuestionId},
                 new SqlParameter("@sQuestion", SqlDbType.NVarChar, -1) { Value = entity.Question},
-                new SqlParameter("@sGraphUrl", SqlDbType.NVarChar, 200) { Value = entity.GraphUrl},
+                //new SqlParameter("@sGraphUrl", SqlDbType.NVarChar, 200) { Value = entity.GraphUrl},
                 //new SqlParameter("@iCorrectAnswerId", SqlDbType.Int) { Value = entity.CorrectAnswerId},
                 new SqlParameter("@iTopicId", SqlDbType.Int) { Value = entity.TopicId},
                 new SqlParameter("@iErrorCode", SqlDbType.Int) { Direction = ParameterDirection.Output }
