@@ -17,6 +17,7 @@ namespace EEC_ICT.Data.Models
         public int TopicId { get; set; }
         public string Note { get; set; }
         public int QuestionType { get; set; }
+        public float TrongSo { get; set; }
         //public List<D> ChoiceList { get; set; }
         //public List<DM_DapAn> ChoiceList_Delete { get; set; }
     }

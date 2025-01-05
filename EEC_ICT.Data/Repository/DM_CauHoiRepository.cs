@@ -38,6 +38,7 @@ namespace EEC_ICT.Data.Repository
                 //new SqlParameter("@iCorrectAnswerId", SqlDbType.Int) { Value = entity.CorrectAnswerId},
                 new SqlParameter("@sChoices", SqlDbType.NVarChar, -1) { Value = entity.Choices},
                 new SqlParameter("@byQuestionType", SqlDbType.TinyInt) { Value = entity.QuestionType},
+                new SqlParameter("@fTrongSo", SqlDbType.Float) { Value = entity.TrongSo},
                 new SqlParameter("@iTopicId", SqlDbType.Int) { Value = entity.TopicId},
                 new SqlParameter("@lIdDeThi", SqlDbType.BigInt) { Value = entity.IdDeThi},
                 new SqlParameter("@sNote", SqlDbType.NVarChar, 4000) { Value = entity.Note},
