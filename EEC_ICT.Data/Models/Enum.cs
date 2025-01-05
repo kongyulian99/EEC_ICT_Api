@@ -3,6 +3,7 @@
     public enum QuestionType
     {
         MULTIPLE_CHOICE = 1,
-        FILLING = 2
+        FILL_IN_BLANK = 2,
+        MATCHING = 3
     }
 }
