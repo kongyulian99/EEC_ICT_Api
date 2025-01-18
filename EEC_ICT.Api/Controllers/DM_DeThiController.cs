@@ -303,7 +303,8 @@ namespace EEC_ICT.Api.Controllers
             };
             try
             {
-                var dataFromSql = DM_DeThiServices.SelectAll
+                var dataFromSql = DM_DeThiServices.SelectAll().Find(o => o.IdDeThi == request.IdDeThi);
+                dataFromSql.ListCauHoi = DM_CauHoiServices.SelectAll(request.IdDeThi);
                 var correctCount = 0;
                 for (int i = 0; i < request.ListCauHoi?.Count; i++)
                 {
@@ -318,8 +319,10 @@ namespace EEC_ICT.Api.Controllers
                     //    correctCount ++;
                     //}
 
-                    //if()
-
+                    if (request.ListCauHoi[i].Choices == dataFromSql.ListCauHoi[i].Choices)
+                    {
+                        correctCount ++;
+                    }
                 }
 
                 // insert test result
