@@ -305,7 +305,7 @@ namespace EEC_ICT.Api.Controllers
             {
                 var dataFromSql = DM_DeThiServices.SelectAll().Find(o => o.IdDeThi == request.IdDeThi);
                 dataFromSql.ListCauHoi = DM_CauHoiServices.SelectAll(request.IdDeThi);
-                var correctCount = (float)0.0;
+                float correctScore = (float)0.0;
                 for (int i = 0; i < request.ListCauHoi?.Count; i++)
                 {
                     //var listDapAn = DM_DapAnServices.SelectAllWQuestionId(request.ListCauHoi[i].QuestionId);
@@ -320,7 +320,7 @@ namespace EEC_ICT.Api.Controllers
 
                     if (request.ListCauHoi[i].Choices == dataFromSql.ListCauHoi[i].Choices)
                     {
-                        correctCount += request.ListCauHoi[i].TrongSo;
+                        correctScore += request.ListCauHoi[i].TrongSo;
                     }
                 }
 
@@ -328,7 +328,7 @@ namespace EEC_ICT.Api.Controllers
                 var testResult = new TestResults();
                 testResult.UserId = request.UserId;
                 testResult.IdDeThi = request.IdDeThi;
-                testResult.Score = dataFromSql.ListCauHoi.Count > 0 ? correctCount / dataFromSql.ListCauHoi.Count : 0;
+                testResult.Score = correctScore / dataFromSql.ListCauHoi.Select(o => o.TrongSo).Sum();
                 testResult.StartTime = request.StartTime;
                 testResult.EndTime = request.EndTime;
                 TestResultsServices.Insert(testResult);
