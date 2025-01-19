@@ -304,11 +304,21 @@ namespace EEC_ICT.Api.Controllers
             };
             try
             {
-                var correctCount = 0;
+                float currentScore = 0;
+                float totalScore = request.ListCauHoi.Sum(o => o.TrongSo);
                 for (int i = 0; i < request.ListCauHoi?.Count; i++)
                 {
-                    var listDapAn = DM_DapAnServices.SelectAllWQuestionId(request.ListCauHoi[i].QuestionId);
-                    var correctAnswerId = listDapAn.Find(o => o.IsCorrect == true).AnswerId;
+                    //var listDapAn = DM_DapAnServices.SelectAllWQuestionId(request.ListCauHoi[i].QuestionId);
+
+                    var cauHoiTrongDb = DM_CauHoiServices.SelectOne(request.ListCauHoi[i].QuestionId);
+
+                    if(cauHoiTrongDb.Choices == request.ListCauHoi[i].Choices)
+                    {
+                        currentScore += (float)cauHoiTrongDb.TrongSo;
+                        
+                    }
+
+                    //var correctAnswerId = listDapAn.Find(o => o.IsCorrect == true).AnswerId;
 
                     //if (request.ListCauHoi[i].ChoiceList.Find(o => o.IsCorrect == true)?.AnswerId == correctAnswerId) { 
                     //    correctCount ++;
@@ -319,12 +329,12 @@ namespace EEC_ICT.Api.Controllers
                 var testResult = new TestResults();
                 testResult.UserId = userId;
                 testResult.IdDeThi = request.IdDeThi;
-                testResult.Score = float.Parse(correctCount.ToString()) / request.ListCauHoi.Count;
+                testResult.Score = totalScore > 0 ? currentScore / totalScore : 0;
                 testResult.StartTime = request.StartTime;
                 testResult.EndTime = request.EndTime;
                 TestResultsServices.Insert(testResult);
 
-                retval.Data = correctCount;
+                retval.Data = testResult.Score;
                 retval.Status = new StatusReturn { Code = 1, Message = "Thành công" };
             }
             catch (Exception ex)
