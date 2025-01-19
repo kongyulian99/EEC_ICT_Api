@@ -42,6 +42,7 @@ namespace EEC_ICT.Data.Repository
                 new SqlParameter("@iTopicId", SqlDbType.Int) { Value = entity.TopicId},
                 new SqlParameter("@lIdDeThi", SqlDbType.BigInt) { Value = entity.IdDeThi},
                 new SqlParameter("@sNote", SqlDbType.NVarChar, 4000) { Value = entity.Note},
+                new SqlParameter("@fTrongSo", SqlDbType.Float) { Value = entity.TrongSo},
                 new SqlParameter("@iErrorCode", SqlDbType.Int) { Direction = ParameterDirection.Output }
             };
             SqlHelper.ExecuteNonQuery(CommonFunctions.GetConnectionString(), CommandType.StoredProcedure, "pr_DM_CauHoi_Insert", parameters.ToArray());
@@ -74,6 +75,7 @@ namespace EEC_ICT.Data.Repository
                 new SqlParameter("@iTopicId", SqlDbType.Int) { Value = entity.TopicId},
                 new SqlParameter("@lIdDeThi", SqlDbType.BigInt) { Value = entity.IdDeThi},
                 new SqlParameter("@sNote", SqlDbType.NVarChar, 4000) { Value = entity.Note},
+                new SqlParameter("@fTrongSo", SqlDbType.Float) { Value = entity.TrongSo},
                 new SqlParameter("@iErrorCode", SqlDbType.Int) { Direction = ParameterDirection.Output }
             };
             SqlHelper.ExecuteNonQuery(CommonFunctions.GetConnectionString(), CommandType.StoredProcedure, "pr_DM_CauHoi_Update", parameters.ToArray());

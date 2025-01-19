@@ -66,7 +66,10 @@ namespace EEC_ICT.Api.Controllers
             {
                 var deThi = DM_DeThiServices.SelectOne(idDeThi);
 
-                deThi.ListCauHoi = DM_CauHoiServices.SelectAll(idDeThi);
+                if (deThi != null)
+                {
+                    deThi.ListCauHoi = DM_CauHoiServices.SelectAll(idDeThi);
+                }
 
                 //for (int i = 0; i < deThi.ListCauHoi.Count; i++) {
                 //    deThi.ListCauHoi[i].ChoiceList = DM_DapAnServices.SelectAllWQuestionId(deThi.ListCauHoi[i].QuestionId);
@@ -103,14 +106,10 @@ namespace EEC_ICT.Api.Controllers
 
                 deThi.ListCauHoi = DM_CauHoiServices.SelectAll(idDeThi);
 
-                //for (int i = 0; i < deThi.ListCauHoi.Count; i++)
-                //{
-                //    deThi.ListCauHoi[i].ChoiceList = DM_DapAnServices.SelectAllWQuestionId(deThi.ListCauHoi[i].QuestionId);
-                //    for(int j=0; j < deThi.ListCauHoi[i].ChoiceList.Count; j++)
-                //    {
-                //        deThi.ListCauHoi[i].ChoiceList[j].IsCorrect = false;
-                //    }
-                //}
+                for (int i = 0; i < deThi.ListCauHoi.Count; i++)
+                {
+                    deThi.ListCauHoi[i].Choices = deThi.ListCauHoi[i].Choices.Replace(":true", ":false");
+                }
 
                 // TODO
                 // SELECT ALL QUESTION FROM DETHI
@@ -291,11 +290,11 @@ namespace EEC_ICT.Api.Controllers
             return retval;
         }
 
-        [HttpPost]
-        [Route("submit/{userId}")]
-        public object Submit(string userId, DM_DeThi request)
+        [HttpPut]
+        [Route("submit")]
+        public object Submit(DM_DeThi request)
         {
-            Logger.Info("[DM_DeThi_Update]");
+            Logger.Info("[DM_DeThi_Submit]");
             var retval = new ReturnInfo
             {
                 Data = "",
@@ -304,6 +303,7 @@ namespace EEC_ICT.Api.Controllers
             };
             try
             {
+<<<<<<< HEAD
                 float currentScore = 0;
                 float totalScore = request.ListCauHoi.Sum(o => o.TrongSo);
                 for (int i = 0; i < request.ListCauHoi?.Count; i++)
@@ -319,15 +319,33 @@ namespace EEC_ICT.Api.Controllers
                     }
 
                     //var correctAnswerId = listDapAn.Find(o => o.IsCorrect == true).AnswerId;
+=======
+                var dataFromSql = DM_DeThiServices.SelectAll().Find(o => o.IdDeThi == request.IdDeThi);
+                dataFromSql.ListCauHoi = DM_CauHoiServices.SelectAll(request.IdDeThi);
+                var correctCount = 0;
+                for (int i = 0; i < request.ListCauHoi?.Count; i++)
+                {
+                    //var listDapAn = DM_DapAnServices.SelectAllWQuestionId(request.ListCauHoi[i].QuestionId);
+                    //if (listDapAn != null)
+                    //{
+                    //    //var correctAnswerId = listDapAn.Find(o => o.IsCorrect == true).AnswerId;
+                    //}
+
+>>>>>>> 80cc1117982327170da68106fce19d3b5e6677e4
 
                     //if (request.ListCauHoi[i].ChoiceList.Find(o => o.IsCorrect == true)?.AnswerId == correctAnswerId) { 
                     //    correctCount ++;
                     //}
+
+                    if (request.ListCauHoi[i].Choices == dataFromSql.ListCauHoi[i].Choices)
+                    {
+                        correctCount ++;
+                    }
                 }
 
                 // insert test result
                 var testResult = new TestResults();
-                testResult.UserId = userId;
+                testResult.UserId = request.UserId;
                 testResult.IdDeThi = request.IdDeThi;
                 testResult.Score = totalScore > 0 ? currentScore / totalScore : 0;
                 testResult.StartTime = request.StartTime;
@@ -344,6 +362,53 @@ namespace EEC_ICT.Api.Controllers
             Logger.Info("[retval]" + retval.JSONSerializer());
             return retval;
         }
+        //[HttpPut]
+        //[Route("submit")]
+        //public object Submit(DM_DeThi request)
+        //{
+        //    Logger.Info("[DM_DeThi_Update]");
+        //    var retval = new ReturnInfo
+        //    {
+        //        Data = "",
+        //        Pagination = new PaginationInfo(),
+        //        Status = new StatusReturn { Code = 0, Message = "Không thành công" }
+        //    };
+        //    try
+        //    {
+        //        var correctCount = 0;
+        //        for (int i = 0; i < request.ListCauHoi?.Count; i++)
+        //        {
+        //            //var listDapAn = DM_DapAnServices.SelectAllWQuestionId(request.ListCauHoi[i].QuestionId);
+        //            //if (listDapAn != null)
+        //            //{
+        //            //    //var correctAnswerId = listDapAn.Find(o => o.IsCorrect == true).AnswerId;
+        //            //}
+
+
+        //            //if (request.ListCauHoi[i].ChoiceList.Find(o => o.IsCorrect == true)?.AnswerId == correctAnswerId) { 
+        //            //    correctCount ++;
+        //            //}
+        //        }
+
+        //        // insert test result
+        //        var testResult = new TestResults();
+        //        testResult.UserId = request.UserId;
+        //        testResult.IdDeThi = request.IdDeThi;
+        //        testResult.Score = float.Parse(correctCount.ToString()) / request.ListCauHoi.Count;
+        //        testResult.StartTime = request.StartTime;
+        //        testResult.EndTime = request.EndTime;
+        //        TestResultsServices.Insert(testResult);
+
+        //        retval.Data = correctCount;
+        //        retval.Status = new StatusReturn { Code = 1, Message = "Thành công" };
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        retval.Status = new StatusReturn { Code = -1, Message = ex.Message };
+        //    }
+        //    Logger.Info("[retval]" + retval.JSONSerializer());
+        //    return retval;
+        //}
 
         // DELETE
         [HttpDelete]
