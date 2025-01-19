@@ -303,26 +303,9 @@ namespace EEC_ICT.Api.Controllers
             };
             try
             {
-<<<<<<< HEAD
-                float currentScore = 0;
-                float totalScore = request.ListCauHoi.Sum(o => o.TrongSo);
-                for (int i = 0; i < request.ListCauHoi?.Count; i++)
-                {
-                    //var listDapAn = DM_DapAnServices.SelectAllWQuestionId(request.ListCauHoi[i].QuestionId);
-
-                    var cauHoiTrongDb = DM_CauHoiServices.SelectOne(request.ListCauHoi[i].QuestionId);
-
-                    if(cauHoiTrongDb.Choices == request.ListCauHoi[i].Choices)
-                    {
-                        currentScore += (float)cauHoiTrongDb.TrongSo;
-                        
-                    }
-
-                    //var correctAnswerId = listDapAn.Find(o => o.IsCorrect == true).AnswerId;
-=======
                 var dataFromSql = DM_DeThiServices.SelectAll().Find(o => o.IdDeThi == request.IdDeThi);
                 dataFromSql.ListCauHoi = DM_CauHoiServices.SelectAll(request.IdDeThi);
-                var correctCount = 0;
+                var correctCount = 0.0;
                 for (int i = 0; i < request.ListCauHoi?.Count; i++)
                 {
                     //var listDapAn = DM_DapAnServices.SelectAllWQuestionId(request.ListCauHoi[i].QuestionId);
@@ -331,15 +314,13 @@ namespace EEC_ICT.Api.Controllers
                     //    //var correctAnswerId = listDapAn.Find(o => o.IsCorrect == true).AnswerId;
                     //}
 
->>>>>>> 80cc1117982327170da68106fce19d3b5e6677e4
-
                     //if (request.ListCauHoi[i].ChoiceList.Find(o => o.IsCorrect == true)?.AnswerId == correctAnswerId) { 
                     //    correctCount ++;
                     //}
 
                     if (request.ListCauHoi[i].Choices == dataFromSql.ListCauHoi[i].Choices)
                     {
-                        correctCount ++;
+                        correctCount += request.ListCauHoi[i].TrongSo;
                     }
                 }
 
@@ -347,7 +328,7 @@ namespace EEC_ICT.Api.Controllers
                 var testResult = new TestResults();
                 testResult.UserId = request.UserId;
                 testResult.IdDeThi = request.IdDeThi;
-                testResult.Score = totalScore > 0 ? currentScore / totalScore : 0;
+                testResult.Score = dataFromSql.ListCauHoi.Count > 0 ? correctCount / dataFromSql.ListCauHoi.Count : 0;
                 testResult.StartTime = request.StartTime;
                 testResult.EndTime = request.EndTime;
                 TestResultsServices.Insert(testResult);
