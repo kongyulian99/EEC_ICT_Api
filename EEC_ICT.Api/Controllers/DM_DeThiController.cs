@@ -305,7 +305,7 @@ namespace EEC_ICT.Api.Controllers
             {
                 var dataFromSql = DM_DeThiServices.SelectAll().Find(o => o.IdDeThi == request.IdDeThi);
                 dataFromSql.ListCauHoi = DM_CauHoiServices.SelectAll(request.IdDeThi);
-                var correctCount = 0.0;
+                var correctCount = (float)0.0;
                 for (int i = 0; i < request.ListCauHoi?.Count; i++)
                 {
                     //var listDapAn = DM_DapAnServices.SelectAllWQuestionId(request.ListCauHoi[i].QuestionId);
