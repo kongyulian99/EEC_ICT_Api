@@ -16,5 +16,6 @@ namespace EEC_ICT.Data.Models
         public DateTime EndTime { get; set; }
         public int ThoiGianLamBai { get; set; }
         public string UserId { get; set; }
+        public DateTime Ngay { get; set; }
     }
 }

@@ -40,6 +40,7 @@ namespace EEC_ICT.Data.Repository
                 new SqlParameter("@sTenDeThi", SqlDbType.NVarChar, 250) { Value = entity.TenDeThi},
                 new SqlParameter("@sGhiChu", SqlDbType.NVarChar, 500) { Value = entity.GhiChu},
                 new SqlParameter("@iThoiGianLamBai", SqlDbType.Int) { Value = entity.ThoiGianLamBai},
+                new SqlParameter("@daNgay", SqlDbType.DateTime) { Value = entity.Ngay},
         new SqlParameter("@iErrorCode", SqlDbType.Int) { Direction = ParameterDirection.Output }
             };
             SqlHelper.ExecuteNonQuery(CommonFunctions.GetConnectionString(), CommandType.StoredProcedure, "pr_DM_DeThi_Insert", parameters.ToArray());
@@ -53,6 +54,8 @@ namespace EEC_ICT.Data.Repository
                 new SqlParameter("@lIdDeThi", SqlDbType.Int){ Value = entity.IdDeThi},
                 new SqlParameter("@sTenDeThi", SqlDbType.NVarChar, 250) { Value = entity.TenDeThi},
                 new SqlParameter("@sGhiChu", SqlDbType.NVarChar, 500) { Value = entity.GhiChu},
+                new SqlParameter("@iThoiGianLamBai", SqlDbType.Int) { Value = entity.ThoiGianLamBai},
+                new SqlParameter("@daNgay", SqlDbType.DateTime) { Value = entity.Ngay},
                 new SqlParameter("@iErrorCode", SqlDbType.Int) { Direction = ParameterDirection.Output }
             };
             SqlHelper.ExecuteNonQuery(CommonFunctions.GetConnectionString(), CommandType.StoredProcedure, "pr_DM_DeThi_Update", parameters.ToArray());

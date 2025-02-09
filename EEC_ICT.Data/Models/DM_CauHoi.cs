@@ -16,9 +16,16 @@ namespace EEC_ICT.Data.Models
         //public int CorrectAnswerId { get; set; }
         public int TopicId { get; set; }
         public string Note { get; set; }
-        public int QuestionType { get; set; }
+        public QuestionType QuestionType { get; set; }
         public float TrongSo { get; set; }
         //public List<D> ChoiceList { get; set; }
         //public List<DM_DapAn> ChoiceList_Delete { get; set; }
     }
+
+    //public enum QuestionType
+    //{
+    //    MULTIPLE_CHOICE = 1,
+    //    FILL_IN_BLANK = 2,
+    //    MATCHING = 3,
+    //}
 }
