@@ -33,16 +33,15 @@ namespace EEC_ICT.Data.Repository
             var parameters = new List<SqlParameter>()
             {
                 new SqlParameter("@iQuestionId", SqlDbType.Int){ Direction = ParameterDirection.Output},
+                new SqlParameter("@iTopicId", SqlDbType.Int) { Value = entity.TopicId},
+                new SqlParameter("@lIdDeThi", SqlDbType.BigInt) { Value = entity.IdDeThi},
                 new SqlParameter("@sQuestion", SqlDbType.NVarChar, -1) { Value = entity.Question},
                 //new SqlParameter("@sGraphUrl", SqlDbType.NVarChar, 200) { Value = entity.GraphUrl},
                 //new SqlParameter("@iCorrectAnswerId", SqlDbType.Int) { Value = entity.CorrectAnswerId},
                 new SqlParameter("@sChoices", SqlDbType.NVarChar, -1) { Value = entity.Choices},
                 new SqlParameter("@byQuestionType", SqlDbType.TinyInt) { Value = entity.QuestionType},
                 new SqlParameter("@fTrongSo", SqlDbType.Float) { Value = entity.TrongSo},
-                new SqlParameter("@iTopicId", SqlDbType.Int) { Value = entity.TopicId},
-                new SqlParameter("@lIdDeThi", SqlDbType.BigInt) { Value = entity.IdDeThi},
                 new SqlParameter("@sNote", SqlDbType.NVarChar, 4000) { Value = entity.Note},
-                new SqlParameter("@fTrongSo", SqlDbType.Float) { Value = entity.TrongSo},
                 new SqlParameter("@iErrorCode", SqlDbType.Int) { Direction = ParameterDirection.Output }
             };
             SqlHelper.ExecuteNonQuery(CommonFunctions.GetConnectionString(), CommandType.StoredProcedure, "pr_DM_CauHoi_Insert", parameters.ToArray());

@@ -4,6 +4,7 @@ using EEC_ICT.Data.Common;
 using EEC_ICT.Data.Core;
 using EEC_ICT.Data.Models;
 using EEC_ICT.Data.Services;
+using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -108,7 +109,22 @@ namespace EEC_ICT.Api.Controllers
 
                 for (int i = 0; i < deThi.ListCauHoi.Count; i++)
                 {
-                    deThi.ListCauHoi[i].Choices = deThi.ListCauHoi[i].Choices.Replace(":true", ":false");
+                    if(deThi.ListCauHoi[i].QuestionType == QuestionType.MULTIPLE_CHOICE)
+                    {
+                        deThi.ListCauHoi[i].Choices = deThi.ListCauHoi[i].Choices.Replace(":true", ":false");
+                    }
+                    if(deThi.ListCauHoi[i].QuestionType == QuestionType.FILL_IN_BLANK)
+                    {
+                        var data = JsonConvert.DeserializeObject<List<Dictionary<string, object>>>(deThi.ListCauHoi[i].Choices);
+                        foreach (var item in data)
+                        {
+                            if (item.ContainsKey("Answer"))
+                            {
+                                item["Answer"] = ""; // Ẩn nội dung
+                            }
+                        }
+                        deThi.ListCauHoi[i].Choices = JsonConvert.SerializeObject(data);
+                    }
                 }
 
                 // TODO
