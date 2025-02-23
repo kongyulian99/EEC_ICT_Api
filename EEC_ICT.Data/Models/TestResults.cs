@@ -20,23 +20,27 @@ namespace EEC_ICT.Data.Models
     public class MaxScoreAndIdDeThi
     {
         public long IdDeThi { get; set; }
+        public string TenDeThi { get; set; }
         public double MaxScore { get; set; }
     }
     public class AverageScoreAndIdDeThi
     {
         public long IdDeThi { get; set; }
+        public string TenDeThi { get; set; }
         public double AverageScore { get; set; }
     }
 
     public class MinScoreAndIdDeThi
     {
         public long IdDeThi { get; set; }
+        public string TenDeThi { get; set; }
         public double MinScore { get; set; }
     }
 
     public class AverageTimespanAndIdDeThi
     {
         public long IdDeThi { get; set; }
+        public string TenDeThi { get; set; }
         public double AverageTimespan { get; set; }
     }
 }

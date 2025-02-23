@@ -54,7 +54,7 @@ namespace EEC_ICT.Data.Repository
                 //new SqlParameter("@iTopicId", SqlDbType.Int){ Value = topicId},
                 new SqlParameter("@sUserId", SqlDbType.NVarChar, 128){ Value = userId},
                 new SqlParameter("@iNam", SqlDbType.Int){ Value = nam},
-                new SqlParameter("@sUserId", SqlDbType.NVarChar, 128){ Value = userId},
+                new SqlParameter("@iErrorCode", SqlDbType.Int) {Direction = ParameterDirection.Output}
             };
             var data = SqlHelper.ExecuteReader(CommonFunctions.GetConnectionString(), CommandType.StoredProcedure, "pr_TestResults_SelectBestScoreByUser", parameters.ToArray());
             return data;
@@ -94,6 +94,7 @@ namespace EEC_ICT.Data.Repository
             {
                 //new SqlParameter("@sFilter", SqlDbType.NVarChar, 300){ Value = filter},
                 //new SqlParameter("@iTopicId", SqlDbType.Int){ Value = topicId},
+                new SqlParameter("@sUserId", SqlDbType.NVarChar, 128){ Value = userId},
                 new SqlParameter("@sUserId", SqlDbType.NVarChar, 128){ Value = userId},
                 new SqlParameter("@iNam", SqlDbType.Int){ Value = nam},
                 new SqlParameter("@iErrorCode", SqlDbType.Int) {Direction = ParameterDirection.Output}
