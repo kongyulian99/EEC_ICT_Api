@@ -46,52 +46,56 @@ namespace EEC_ICT.Data.Repository
         }
 
         // for dashboard
-        public IDataReader SelectBestScoreByUser(string userId)
+        public IDataReader SelectBestScoreByUser(string userId, int nam)
         {
             var parameters = new List<SqlParameter>()
             {
                 //new SqlParameter("@sFilter", SqlDbType.NVarChar, 300){ Value = filter},
                 //new SqlParameter("@iTopicId", SqlDbType.Int){ Value = topicId},
                 new SqlParameter("@sUserId", SqlDbType.NVarChar, 128){ Value = userId},
-                new SqlParameter("@iErrorCode", SqlDbType.Int) {Direction = ParameterDirection.Output}
+                new SqlParameter("@iNam", SqlDbType.Int){ Value = nam},
+                new SqlParameter("@sUserId", SqlDbType.NVarChar, 128){ Value = userId},
             };
             var data = SqlHelper.ExecuteReader(CommonFunctions.GetConnectionString(), CommandType.StoredProcedure, "pr_TestResults_SelectBestScoreByUser", parameters.ToArray());
             return data;
         }
 
-        public IDataReader SelectMinScoreByUser(string userId)
+        public IDataReader SelectMinScoreByUser(string userId, int nam)
         {
             var parameters = new List<SqlParameter>()
             {
                 //new SqlParameter("@sFilter", SqlDbType.NVarChar, 300){ Value = filter},
                 //new SqlParameter("@iTopicId", SqlDbType.Int){ Value = topicId},
                 new SqlParameter("@sUserId", SqlDbType.NVarChar, 128){ Value = userId},
+                new SqlParameter("@iNam", SqlDbType.Int){ Value = nam},
                 new SqlParameter("@iErrorCode", SqlDbType.Int) {Direction = ParameterDirection.Output}
             };
             var data = SqlHelper.ExecuteReader(CommonFunctions.GetConnectionString(), CommandType.StoredProcedure, "pr_TestResults_SelectMinScoreByUser", parameters.ToArray());
             return data;
         }
 
-        public IDataReader SelectAverageScoreByUser(string userId)
+        public IDataReader SelectAverageScoreByUser(string userId, int nam)
         {
             var parameters = new List<SqlParameter>()
             {
                 //new SqlParameter("@sFilter", SqlDbType.NVarChar, 300){ Value = filter},
                 //new SqlParameter("@iTopicId", SqlDbType.Int){ Value = topicId},
                 new SqlParameter("@sUserId", SqlDbType.NVarChar, 128){ Value = userId},
+                new SqlParameter("@iNam", SqlDbType.Int){ Value = nam},
                 new SqlParameter("@iErrorCode", SqlDbType.Int) {Direction = ParameterDirection.Output}
             };
             var data = SqlHelper.ExecuteReader(CommonFunctions.GetConnectionString(), CommandType.StoredProcedure, "pr_TestResults_SelectAverageScoreByUser", parameters.ToArray());
             return data;
         }
 
-        public IDataReader SelectAverageTimespanByUser(string userId)
+        public IDataReader SelectAverageTimespanByUser(string userId, int nam)
         {
             var parameters = new List<SqlParameter>()
             {
                 //new SqlParameter("@sFilter", SqlDbType.NVarChar, 300){ Value = filter},
                 //new SqlParameter("@iTopicId", SqlDbType.Int){ Value = topicId},
                 new SqlParameter("@sUserId", SqlDbType.NVarChar, 128){ Value = userId},
+                new SqlParameter("@iNam", SqlDbType.Int){ Value = nam},
                 new SqlParameter("@iErrorCode", SqlDbType.Int) {Direction = ParameterDirection.Output}
             };
             var data = SqlHelper.ExecuteReader(CommonFunctions.GetConnectionString(), CommandType.StoredProcedure, "pr_TestResults_SelectAverageTimespanByUser", parameters.ToArray());

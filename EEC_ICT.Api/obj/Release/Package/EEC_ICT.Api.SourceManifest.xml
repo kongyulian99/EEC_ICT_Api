@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <sitemanifest>
-  <IisApp path="D:\Workspace\Teach\ICT\FinalProject\Api\EEC_ICT.Api\obj\Release\Package\PackageTmp" />
-  <setAcl path="D:\Workspace\Teach\ICT\FinalProject\Api\EEC_ICT.Api\obj\Release\Package\PackageTmp" setAclResourceType="Directory" />
-  <setAcl path="D:\Workspace\Teach\ICT\FinalProject\Api\EEC_ICT.Api\obj\Release\Package\PackageTmp" setAclUser="anonymousAuthenticationUser" setAclResourceType="Directory" />
+  <IisApp path="D:\Pham Hoang Phuc\ICT\EEC_ICT_Api\EEC_ICT.Api\obj\Release\Package\PackageTmp" />
+  <setAcl path="D:\Pham Hoang Phuc\ICT\EEC_ICT_Api\EEC_ICT.Api\obj\Release\Package\PackageTmp" setAclResourceType="Directory" />
+  <setAcl path="D:\Pham Hoang Phuc\ICT\EEC_ICT_Api\EEC_ICT.Api\obj\Release\Package\PackageTmp" setAclUser="anonymousAuthenticationUser" setAclResourceType="Directory" />
 </sitemanifest>

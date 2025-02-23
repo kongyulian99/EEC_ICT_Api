@@ -198,7 +198,7 @@ namespace EEC_ICT.Api.Controllers
 
         [HttpGet]
         [Route("getMaxScoreByUser")]
-        public object GetMaxScoreByUser(string userId) {
+        public object GetMaxScoreByUser(string userId, int nam) {
             Logger.Info("[TestResults_SelecOne]");
             var retval = new ReturnInfo
             {
@@ -208,7 +208,7 @@ namespace EEC_ICT.Api.Controllers
             };
             try
             {
-                retval.Data = TestResultsServices.SelectBestScoreByUser(userId);
+                retval.Data = TestResultsServices.SelectBestScoreByUser(userId, nam);
                 retval.Status = new StatusReturn { Code = 1, Message = "Thành công" };
             }
             catch (Exception ex)
@@ -221,7 +221,7 @@ namespace EEC_ICT.Api.Controllers
 
         [HttpGet]
         [Route("getMinScoreByUser")]
-        public object GetMinScoreByUser(string userId)
+        public object GetMinScoreByUser(string userId, int nam)
         {
             Logger.Info("[TestResults_SelecOne]");
             var retval = new ReturnInfo
@@ -232,7 +232,7 @@ namespace EEC_ICT.Api.Controllers
             };
             try
             {
-                retval.Data = TestResultsServices.SelectMinScoreByUser(userId);
+                retval.Data = TestResultsServices.SelectMinScoreByUser(userId, nam);
                 retval.Status = new StatusReturn { Code = 1, Message = "Thành công" };
             }
             catch (Exception ex)
@@ -245,7 +245,7 @@ namespace EEC_ICT.Api.Controllers
 
         [HttpGet]
         [Route("getAverageScoreByUser")]
-        public object GetAverageScoreByUser(string userId)
+        public object GetAverageScoreByUser(string userId, int nam)
         {
             Logger.Info("[TestResults_SelecOne]");
             var retval = new ReturnInfo
@@ -256,7 +256,7 @@ namespace EEC_ICT.Api.Controllers
             };
             try
             {
-                retval.Data = TestResultsServices.SelectAverageScoreByUser(userId);
+                retval.Data = TestResultsServices.SelectAverageScoreByUser(userId, nam);
                 retval.Status = new StatusReturn { Code = 1, Message = "Thành công" };
             }
             catch (Exception ex)
@@ -269,7 +269,7 @@ namespace EEC_ICT.Api.Controllers
 
         [HttpGet]
         [Route("getAverageTimespanByUser")]
-        public object GetAverageTimespanByUser(string userId)
+        public object GetAverageTimespanByUser(string userId, int nam)
         {
             Logger.Info("[TestResults_SelecOne]");
             var retval = new ReturnInfo
@@ -280,7 +280,7 @@ namespace EEC_ICT.Api.Controllers
             };
             try
             {
-                retval.Data = TestResultsServices.SelectAverageTimespanByUser(userId);
+                retval.Data = TestResultsServices.SelectAverageTimespanByUser(userId, nam);
                 retval.Status = new StatusReturn { Code = 1, Message = "Thành công" };
             }
             catch (Exception ex)
