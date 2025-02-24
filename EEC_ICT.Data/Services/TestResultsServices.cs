@@ -28,24 +28,24 @@ namespace EEC_ICT.Data.Services
             return rep.Insert(entity);
         }
 
-        public static List<MaxScoreAndIdDeThi> SelectBestScoreByUser(string userId)
+        public static List<MaxScoreAndIdDeThi> SelectBestScoreByUser(string userId, int nam)
         {
-            return SqlHelper.GetList<MaxScoreAndIdDeThi>(rep.SelectBestScoreByUser(userId));
+            return SqlHelper.GetList<MaxScoreAndIdDeThi>(rep.SelectBestScoreByUser(userId, nam));
         }
 
-        public static List<MinScoreAndIdDeThi> SelectMinScoreByUser(string userId)
+        public static List<MinScoreAndIdDeThi> SelectMinScoreByUser(string userId, int nam)
         {
-            return SqlHelper.GetList<MinScoreAndIdDeThi>(rep.SelectMinScoreByUser(userId));
+            return SqlHelper.GetList<MinScoreAndIdDeThi>(rep.SelectMinScoreByUser(userId, nam));
         }
 
-        public static List<AverageScoreAndIdDeThi> SelectAverageScoreByUser(string userId)
+        public static List<AverageScoreAndIdDeThi> SelectAverageScoreByUser(string userId, int nam)
         {
-            return SqlHelper.GetList<AverageScoreAndIdDeThi>(rep.SelectAverageScoreByUser(userId));
+            return SqlHelper.GetList<AverageScoreAndIdDeThi>(rep.SelectAverageScoreByUser(userId, nam));
         }
 
-        public static List<AverageTimespanAndIdDeThi> SelectAverageTimespanByUser(string userId)
+        public static List<AverageTimespanAndIdDeThi> SelectAverageTimespanByUser(string userId, int nam)
         {
-            return SqlHelper.GetList<AverageTimespanAndIdDeThi>(rep.SelectAverageTimespanByUser(userId));
+            return SqlHelper.GetList<AverageTimespanAndIdDeThi>(rep.SelectAverageTimespanByUser(userId, nam));
         }
     }
 }

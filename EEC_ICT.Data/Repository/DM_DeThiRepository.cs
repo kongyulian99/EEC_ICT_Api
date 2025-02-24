@@ -41,7 +41,7 @@ namespace EEC_ICT.Data.Repository
                 new SqlParameter("@sGhiChu", SqlDbType.NVarChar, 500) { Value = entity.GhiChu},
                 new SqlParameter("@iThoiGianLamBai", SqlDbType.Int) { Value = entity.ThoiGianLamBai},
                 new SqlParameter("@daNgay", SqlDbType.DateTime) { Value = entity.Ngay},
-        new SqlParameter("@iErrorCode", SqlDbType.Int) { Direction = ParameterDirection.Output }
+                new SqlParameter("@iErrorCode", SqlDbType.Int) { Direction = ParameterDirection.Output }
             };
             SqlHelper.ExecuteNonQuery(CommonFunctions.GetConnectionString(), CommandType.StoredProcedure, "pr_DM_DeThi_Insert", parameters.ToArray());
             return parameters[0].Value.ToString();
