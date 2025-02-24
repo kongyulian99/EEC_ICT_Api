@@ -22,6 +22,18 @@ namespace EEC_ICT.Data.Models
         //public List<DM_DapAn> ChoiceList_Delete { get; set; }
     }
 
+    public class MultipleChoiceModel
+    {
+        public int? Id { get; set; }
+        public bool Check { get; set; }
+    }
+
+    public class FillInBlankModel
+    {
+        public int? Id { get; set; }
+        public string Answer { get; set; }
+    }
+
     //public enum QuestionType
     //{
     //    MULTIPLE_CHOICE = 1,

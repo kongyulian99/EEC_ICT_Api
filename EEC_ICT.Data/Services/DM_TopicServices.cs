@@ -13,9 +13,9 @@ namespace EEC_ICT.Data.Services
     {
         private static DM_TopicRepository rep = new DM_TopicRepository();
 
-        public static List<DM_Topic> SelectAll()
+        public static List<DM_Topic1> SelectAll()
         {
-            return SqlHelper.GetList<DM_Topic>(rep.SelectAll());
+            return SqlHelper.GetList<DM_Topic1>(rep.SelectAll());
         }
 
         public static DM_Topic SelectOne(int questionId)

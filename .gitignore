@@ -2,6 +2,7 @@ packages/
 .git/
 .vs/
 ./EEC_ICT.Api/bin
+./EEC_ICT.Api/bin/EEC_ICT.Api.dll
 ./EEC_ICT.Api/obj/
 ./EEC_ICT.Api/obj/Debug
 ./EEC_ICT.Api/obj/Debug/
@@ -9,3 +10,5 @@ packages/
 ./EEC_ICT.Data/obj
 ./EEC_ICT.Data/obj/Debug/
 .vs/EEC_ICT/v16/.suo
+./EEC_ICT.Api/bin
+./EEC_ICT.Api/obj/Debug/

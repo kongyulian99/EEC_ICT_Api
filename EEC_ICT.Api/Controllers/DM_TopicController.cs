@@ -21,7 +21,7 @@ namespace EEC_ICT.Api.Controllers
             Logger.Info("[DM_Topic_SelectAll]");
             var retval = new ReturnInfo
             {
-                Data = new List<DM_Topic>(),
+                Data = new List<DM_Topic1>(),
                 Pagination = new PaginationInfo { PageIndex = pageIndex, PageSize = pageSize, TotalRows = 0 },
                 Status = new StatusReturn { Code = 0, Message = "Không thành công" }
             };
