@@ -33,6 +33,7 @@ namespace EEC_ICT.Data.Repository
             var parameters = new List<SqlParameter>()
             {
                 new SqlParameter("@iTopicId", SqlDbType.Int){ Value = ParameterDirection.Output},
+                new SqlParameter("@iIdCha", SqlDbType.Int) { Value = entity.IdCha},
                 new SqlParameter("@sTopicName", SqlDbType.NVarChar, 200) { Value = entity.TopicName},
                 new SqlParameter("@sNote", SqlDbType.NVarChar, 500) { Value = entity.Note},
                 new SqlParameter("@iErrorCode", SqlDbType.Int) { Direction = ParameterDirection.Output }
@@ -46,6 +47,7 @@ namespace EEC_ICT.Data.Repository
             var parameters = new List<SqlParameter>()
             {
                 new SqlParameter("@iTopicId", SqlDbType.Int){ Value = entity.TopicId},
+                new SqlParameter("@iIdCha", SqlDbType.Int) { Value = entity.IdCha},
                 new SqlParameter("@sTopicName", SqlDbType.NVarChar, 200) { Value = entity.TopicName},
                 new SqlParameter("@sNote", SqlDbType.NVarChar, 500) { Value = entity.Note},
                 new SqlParameter("@iErrorCode", SqlDbType.Int) { Direction = ParameterDirection.Output }

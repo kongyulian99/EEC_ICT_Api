@@ -8,6 +8,7 @@ using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Text.RegularExpressions;
 using System.Web.Http;
 
 namespace EEC_ICT.Api.Controllers
@@ -333,18 +334,37 @@ namespace EEC_ICT.Api.Controllers
                     //if (request.ListCauHoi[i].ChoiceList.Find(o => o.IsCorrect == true)?.AnswerId == correctAnswerId) { 
                     //    correctCount ++;
                     //}
-
-                    if (request.ListCauHoi[i].Choices == dataFromSql.ListCauHoi[i].Choices)
+                    if (request.ListCauHoi[i].QuestionType == QuestionType.MULTIPLE_CHOICE)
                     {
-                        correctScore += request.ListCauHoi[i].TrongSo;
-                    }
+                        var answerModel = JsonConvert.DeserializeObject<List<MultipleChoiceModel>>(request.ListCauHoi[i].Choices);
+                        if (request.ListCauHoi[i].Choices == dataFromSql.ListCauHoi[i].Choices)
+                        {
+                            correctScore += request.ListCauHoi[i].TrongSo;
+                        }
+                    } else if(request.ListCauHoi[i].QuestionType == QuestionType.FILL_IN_BLANK)
+                    {
+                        var answerModel = JsonConvert.DeserializeObject<List<FillInBlankModel>>(request.ListCauHoi[i].Choices);
+                        var dataSql = JsonConvert.DeserializeObject<List<FillInBlankModel>>(dataFromSql.ListCauHoi[i].Choices);
+                        int correctCount = 0;
+
+                        for(int j = 0; j < answerModel.Count; j++)
+                        {
+                            var listCorrectAnswer = Regex.Replace(dataSql[j].Answer, "<.*?>", string.Empty).Split(';').Select(answer => answer.Trim().ToLower());
+                            var answerReplaceHtml = Regex.Replace(answerModel[j].Answer, "<.*?>", string.Empty).ToLower();
+                            if (listCorrectAnswer.Contains(answerReplaceHtml))
+                            {
+                                correctCount++;
+                            }
+                        }
+                        correctScore += request.ListCauHoi[i].TrongSo * correctCount / dataSql.Count();
+                    }                    
                 }
 
                 // insert test result
                 var testResult = new TestResults();
                 testResult.UserId = request.UserId;
                 testResult.IdDeThi = request.IdDeThi;
-                testResult.Score = correctScore / dataFromSql.ListCauHoi.Select(o => o.TrongSo).Sum();
+                testResult.Score = dataFromSql.ListCauHoi.Select(o => o.TrongSo).Sum() > 0 ? correctScore / dataFromSql.ListCauHoi.Select(o => o.TrongSo).Sum() : 0;
                 testResult.StartTime = request.StartTime;
                 testResult.EndTime = request.EndTime;
                 TestResultsServices.Insert(testResult);
