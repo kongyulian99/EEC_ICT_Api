@@ -4,6 +4,7 @@ using EEC_ICT.Data.Common;
 using EEC_ICT.Data.Core;
 using EEC_ICT.Data.Models;
 using EEC_ICT.Data.Services;
+using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -40,6 +41,67 @@ namespace EEC_ICT.Api.Controllers
                 //{
                 //    data[i].ChoiceList = DM_DapAnServices.SelectAllWQuestionId(data[i].QuestionId);
                 //}
+
+                if (!string.IsNullOrEmpty(filter))
+                {
+                    data = data.Where(o => UtilityServices.convertToUnSign(o.Question).IndexOf(UtilityServices.convertToUnSign(filter), StringComparison.CurrentCultureIgnoreCase) >= 0).ToList();
+                }
+                retval.Pagination.TotalRows = data.Count;
+                if (pageSize > 0)
+                {
+                    data = data.Skip(pageSize * (pageIndex - 1)).Take(pageSize).ToList();
+                }
+                retval.Data = data;
+                retval.Status = new StatusReturn { Code = 1, Message = "Thành công" };
+            }
+            catch (Exception ex)
+            {
+                retval.Status = new StatusReturn { Code = -1, Message = ex.Message };
+            }
+            Logger.Info("[retval]" + retval.JSONSerializer());
+            return retval;
+        }
+
+        [HttpGet]
+        [Route("selectallfortest")]
+        public object SelectAllForTest(string filter, int pageIndex, int pageSize, int topicId)
+        {
+            Logger.Info("[DM_CauHoi_SelectAll]");
+            var retval = new ReturnInfo
+            {
+                Data = new List<DM_CauHoi>(),
+                Pagination = new PaginationInfo { PageIndex = pageIndex, PageSize = pageSize, TotalRows = 0 },
+                Status = new StatusReturn { Code = 0, Message = "Không thành công" }
+            };
+
+            try
+            {
+                var data = DM_CauHoiServices.SelectAll(0);
+
+                if (topicId > 0)
+                {
+                    data = data.FindAll(o => o.TopicId == topicId);
+                }
+
+                for (int i = 0; i < data.Count; i++)
+                {
+                    if (data[i].QuestionType == QuestionType.MULTIPLE_CHOICE)
+                    {
+                        data[i].Choices = data[i].Choices.Replace(":true", ":false");
+                    }
+                    if (data[i].QuestionType == QuestionType.FILL_IN_BLANK)
+                    {
+                        var choices = JsonConvert.DeserializeObject<List<Dictionary<string, object>>>(data[i].Choices);
+                        foreach (var choice in choices)
+                        {
+                            if (choice.ContainsKey("Answer"))
+                            {
+                                choice["Answer"] = ""; // Ẩn nội dung
+                            }
+                        }
+                        data[i].Choices = JsonConvert.SerializeObject(choices);
+                    }
+                }
 
                 if (!string.IsNullOrEmpty(filter))
                 {
