@@ -162,28 +162,6 @@ namespace EEC_ICT.Api.Controllers
             try
             {
                 var questionId = DM_CauHoiServices.Insert(request);
-                //if (request.ChoiceList != null)
-                //{
-                //    for (int i = 0; i < request.ChoiceList.Count(); i++)
-                //    {
-                //        if (request.ChoiceList[i].AnswerId <= 0)
-                //        {
-                //            request.ChoiceList[i].QuestionId = int.Parse(questionId); // request.IdCanBoNhanVien;
-                //            DM_DapAnServices.Insert(request.ChoiceList[i]);
-                //        }
-                //        else
-                //        {
-                //            DM_DapAnServices.Update(request.ChoiceList[i]);
-                //        }
-                //    }
-                //}
-                //if (request.ChoiceList_Delete != null)
-                //{
-                //    for (int i = 0; i < request.ChoiceList_Delete.Count(); i++)
-                //    {
-                //        DM_DapAnServices.Delete(request.ChoiceList_Delete[i].AnswerId);
-                //    }
-                //}
 
                 retval.Data = questionId;
                 retval.Status = new StatusReturn { Code = 1, Message = "Thành công" };

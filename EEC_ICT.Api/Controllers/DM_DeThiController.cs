@@ -325,24 +325,13 @@ namespace EEC_ICT.Api.Controllers
                 float correctScore = (float)0.0;
                 for (int i = 0; i < request.ListCauHoi?.Count; i++)
                 {
-                    //var listDapAn = DM_DapAnServices.SelectAllWQuestionId(request.ListCauHoi[i].QuestionId);
-                    //if (listDapAn != null)
-                    //{
-                    //    //var correctAnswerId = listDapAn.Find(o => o.IsCorrect == true).AnswerId;
-                    //}
-
-                    //if (request.ListCauHoi[i].ChoiceList.Find(o => o.IsCorrect == true)?.AnswerId == correctAnswerId) { 
-                    //    correctCount ++;
-                    //}
-
-
-
                     if (request.ListCauHoi[i].QuestionType == QuestionType.MULTIPLE_CHOICE)
                     {
                         var answerModel = JsonConvert.DeserializeObject<List<MultipleChoiceModel>>(request.ListCauHoi[i].Choices);
                         if (request.ListCauHoi[i].Choices == dataFromSql.ListCauHoi[i].Choices)
                         {
                             correctScore += request.ListCauHoi[i].TrongSo;
+                            QuestionResultsService
                         }
                     } else if(request.ListCauHoi[i].QuestionType == QuestionType.FILL_IN_BLANK)
                     {
