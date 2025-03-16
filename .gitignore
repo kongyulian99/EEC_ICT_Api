@@ -12,3 +12,4 @@ packages/
 .vs/EEC_ICT/v16/.suo
 ./EEC_ICT.Api/bin
 ./EEC_ICT.Api/obj/Debug/
+./EEC_ICT.Api/Properties/PublishProfiles
