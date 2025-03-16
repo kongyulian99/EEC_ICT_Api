@@ -334,6 +334,9 @@ namespace EEC_ICT.Api.Controllers
                     //if (request.ListCauHoi[i].ChoiceList.Find(o => o.IsCorrect == true)?.AnswerId == correctAnswerId) { 
                     //    correctCount ++;
                     //}
+
+
+
                     if (request.ListCauHoi[i].QuestionType == QuestionType.MULTIPLE_CHOICE)
                     {
                         var answerModel = JsonConvert.DeserializeObject<List<MultipleChoiceModel>>(request.ListCauHoi[i].Choices);
