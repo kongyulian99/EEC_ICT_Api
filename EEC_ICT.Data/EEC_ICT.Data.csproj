@@ -104,6 +104,7 @@
     <Compile Include="Services\CommandInFunctionServices.cs" />
     <Compile Include="Services\CommandServices.cs" />
     <Compile Include="Services\DM_DeThiServices.cs" />
+    <Compile Include="Services\QuestionResults.cs" />
     <Compile Include="Services\TestResultsServices.cs" />
     <Compile Include="Services\DM_TopicServices.cs" />
     <Compile Include="Services\DM_CauHoiServices.cs" />

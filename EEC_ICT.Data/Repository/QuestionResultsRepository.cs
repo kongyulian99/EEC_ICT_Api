@@ -22,9 +22,16 @@ namespace EEC_ICT.Data.Repository
             return data;
         }
 
-        public IDataReader SelectByUser(int topicId)
+        public IDataReader SelectOne(int questionId, string userId)
         {
-            var parameter = new SqlParameter("@sUserId", SqlDbType.Int) { Value = topicId };
+            var parameters = new List<SqlParameter>()
+            {
+                new SqlParameter("@sUserId", SqlDbType.Int) { Value = userId },
+                new SqlParameter("@iQuestionId", SqlDbType.Int) { Value = questionId },
+                //new SqlParameter("@iTopicId", SqlDbType.Int){ Value = topicId},
+                new SqlParameter("@iErrorCode", SqlDbType.Int) {Direction = ParameterDirection.Output}
+            };
+            var parameter = ;
             return SqlHelper.ExecuteReader(CommonFunctions.GetConnectionString(), CommandType.StoredProcedure, "pr_QuestionResults_SelectByUser", parameter);
         }
 
@@ -42,11 +49,11 @@ namespace EEC_ICT.Data.Repository
                 new SqlParameter("@sUserId", SqlDbType.NVarChar, 128) { Value = entity.UserId},
                 new SqlParameter("@iErrorCode", SqlDbType.Int) { Direction = ParameterDirection.Output }
             };
-            SqlHelper.ExecuteNonQuery(CommonFunctions.GetConnectionString(), CommandType.StoredProcedure, "pr_DM_Topic_Insert", parameters.ToArray());
+            SqlHelper.ExecuteNonQuery(CommonFunctions.GetConnectionString(), CommandType.StoredProcedure, "pr_QuestionResults_Insert", parameters.ToArray());
             return parameters[0].Value.ToString();
         }
 
-        public string Update(DM_Topic entity)
+        public string Update(QuestionResults entity)
         {
             var parameters = new List<SqlParameter>()
             {
@@ -56,7 +63,7 @@ namespace EEC_ICT.Data.Repository
                 new SqlParameter("@sNote", SqlDbType.NVarChar, 500) { Value = entity.Note},
                 new SqlParameter("@iErrorCode", SqlDbType.Int) { Direction = ParameterDirection.Output }
             };
-            SqlHelper.ExecuteNonQuery(CommonFunctions.GetConnectionString(), CommandType.StoredProcedure, "pr_DM_Topic_Update", parameters.ToArray());
+            SqlHelper.ExecuteNonQuery(CommonFunctions.GetConnectionString(), CommandType.StoredProcedure, "pr_QuestionResults_Update", parameters.ToArray());
             return entity.TopicId.ToString();
         }
 
@@ -67,7 +74,7 @@ namespace EEC_ICT.Data.Repository
                 new SqlParameter("@iTopicId", SqlDbType.Int){ Value = iTopicId},
                 new SqlParameter("@iErrorCode", SqlDbType.Int) {Direction = ParameterDirection.Output}
             };
-            SqlHelper.ExecuteNonQuery(CommonFunctions.GetConnectionString(), CommandType.StoredProcedure, "pr_DM_Topic_Delete", parameters.ToArray());
+            SqlHelper.ExecuteNonQuery(CommonFunctions.GetConnectionString(), CommandType.StoredProcedure, "pr_QuestionResults_Delete", parameters.ToArray());
             return iTopicId.ToString();
         }
     }
