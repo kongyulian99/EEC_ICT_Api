@@ -37,5 +37,16 @@ namespace EEC_ICT.Data.Services
         {
             return rep.Delete(questionId);
         }
+
+        public static void UpdateQuestionResults(QuestionResults entity)
+        {
+            if(SelectOne(entity.QuestionId, entity.UserId) != null)
+            {
+                Update(entity);
+            } else
+            {
+                Insert(entity);
+            }
+        }
     }
 }

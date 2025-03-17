@@ -323,15 +323,25 @@ namespace EEC_ICT.Api.Controllers
                 var dataFromSql = DM_DeThiServices.SelectAll().Find(o => o.IdDeThi == request.IdDeThi);
                 dataFromSql.ListCauHoi = DM_CauHoiServices.SelectAll(request.IdDeThi);
                 float correctScore = (float)0.0;
+
                 for (int i = 0; i < request.ListCauHoi?.Count; i++)
                 {
+                    var questionResults = new QuestionResults();
+                    questionResults.UserId = request.UserId;
+                    questionResults.QuestionId = request.ListCauHoi[i].QuestionId;
+
                     if (request.ListCauHoi[i].QuestionType == QuestionType.MULTIPLE_CHOICE)
                     {
                         var answerModel = JsonConvert.DeserializeObject<List<MultipleChoiceModel>>(request.ListCauHoi[i].Choices);
                         if (request.ListCauHoi[i].Choices == dataFromSql.ListCauHoi[i].Choices)
                         {
                             correctScore += request.ListCauHoi[i].TrongSo;
-                            QuestionResultsService
+                            questionResults.Result = true;
+                            QuestionResultsServices.UpdateQuestionResults(questionResults);
+                        } else
+                        {
+                            questionResults.Result = false;
+                            QuestionResultsServices.UpdateQuestionResults(questionResults);
                         }
                     } else if(request.ListCauHoi[i].QuestionType == QuestionType.FILL_IN_BLANK)
                     {
@@ -341,14 +351,28 @@ namespace EEC_ICT.Api.Controllers
 
                         for(int j = 0; j < answerModel.Count; j++)
                         {
-                            var listCorrectAnswer = Regex.Replace(dataSql[j].Answer, "<.*?>", string.Empty).Split(';').Select(answer => answer.Trim().ToLower());
-                            var answerReplaceHtml = Regex.Replace(answerModel[j].Answer, "<.*?>", string.Empty).ToLower();
+                            var listCorrectAnswer = Regex.Replace(dataSql[j].Answer.ToLower(), "<.*?>", string.Empty).Split(';');// .Select(answer => answer.Trim().ToLower());
+                            var answerReplaceHtml = Regex.Replace(answerModel[j].Answer.ToLower(), "<.*?>", string.Empty).ToLower();
                             if (listCorrectAnswer.Contains(answerReplaceHtml))
                             {
                                 correctCount++;
+                            } else
+                            {
+                                questionResults.Result = false;
+                                QuestionResultsServices.UpdateQuestionResults(questionResults);
                             }
                         }
                         correctScore += request.ListCauHoi[i].TrongSo * correctCount / dataSql.Count();
+
+                        if(correctCount >= answerModel.Count)
+                        {
+                            questionResults.Result = true;
+                            QuestionResultsServices.UpdateQuestionResults(questionResults);
+                        } else
+                        {
+                            questionResults.Result = false;
+                            QuestionResultsServices.UpdateQuestionResults(questionResults);
+                        }
                     }                    
                 }
 

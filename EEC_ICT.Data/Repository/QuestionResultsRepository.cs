@@ -26,13 +26,12 @@ namespace EEC_ICT.Data.Repository
         {
             var parameters = new List<SqlParameter>()
             {
-                new SqlParameter("@sUserId", SqlDbType.Int) { Value = userId },
+                new SqlParameter("@sUserId", SqlDbType.NVarChar, 128) { Value = userId },
                 new SqlParameter("@iQuestionId", SqlDbType.Int) { Value = questionId },
                 //new SqlParameter("@iTopicId", SqlDbType.Int){ Value = topicId},
                 new SqlParameter("@iErrorCode", SqlDbType.Int) {Direction = ParameterDirection.Output}
             };
-            var parameter = ;
-            return SqlHelper.ExecuteReader(CommonFunctions.GetConnectionString(), CommandType.StoredProcedure, "pr_QuestionResults_SelectByUser", parameter);
+            return SqlHelper.ExecuteReader(CommonFunctions.GetConnectionString(), CommandType.StoredProcedure, "pr_QuestionResults_SelectOne", parameters.ToArray());
         }
 
         public string Insert(QuestionResults entity)
@@ -44,8 +43,8 @@ namespace EEC_ICT.Data.Repository
                 //new SqlParameter("@sTopicName", SqlDbType.NVarChar, 200) { Value = entity.TopicName},
                 //new SqlParameter("@sNote", SqlDbType.NVarChar, 500) { Value = entity.Note},
                 
-                new SqlParameter("@sQuestionId", SqlDbType.Int){ Value = entity.QuestionId},
-                new SqlParameter("@bResult", SqlDbType.Int){ Value = entity.QuestionId},
+                new SqlParameter("@iQuestionId", SqlDbType.Int){ Value = entity.QuestionId},
+                new SqlParameter("@bResult", SqlDbType.Bit){ Value = entity.Result},
                 new SqlParameter("@sUserId", SqlDbType.NVarChar, 128) { Value = entity.UserId},
                 new SqlParameter("@iErrorCode", SqlDbType.Int) { Direction = ParameterDirection.Output }
             };
@@ -57,14 +56,13 @@ namespace EEC_ICT.Data.Repository
         {
             var parameters = new List<SqlParameter>()
             {
-                new SqlParameter("@iTopicId", SqlDbType.Int){ Value = entity.TopicId},
-                new SqlParameter("@iIdCha", SqlDbType.Int) { Value = entity.IdCha},
-                new SqlParameter("@sTopicName", SqlDbType.NVarChar, 200) { Value = entity.TopicName},
-                new SqlParameter("@sNote", SqlDbType.NVarChar, 500) { Value = entity.Note},
+                new SqlParameter("@iQuestionId", SqlDbType.Int){ Value = entity.QuestionId},
+                new SqlParameter("@bResult", SqlDbType.Bit){ Value = entity.Result},
+                new SqlParameter("@sUserId", SqlDbType.NVarChar, 128) { Value = entity.UserId},
                 new SqlParameter("@iErrorCode", SqlDbType.Int) { Direction = ParameterDirection.Output }
             };
             SqlHelper.ExecuteNonQuery(CommonFunctions.GetConnectionString(), CommandType.StoredProcedure, "pr_QuestionResults_Update", parameters.ToArray());
-            return entity.TopicId.ToString();
+            return entity.QuestionId.ToString();
         }
 
         public string Delete(int iTopicId)
