@@ -37,5 +37,10 @@ namespace EEC_ICT.Data.Services
         {
             return rep.Delete(questionId);
         }
+
+        public static List<AverageScoreAndIdDeThi> SelectAverageScoreByUser(int questionId, string userId)
+        {
+            return SqlHelper.GetList<AverageScoreAndIdDeThi>(rep.SelectAverageScoreByUser(questionId, userId));
+        }
     }
 }
