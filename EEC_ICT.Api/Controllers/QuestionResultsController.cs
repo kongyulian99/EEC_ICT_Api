@@ -64,7 +64,7 @@ namespace EEC_ICT.Api.Controllers
         }
 
         [HttpGet]
-        [Route("getAverageScoreByUser")]
+        [Route("getAverageScoreByTopic")]
         public object GetAverageScoreByUser(string userId, int TopicId)
         {
             Logger.Info("[QuestionResults_SelecOne]");
