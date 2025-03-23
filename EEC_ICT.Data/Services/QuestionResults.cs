@@ -42,5 +42,17 @@ namespace EEC_ICT.Data.Services
         {
             return SqlHelper.GetList<AverageScoreAndIdDeThi>(rep.SelectAverageScoreByUser(questionId, userId));
         }
+
+        public static void UpdateQuestionResults(QuestionResults entity)
+        {
+            if (SelectOne(entity.QuestionId, entity.UserId) != null)
+            {
+                Update(entity);
+            }
+            else
+            {
+                Insert(entity);
+            }
+        }
     }
 }
