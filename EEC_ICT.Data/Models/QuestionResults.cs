@@ -13,4 +13,15 @@ namespace EEC_ICT.Data.Models
         public string UserId { get; set; }
 
     }
+
+    public class QuestionResultsByTopic
+    {
+        public int QuestionId { get; set; }
+        public bool Result { get; set; }
+        public int TopicId { get; set; }
+        public string TopicName { get; set; }
+        public string UserId { get; set; }
+        public double AverageScore { get; set; }
+
+    }
 }

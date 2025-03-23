@@ -241,6 +241,7 @@
     <Compile Include="Controllers\BaseController.cs" />
     <Compile Include="Controllers\CommandsController.cs" />
     <Compile Include="Controllers\DM_DeThiController.cs" />
+    <Compile Include="Controllers\QuestionResultsController.cs" />
     <Compile Include="Controllers\TestResultsController.cs" />
     <Compile Include="Controllers\DM_TopicController.cs" />
     <Compile Include="Controllers\DM_CauHoiController.cs" />
