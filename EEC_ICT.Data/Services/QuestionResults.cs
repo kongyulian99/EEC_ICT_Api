@@ -38,12 +38,18 @@ namespace EEC_ICT.Data.Services
             return rep.Delete(questionId);
         }
 
+        public static List<AverageScoreAndIdDeThi> SelectAverageScoreByUser(int questionId, string userId)
+        {
+            return SqlHelper.GetList<AverageScoreAndIdDeThi>(rep.SelectAverageScoreByUser(questionId, userId));
+        }
+
         public static void UpdateQuestionResults(QuestionResults entity)
         {
-            if(SelectOne(entity.QuestionId, entity.UserId) != null)
+            if (SelectOne(entity.QuestionId, entity.UserId) != null)
             {
                 Update(entity);
-            } else
+            }
+            else
             {
                 Insert(entity);
             }
