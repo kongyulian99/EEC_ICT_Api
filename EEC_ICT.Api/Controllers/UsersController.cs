@@ -297,7 +297,7 @@ namespace EEC_ICT.Api.Controllers
                 UserName = request.UserName,
                 FullName = request.FullName,
                 Avatar = request.Avatar,
-                Status = request.Status,
+                Status = true,
                 Gender = request.Gender,
                 BirthDay = request.BirthDay,
                 Password = request.Password,
@@ -307,6 +307,18 @@ namespace EEC_ICT.Api.Controllers
 
             try
             {
+                if(UserServices.SelectAll().FindIndex(o => o.Email != null && o.Email == request.Email) >= 0)
+                {
+                    retval.Status.Message = "Email already used!";
+                    retval.Status.Code = -1;
+                    return retval;
+                }
+                if (UserServices.SelectAll().FindIndex(o => o.UserName != null && o.UserName == request.UserName) >= 0)
+                {
+                    retval.Status.Message = "Username already used!";
+                    retval.Status.Code = -1;
+                    return retval;
+                }
                 var result = UserServices.Insert(user);
                 retval.Status.Message = "Thêm mới thành công";
                 retval.Status.Code = 1;

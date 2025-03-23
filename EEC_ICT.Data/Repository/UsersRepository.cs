@@ -23,7 +23,11 @@ namespace EEC_ICT.Data.Repository
 
         public IDataReader SelectAll()
         {
-            return SqlHelper.ExecuteReader(CommonFunctions.GetConnectionString(), CommandType.StoredProcedure, storep+"SelectAll");
+            var parameters = new List<SqlParameter>
+            {
+                new SqlParameter("@iErrorCode", SqlDbType.Int) { Direction = ParameterDirection.Output }
+            };
+            return SqlHelper.ExecuteReader(CommonFunctions.GetConnectionString(), CommandType.StoredProcedure, storep+"SelectAll", parameters.ToArray());
         }
         public IDataReader SelectAllByPermission(string userId)
         {
@@ -62,7 +66,7 @@ namespace EEC_ICT.Data.Repository
         {
             var parameters = new List<SqlParameter>
             {
-                new SqlParameter("@sUserId", SqlDbType.NVarChar,128) {Value = entity.UserId},
+                new SqlParameter("@sUserId", SqlDbType.NVarChar,128) {Value = Guid.NewGuid().ToString()},
                 new SqlParameter("@sFullName", SqlDbType.NVarChar, 256) {Value = entity.FullName},
                 new SqlParameter("@sAddress", SqlDbType.NVarChar, 256) {Value = entity.Address},
                 new SqlParameter("@sAvatar", SqlDbType.VarChar, 256) {Value = entity.Avatar},
