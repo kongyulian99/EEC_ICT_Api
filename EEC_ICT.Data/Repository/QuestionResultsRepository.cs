@@ -76,14 +76,14 @@ namespace EEC_ICT.Data.Repository
             return iTopicId.ToString();
         }
 
-        public IDataReader SelectAverageScoreByUser(int questionId, string userId)
+        public IDataReader SelectAverageScoreByUser(string userId, int TopicId)
         {
             var parameters = new List<SqlParameter>()
             {
                 //new SqlParameter("@sFilter", SqlDbType.NVarChar, 300){ Value = filter},
                 //new SqlParameter("@iTopicId", SqlDbType.Int){ Value = topicId},
                 new SqlParameter("@sUserId", SqlDbType.NVarChar, 128){ Value = userId},
-                new SqlParameter("iQuestionId", SqlDbType.Int){ Value = questionId},
+                new SqlParameter("@iTopicId", SqlDbType.Int){ Value = TopicId},
                 new SqlParameter("@iErrorCode", SqlDbType.Int) {Direction = ParameterDirection.Output}
             };
             var data = SqlHelper.ExecuteReader(CommonFunctions.GetConnectionString(), CommandType.StoredProcedure, "pr_QuestionResults_SelectAverageScoreByUser", parameters.ToArray());

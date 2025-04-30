@@ -38,11 +38,6 @@ namespace EEC_ICT.Data.Services
             return rep.Delete(questionId);
         }
 
-        public static List<AverageScoreAndIdDeThi> SelectAverageScoreByUser(int questionId, string userId)
-        {
-            return SqlHelper.GetList<AverageScoreAndIdDeThi>(rep.SelectAverageScoreByUser(questionId, userId));
-        }
-
         public static void UpdateQuestionResults(QuestionResults entity)
         {
             if (SelectOne(entity.QuestionId, entity.UserId) != null)
@@ -53,6 +48,11 @@ namespace EEC_ICT.Data.Services
             {
                 Insert(entity);
             }
+        }
+
+        public static List<QuestionResultsByTopic> SelectAverageScoreByUser(string userId, int TopicId)
+        {
+            return SqlHelper.GetList<QuestionResultsByTopic>(rep.SelectAverageScoreByUser(userId, TopicId));
         }
     }
 }
