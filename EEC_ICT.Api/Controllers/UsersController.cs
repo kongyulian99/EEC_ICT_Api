@@ -237,7 +237,7 @@ namespace EEC_ICT.Api.Controllers
             try
             {
                 var result = UserServices.UpdateCommonInfo(entity);
-                retval.Status.Message = "Thêm mới thành công";
+                retval.Status.Message = "Cập nhật thành công";
                 retval.Status.Code = 1;
                 retval.Data = result;
             }

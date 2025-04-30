@@ -56,7 +56,7 @@ namespace EEC_ICT.Data.Repository
         {
             var parameters = new List<SqlParameter>
             {
-                new SqlParameter("@sId", SqlDbType.NVarChar, 128) {Value = id},
+                new SqlParameter("@sUserId", SqlDbType.NVarChar, 128) {Value = id},
                 new SqlParameter("@iErrorCode", SqlDbType.Int) { Direction = ParameterDirection.Output }
             };
             return SqlHelper.ExecuteReader(CommonFunctions.GetConnectionString(), CommandType.StoredProcedure, storep+"SelectOne", parameters.ToArray());

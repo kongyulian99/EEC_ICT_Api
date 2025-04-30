@@ -63,14 +63,14 @@ namespace EEC_ICT.Data.Services
 
         public static string UpdatePassword(string userId, string password)
         {
-            var passwordHash = CommonFunctions.ToMD5(password);
-            return rep.UpdatePassword(userId, passwordHash);
+            //var passwordHash = CommonFunctions.ToMD5(password);
+            return rep.UpdatePassword(userId, password);
         }
 
         public static bool CheckPassword(string userId, string password)
         {
-            var passwordHash = CommonFunctions.ToMD5(password);
-            return SqlHelper.GetList<User>(rep.CheckPassword(userId, passwordHash)).Count == 1;
+            //var passwordHash = CommonFunctions.ToMD5(password);
+            return SqlHelper.GetList<User>(rep.CheckPassword(userId, password)).Count == 1;
         }
 
         public static string UpdateCommonInfo(User entity)
